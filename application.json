@@ -1,0 +1,18 @@
+{
+  "pages": [
+    {
+      "id": "Контент",
+      "isDefault": true
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "clonedFromApplicationId": "61e08b63eb0501052b9fa7ee",
+  "color": "#F3F1C7",
+  "icon": "football",
+  "evaluationVersion": 2,
+  "applicationVersion": 1,
+  "isManualUpdate": false,
+  "deleted": false
+}
