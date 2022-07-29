@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1420,
+          "bottomRow": 1450,
           "containerStyle": "none",
           "snapRows": 84,
           "parentRowSpace": 1,
@@ -1875,8 +1875,8 @@
               "displayName": "Multi TreeSelect",
               "iconSVG": "/static/media/icon.b3e28afb.svg",
               "labelText": "",
-              "topRow": 8,
-              "bottomRow": 12,
+              "topRow": 0,
+              "bottomRow": 4,
               "parentRowSpace": 10,
               "labelWidth": 5,
               "type": "MULTI_SELECT_TREE_WIDGET",
@@ -1886,7 +1886,7 @@
               "animateLoading": true,
               "parentColumnSpace": 19.75,
               "dynamicTriggerPathList": [],
-              "leftColumn": 0,
+              "leftColumn": 19,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -1906,7 +1906,7 @@
               "labelTextSize": "0.875rem",
               "isRequired": false,
               "isDeprecated": false,
-              "rightColumn": 8,
+              "rightColumn": 29,
               "widgetId": "6dyh5e5lar",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
@@ -3930,8 +3930,8 @@
               "isCanvas": true,
               "displayName": "Tabs",
               "iconSVG": "/static/media/icon.74a6d653.svg",
-              "topRow": 0,
-              "bottomRow": 95,
+              "topRow": 4,
+              "bottomRow": 99,
               "parentRowSpace": 10,
               "type": "TABS_WIDGET",
               "hideCard": false,
@@ -5248,8 +5248,8 @@
                 "dropdown",
                 "tags"
               ],
-              "topRow": 4,
-              "bottomRow": 8,
+              "topRow": 0,
+              "bottomRow": 4,
               "parentRowSpace": 10,
               "labelWidth": 5,
               "type": "MULTI_SELECT_WIDGET_V2",
@@ -5259,7 +5259,7 @@
               "animateLoading": true,
               "parentColumnSpace": 20.0625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 0,
+              "leftColumn": 8,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -5279,7 +5279,7 @@
               "labelTextSize": "0.875rem",
               "isRequired": false,
               "isDeprecated": false,
-              "rightColumn": 8,
+              "rightColumn": 18,
               "widgetId": "wt8vr8l6v0",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
@@ -5298,8 +5298,8 @@
                 "typography",
                 "paragraph"
               ],
-              "topRow": 96,
-              "bottomRow": 140,
+              "topRow": 99,
+              "bottomRow": 143,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
