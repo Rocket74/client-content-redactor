@@ -46,7 +46,7 @@
               "animateLoading": true,
               "parentColumnSpace": 20.0625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 12,
+              "leftColumn": 26,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -66,7 +66,7 @@
               "labelTextSize": "0.875rem",
               "isRequired": false,
               "isDeprecated": false,
-              "rightColumn": 24,
+              "rightColumn": 38,
               "widgetId": "ehysckkbzw",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
@@ -5261,7 +5261,7 @@
               "animateLoading": true,
               "parentColumnSpace": 20.0625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 0,
+              "leftColumn": 38,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -5281,7 +5281,7 @@
               "labelTextSize": "0.875rem",
               "isRequired": false,
               "isDeprecated": false,
-              "rightColumn": 12,
+              "rightColumn": 49,
               "widgetId": "iql8hdt1di",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
@@ -5330,7 +5330,7 @@
               "isDeprecated": false,
               "rightColumn": 64,
               "disableLink": true,
-              "textAlign": "LEFT",
+              "textAlign": "RIGHT",
               "widgetId": "bpba7gxijm",
               "isVisible": true,
               "fontStyle": "BOLD",
@@ -5362,7 +5362,7 @@
               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
               "parentColumnSpace": 20.0625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 47,
+              "leftColumn": 49,
               "dynamicBindingPathList": [
                 {
                   "key": "fontFamily"
