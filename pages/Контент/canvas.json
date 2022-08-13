@@ -27,6 +27,58 @@
           "children": [
             {
               "boxShadow": "none",
+              "widgetName": "Select1Copy",
+              "isFilterable": false,
+              "displayName": "Select",
+              "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+              "labelText": "",
+              "searchTags": [
+                "dropdown"
+              ],
+              "topRow": 0,
+              "bottomRow": 4,
+              "parentRowSpace": 10,
+              "labelWidth": 5,
+              "type": "SELECT_WIDGET",
+              "serverSideFiltering": false,
+              "hideCard": false,
+              "defaultOptionValue": "",
+              "animateLoading": true,
+              "parentColumnSpace": 20.0625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 27,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "options"
+                }
+              ],
+              "labelPosition": "Left",
+              "options": "{{utils.select(get_project.data, ['name','uuid'])}}",
+              "placeholderText": "Проект",
+              "isDisabled": false,
+              "key": "tzofaix6aa",
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "isDeprecated": false,
+              "rightColumn": 36,
+              "widgetId": "gnovpy9999",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelAlignment": "left",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+            },
+            {
+              "boxShadow": "none",
               "widgetName": "ButtonGroup2Copy",
               "isCanvas": false,
               "dynamicPropertyPathList": [
@@ -5339,71 +5391,11 @@
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "fontSize": "1rem"
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "TreeSelect1",
-              "displayName": "TreeSelect",
-              "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-              "labelText": "",
-              "searchTags": [
-                "dropdown"
-              ],
-              "topRow": 0,
-              "bottomRow": 4,
-              "parentRowSpace": 10,
-              "labelWidth": 5,
-              "type": "SINGLE_SELECT_TREE_WIDGET",
-              "hideCard": false,
-              "defaultOptionValue": "",
-              "animateLoading": true,
-              "parentColumnSpace": 20.0625,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 28,
-              "dynamicBindingPathList": [
-                {
-                  "key": "accentColor"
-                },
-                {
-                  "key": "borderRadius"
-                },
-                {
-                  "key": "options"
-                }
-              ],
-              "labelPosition": "Left",
-              "options": "{{utils.multiselect(get_client_project.data, ['name','uuid','children'])}}",
-              "placeholderText": "Проект",
-              "isDisabled": false,
-              "key": "xp04m9bgkk",
-              "labelTextSize": "0.875rem",
-              "isRequired": false,
-              "isDeprecated": false,
-              "rightColumn": 36,
-              "widgetId": "j9yuqt94pv",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "isVisible": true,
-              "version": 1,
-              "expandAll": true,
-              "parentId": "0",
-              "labelAlignment": "left",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "allowClear": true
             }
           ]
         },
         "layoutOnLoadActions": [
           [
-            {
-              "id": "Контент_get_client_project",
-              "name": "get_client_project",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
             {
               "id": "Контент_get_user",
               "name": "get_user",
@@ -5422,6 +5414,18 @@
               "pluginType": "JS",
               "jsonPathKeys": [
                 "async () => {\n  if (appsmith.mode != \"EDIT\" && appsmith.URL.queryParams.embed === undefined) {\n    if (Object.keys(appsmith.URL.queryParams).length > 0) {\n      navigateTo(appsmith.URL.fullPath + '&embed=true');\n    } else {\n      navigateTo(appsmith.URL.fullPath + '?embed=true');\n    }\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Контент_get_project",
+              "name": "get_project",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.user.email"
               ],
               "timeoutInMillisecond": 10000
             }
