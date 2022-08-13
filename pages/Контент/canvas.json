@@ -46,7 +46,7 @@
               "animateLoading": true,
               "parentColumnSpace": 20.0625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 27,
+              "leftColumn": 0,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -66,7 +66,7 @@
               "labelTextSize": "0.875rem",
               "isRequired": false,
               "isDeprecated": false,
-              "rightColumn": 36,
+              "rightColumn": 9,
               "widgetId": "gnovpy9999",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
