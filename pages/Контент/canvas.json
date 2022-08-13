@@ -118,13 +118,13 @@
                     }
                   },
                   "buttonType": "MENU",
-                  "placement": "START",
+                  "placement": "BETWEEN",
                   "widgetId": "5sanv9wn7f",
                   "isDisabled": false,
                   "isVisible": true,
                   "buttonColor": "#f6f6f6",
                   "onClick": "{{showModal('Modal3')}}",
-                  "iconAlign": "left",
+                  "iconAlign": "right",
                   "iconName": "menu"
                 }
               },
@@ -152,7 +152,7 @@
                   "key": "groupButtons.groupButtonoizx9oach3.menuItems.menuItemesp399ogqd.onClick"
                 }
               ],
-              "leftColumn": 0,
+              "leftColumn": 58,
               "dynamicBindingPathList": [
                 {
                   "key": "childStylesheet.button.buttonColor"
@@ -170,7 +170,7 @@
               "key": "42mwnkak0m",
               "orientation": "vertical",
               "isDeprecated": false,
-              "rightColumn": 8,
+              "rightColumn": 64,
               "widgetId": "lfjjyr6rhg",
               "isVisible": true,
               "version": 1,
@@ -5310,7 +5310,9 @@
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
-            },
+            }
+          ],
+          [
             {
               "id": "Контент_utils.forceEmbed",
               "name": "utils.forceEmbed",
