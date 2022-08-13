@@ -152,7 +152,7 @@
                   "key": "groupButtons.groupButtonoizx9oach3.menuItems.menuItemesp399ogqd.onClick"
                 }
               ],
-              "leftColumn": 58,
+              "leftColumn": 59,
               "dynamicBindingPathList": [
                 {
                   "key": "childStylesheet.button.buttonColor"
@@ -1886,7 +1886,7 @@
               "animateLoading": true,
               "parentColumnSpace": 19.75,
               "dynamicTriggerPathList": [],
-              "leftColumn": 18,
+              "leftColumn": 11,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -1906,7 +1906,7 @@
               "labelTextSize": "0.875rem",
               "isRequired": false,
               "isDeprecated": false,
-              "rightColumn": 28,
+              "rightColumn": 22,
               "widgetId": "6dyh5e5lar",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
@@ -5260,7 +5260,7 @@
               "animateLoading": true,
               "parentColumnSpace": 20.0625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 8,
+              "leftColumn": 0,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -5280,7 +5280,7 @@
               "labelTextSize": "0.875rem",
               "isRequired": false,
               "isDeprecated": false,
-              "rightColumn": 18,
+              "rightColumn": 11,
               "widgetId": "wt8vr8l6v0",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
