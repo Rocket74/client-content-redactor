@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1710,
+          "bottomRow": 1760,
           "containerStyle": "none",
           "snapRows": 84,
           "parentRowSpace": 1,
@@ -5250,8 +5250,8 @@
               "searchTags": [
                 "dropdown"
               ],
-              "topRow": 0,
-              "bottomRow": 4,
+              "topRow": 170,
+              "bottomRow": 174,
               "parentRowSpace": 10,
               "labelWidth": 5,
               "type": "SELECT_WIDGET",
@@ -5261,7 +5261,7 @@
               "animateLoading": true,
               "parentColumnSpace": 20.0625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 36,
+              "leftColumn": 0,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -5281,7 +5281,7 @@
               "labelTextSize": "0.875rem",
               "isRequired": false,
               "isDeprecated": false,
-              "rightColumn": 45,
+              "rightColumn": 9,
               "widgetId": "iql8hdt1di",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
