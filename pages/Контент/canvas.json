@@ -5393,6 +5393,11 @@
               "boxShadow": "none",
               "widgetName": "ButtonGroup5",
               "isCanvas": false,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "groupButtons.groupButton1.isDisabled"
+                }
+              ],
               "displayName": "Button Group",
               "iconSVG": "/static/media/icon.d6773218cfb61dcfa5f460d43371e30d.svg",
               "searchTags": [
@@ -5424,7 +5429,7 @@
                   "buttonType": "SIMPLE",
                   "placement": "CENTER",
                   "isVisible": true,
-                  "isDisabled": false,
+                  "isDisabled": "{{Select1Copy.selectedOptionValue === ''}}",
                   "index": 1,
                   "menuItems": {},
                   "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
@@ -5448,6 +5453,9 @@
                 },
                 {
                   "key": "groupButtons.groupButton2.buttonColor"
+                },
+                {
+                  "key": "groupButtons.groupButton1.isDisabled"
                 }
               ],
               "key": "8ype0u3w31",
