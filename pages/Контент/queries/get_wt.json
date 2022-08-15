@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT wt.uuid AS uuid, wtpa.uuid AS wt_pack, wtpa.payload_post AS pack_post, wtpo.uuid AS wt_post, wttz.uuid AS wt_tz, tz.uuid AS tz, tz.payload AS tz_payload, wtes.uuid AS wt_es, wtes.settings AS es_settings, wtst.uuid AS wt_stack\nFROM public.\"wt\" wt\nLEFT JOIN public.\"wt_pack\" wtpa ON wtpa.uuid = wt.wt_pack\nLEFT JOIN public.\"wt_post\" wtpo ON wtpo.wt = wt.uuid\nLEFT JOIN public.\"wt_tz\" wttz ON wttz.wt = wt.uuid\nLEFT JOIN public.\"tz\" tz ON wttz.tz = tz.uuid\nLEFT JOIN public.\"mf_project_post_type\" mfppt ON mfppt.uuid = tz.mf_project_post_type\nLEFT JOIN public.\"_mf_post_type\" mfpt ON mfpt.uuid = mfppt.mf_post_type\nLEFT JOIN public.\"wt_execution_settings\" wtes ON wtes.wt = wt.uuid\nLEFT JOIN public.\"wt_stack\" wtst ON wtst.wt = wt.uuid\nWHERE wtpa.project_place = '{{Select1Copy.selectedOptionValue}}'\nORDER BY wt.uuid\nLIMIT 100;",
+      "body": "SELECT wt.uuid AS uuid, wtpa.uuid AS wt_pack, wtpa.payload_post AS pack_post, wtpo.uuid AS wt_post, wttz.uuid AS wt_tz, tz.uuid AS tz, tz.payload AS tz_payload, wtes.uuid AS wt_es, wtes.settings AS es_settings, wtst.uuid AS wt_stack\nFROM public.\"wt\" wt\nLEFT JOIN public.\"wt_pack\" wtpa ON wtpa.uuid = wt.wt_pack\nLEFT JOIN public.\"project_place\" pp ON pp.uuid = wtpa.project_place\nLEFT JOIN public.\"wt_post\" wtpo ON wtpo.wt = wt.uuid\nLEFT JOIN public.\"wt_tz\" wttz ON wttz.wt = wt.uuid\nLEFT JOIN public.\"tz\" tz ON wttz.tz = tz.uuid\nLEFT JOIN public.\"mf_project_post_type\" mfppt ON mfppt.uuid = tz.mf_project_post_type\nLEFT JOIN public.\"_mf_post_type\" mfpt ON mfpt.uuid = mfppt.mf_post_type\nLEFT JOIN public.\"wt_execution_settings\" wtes ON wtes.wt = wt.uuid\nLEFT JOIN public.\"wt_stack\" wtst ON wtst.wt = wt.uuid\nWHERE pp.project = '{{Select1Copy.selectedOptionValue}}'\nORDER BY wt.uuid\nLIMIT 100;",
       "pluginSpecifiedTemplates": [
         {
           "value": false
@@ -37,7 +37,7 @@
     "jsonPathKeys": [
       "Select1Copy.selectedOptionValue"
     ],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
