@@ -66,7 +66,7 @@
               "labelTextSize": "0.875rem",
               "isRequired": false,
               "isDeprecated": false,
-              "rightColumn": 9,
+              "rightColumn": 12,
               "widgetId": "gnovpy9999",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
@@ -5435,7 +5435,7 @@
               "animateLoading": true,
               "parentColumnSpace": 20.0625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 9,
+              "leftColumn": 12,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
@@ -5453,7 +5453,7 @@
               "key": "8ype0u3w31",
               "orientation": "horizontal",
               "isDeprecated": false,
-              "rightColumn": 18,
+              "rightColumn": 21,
               "widgetId": "yd3qc8og7u",
               "isVisible": true,
               "version": 1,
