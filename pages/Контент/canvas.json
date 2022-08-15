@@ -4555,7 +4555,7 @@
                                   "iconName": "diagram-tree"
                                 }
                               },
-                              "isVisible": true,
+                              "isVisible": false,
                               "label": "Вид: {{appsmith.store.w_m.split('|')[1]}}",
                               "version": 1,
                               "parentId": "cfxs2mq2ya",
@@ -4600,7 +4600,7 @@
                               "rightColumn": 64,
                               "iconName": "{{appsmith.store.w_m.includes('group') ?'diagram-tree':'symbol-square'}}\n\n\n",
                               "widgetId": "5zkixxlbkc",
-                              "isVisible": true,
+                              "isVisible": false,
                               "version": 1,
                               "parentId": "cfxs2mq2ya",
                               "renderMode": "CANVAS",
