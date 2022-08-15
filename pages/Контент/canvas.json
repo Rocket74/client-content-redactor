@@ -4529,7 +4529,7 @@
                                       "serverSidePaginationEnabled": false,
                                       "renderMode": "CANVAS",
                                       "horizontalAlignment": "LEFT",
-                                      "isVisibleSearch": false,
+                                      "isVisibleSearch": true,
                                       "isVisiblePagination": true,
                                       "verticalAlignment": "CENTER"
                                     }
