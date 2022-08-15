@@ -5432,14 +5432,19 @@
                   "isDisabled": "{{Select1Copy.selectedOptionValue === ''}}",
                   "index": 1,
                   "menuItems": {},
-                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "onClick": "{{get_wt.run()}}"
                 }
               },
               "type": "BUTTON_GROUP_WIDGET",
               "hideCard": false,
               "animateLoading": true,
               "parentColumnSpace": 20.0625,
-              "dynamicTriggerPathList": [],
+              "dynamicTriggerPathList": [
+                {
+                  "key": "groupButtons.groupButton1.onClick"
+                }
+              ],
               "leftColumn": 12,
               "dynamicBindingPathList": [
                 {
