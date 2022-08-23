@@ -4165,6 +4165,9 @@
                                         },
                                         {
                                           "key": "primaryColumns.wt_stack.computedValue"
+                                        },
+                                        {
+                                          "key": "primaryColumns.project_place.computedValue"
                                         }
                                       ],
                                       "leftColumn": 0,
@@ -4212,6 +4215,7 @@
                                         "wt_es",
                                         "es_settings",
                                         "wt_stack",
+                                        "project_place",
                                         "customColumn1"
                                       ],
                                       "compactMode": "SHORT",
@@ -4466,6 +4470,25 @@
                                           "isDerived": false,
                                           "label": "wt_stack",
                                           "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.wt_stack))}}",
+                                          "cellBackground": ""
+                                        },
+                                        "project_place": {
+                                          "index": 10,
+                                          "width": 150,
+                                          "id": "project_place",
+                                          "horizontalAlignment": "LEFT",
+                                          "verticalAlignment": "CENTER",
+                                          "columnType": "text",
+                                          "textColor": "",
+                                          "textSize": "0.875rem",
+                                          "enableFilter": true,
+                                          "enableSort": true,
+                                          "isVisible": true,
+                                          "isDisabled": false,
+                                          "isCellVisible": true,
+                                          "isDerived": false,
+                                          "label": "project_place",
+                                          "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.project_place))}}",
                                           "cellBackground": ""
                                         }
                                       },
