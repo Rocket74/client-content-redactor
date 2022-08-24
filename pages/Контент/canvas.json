@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 59,
+          "version": 60,
           "minHeight": 850,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -4172,6 +4172,18 @@
                                         },
                                         {
                                           "key": "totalRecordsCount"
+                                        },
+                                        {
+                                          "key": "primaryColumns.customColumn1.menuColor"
+                                        },
+                                        {
+                                          "key": "primaryColumns.customColumn1.borderRadius"
+                                        },
+                                        {
+                                          "key": "primaryColumns.customColumn1.boxShadow"
+                                        },
+                                        {
+                                          "key": "primaryColumns.customColumn1.menuButtonLabel"
                                         }
                                       ],
                                       "leftColumn": 0,
@@ -4215,6 +4227,7 @@
                                       "widgetName": "T_wt_list",
                                       "defaultPageSize": 0,
                                       "columnOrder": [
+                                        "customColumn1",
                                         "uuid",
                                         "wt_pack",
                                         "pack_post",
@@ -4512,6 +4525,51 @@
                                           "isSaveVisible": true,
                                           "isDiscardVisible": true,
                                           "computedValue": "{{T_wt_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"project_place\"]))}}"
+                                        },
+                                        "customColumn1": {
+                                          "allowCellWrapping": false,
+                                          "index": 10,
+                                          "width": 150,
+                                          "originalId": "customColumn1",
+                                          "id": "customColumn1",
+                                          "alias": "customColumn1",
+                                          "horizontalAlignment": "LEFT",
+                                          "verticalAlignment": "CENTER",
+                                          "columnType": "menuButton",
+                                          "textSize": "0.75rem",
+                                          "enableFilter": true,
+                                          "enableSort": true,
+                                          "isVisible": true,
+                                          "isDisabled": false,
+                                          "isCellEditable": false,
+                                          "isEditable": false,
+                                          "isCellVisible": true,
+                                          "isDerived": true,
+                                          "label": "Действия",
+                                          "isSaveVisible": true,
+                                          "isDiscardVisible": true,
+                                          "computedValue": "",
+                                          "buttonStyle": "rgb(3, 179, 101)",
+                                          "labelColor": "#FFFFFF",
+                                          "menuColor": "{{T_wt_list.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
+                                          "borderRadius": "{{T_wt_list.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                                          "boxShadow": "{{T_wt_list.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
+                                          "customAlias": "",
+                                          "menuButtonLabel": "{{T_wt_list.processedTableData.map((currentRow, currentIndex) => ( 'Действие'))}}",
+                                          "menuItems": {
+                                            "menuItem36ov05pzf1": {
+                                              "id": "menuItem36ov05pzf1",
+                                              "index": 0,
+                                              "label": "Смотреть задания",
+                                              "widgetId": "3ash1lj722",
+                                              "isDisabled": false,
+                                              "isVisible": true,
+                                              "iconName": "eye-open"
+                                            }
+                                          },
+                                          "isCompact": true,
+                                          "menuVariant": "TERTIARY",
+                                          "menuButtoniconName": "menu"
                                         }
                                       },
                                       "key": "9xj1oje56u",
@@ -5567,15 +5625,23 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "Контент_get_project",
+              "name": "get_project",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.user.email"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "Контент_get_user",
               "name": "get_user",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
-            }
-          ],
-          [
+            },
             {
               "id": "Контент_utils.forceEmbed",
               "name": "utils.forceEmbed",
@@ -5584,18 +5650,6 @@
               "pluginType": "JS",
               "jsonPathKeys": [
                 "async () => {\n  if (appsmith.mode != \"EDIT\" && appsmith.URL.queryParams.embed === undefined) {\n    if (Object.keys(appsmith.URL.queryParams).length > 0) {\n      navigateTo(appsmith.URL.fullPath + '&embed=true');\n    } else {\n      navigateTo(appsmith.URL.fullPath + '?embed=true');\n    }\n  }\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Контент_get_project",
-              "name": "get_project",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.user.email"
               ],
               "timeoutInMillisecond": 10000
             }
