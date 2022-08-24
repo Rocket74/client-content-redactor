@@ -4804,7 +4804,7 @@
                                   "widgetName": "Canvas24",
                                   "displayName": "Canvas",
                                   "topRow": 0,
-                                  "bottomRow": 420,
+                                  "bottomRow": 390,
                                   "parentRowSpace": 1,
                                   "type": "CANVAS_WIDGET",
                                   "canExtend": true,
@@ -4825,20 +4825,86 @@
                                   "children": [
                                     {
                                       "boxShadow": "none",
-                                      "widgetName": "MultiTreeSelect1CopyCopy",
-                                      "displayName": "Multi TreeSelect",
-                                      "iconSVG": "/static/media/icon.b3e28afb.svg",
+                                      "widgetName": "Select2Copy",
+                                      "isFilterable": true,
+                                      "displayName": "Select",
+                                      "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
                                       "labelText": "",
+                                      "searchTags": [
+                                        "dropdown"
+                                      ],
                                       "topRow": 0,
-                                      "bottomRow": 4,
+                                      "bottomRow": 5,
                                       "parentRowSpace": 10,
                                       "labelWidth": 5,
-                                      "type": "MULTI_SELECT_TREE_WIDGET",
+                                      "type": "SELECT_WIDGET",
+                                      "serverSideFiltering": false,
                                       "hideCard": false,
-                                      "mode": "SHOW_ALL",
                                       "defaultOptionValue": "",
                                       "animateLoading": true,
-                                      "parentColumnSpace": 19.75,
+                                      "parentColumnSpace": 16.3916015625,
+                                      "dynamicTriggerPathList": [],
+                                      "leftColumn": 16,
+                                      "dynamicBindingPathList": [
+                                        {
+                                          "key": "accentColor"
+                                        },
+                                        {
+                                          "key": "borderRadius"
+                                        }
+                                      ],
+                                      "labelPosition": "Left",
+                                      "options": [
+                                        {
+                                          "label": "Blue",
+                                          "value": "BLUE"
+                                        },
+                                        {
+                                          "label": "Green",
+                                          "value": "GREEN"
+                                        },
+                                        {
+                                          "label": "Red",
+                                          "value": "RED"
+                                        }
+                                      ],
+                                      "placeholderText": "Тип контента",
+                                      "isDisabled": false,
+                                      "key": "vsgvzavr4b",
+                                      "labelTextSize": "0.875rem",
+                                      "isRequired": false,
+                                      "isDeprecated": false,
+                                      "rightColumn": 31,
+                                      "widgetId": "deuuwzhj89",
+                                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                                      "isVisible": true,
+                                      "version": 1,
+                                      "parentId": "j7mfwqhiln",
+                                      "labelAlignment": "left",
+                                      "renderMode": "CANVAS",
+                                      "isLoading": false,
+                                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                                    },
+                                    {
+                                      "boxShadow": "none",
+                                      "widgetName": "Select2",
+                                      "isFilterable": false,
+                                      "displayName": "Select",
+                                      "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+                                      "labelText": "",
+                                      "searchTags": [
+                                        "dropdown"
+                                      ],
+                                      "topRow": 0,
+                                      "bottomRow": 5,
+                                      "parentRowSpace": 10,
+                                      "labelWidth": 5,
+                                      "type": "SELECT_WIDGET",
+                                      "serverSideFiltering": false,
+                                      "hideCard": false,
+                                      "defaultOptionValue": "all",
+                                      "animateLoading": true,
+                                      "parentColumnSpace": 16.3916015625,
                                       "dynamicTriggerPathList": [],
                                       "leftColumn": 0,
                                       "dynamicBindingPathList": [
@@ -4847,70 +4913,53 @@
                                         },
                                         {
                                           "key": "borderRadius"
+                                        },
+                                        {
+                                          "key": "options"
                                         }
                                       ],
                                       "labelPosition": "Left",
-                                      "options": [
-                                        {
-                                          "label": "Blue",
-                                          "value": "BLUE",
-                                          "children": [
-                                            {
-                                              "label": "Dark Blue",
-                                              "value": "DARK BLUE"
-                                            },
-                                            {
-                                              "label": "Light Blue",
-                                              "value": "LIGHT BLUE"
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          "label": "Green",
-                                          "value": "GREEN"
-                                        },
-                                        {
-                                          "label": "Red",
-                                          "value": "RED"
-                                        }
-                                      ],
-                                      "placeholderText": "Внутренние фильтры",
+                                      "options": "{{utils.select(get_project_place.data, ['name','uuid']).concat((()=>{\n\treturn {label:\"Любой\",\n\t\t\t\t value:\"all\"}\n})())}}",
+                                      "placeholderText": "Ресурс размещения",
                                       "isDisabled": false,
-                                      "key": "a8tkdxlaub",
+                                      "key": "vsgvzavr4b",
                                       "labelTextSize": "0.875rem",
                                       "isRequired": false,
                                       "isDeprecated": false,
-                                      "rightColumn": 18,
-                                      "widgetId": "3sdijf39lj",
+                                      "rightColumn": 15,
+                                      "widgetId": "3x2dv316lk",
                                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                                       "isVisible": true,
                                       "version": 1,
-                                      "expandAll": false,
                                       "parentId": "j7mfwqhiln",
                                       "labelAlignment": "left",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                                      "allowClear": false
+                                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
                                     },
                                     {
                                       "boxShadow": "none",
-                                      "widgetName": "MultiTreeSelect1CopyCopy1",
-                                      "displayName": "Multi TreeSelect",
-                                      "iconSVG": "/static/media/icon.b3e28afb.svg",
+                                      "widgetName": "MultiSelect1",
+                                      "isFilterable": true,
+                                      "displayName": "MultiSelect",
+                                      "iconSVG": "/static/media/icon.a3495809ae48291a64404f3bb04b0e69.svg",
                                       "labelText": "",
+                                      "searchTags": [
+                                        "dropdown",
+                                        "tags"
+                                      ],
                                       "topRow": 0,
-                                      "bottomRow": 4,
+                                      "bottomRow": 5,
                                       "parentRowSpace": 10,
                                       "labelWidth": 5,
-                                      "type": "MULTI_SELECT_TREE_WIDGET",
+                                      "type": "MULTI_SELECT_WIDGET_V2",
+                                      "serverSideFiltering": false,
                                       "hideCard": false,
-                                      "mode": "SHOW_ALL",
                                       "defaultOptionValue": "",
                                       "animateLoading": true,
-                                      "parentColumnSpace": 19.75,
+                                      "parentColumnSpace": 16.3916015625,
                                       "dynamicTriggerPathList": [],
-                                      "leftColumn": 18,
+                                      "leftColumn": 32,
                                       "dynamicBindingPathList": [
                                         {
                                           "key": "accentColor"
@@ -4923,17 +4972,7 @@
                                       "options": [
                                         {
                                           "label": "Blue",
-                                          "value": "BLUE",
-                                          "children": [
-                                            {
-                                              "label": "Dark Blue",
-                                              "value": "DARK BLUE"
-                                            },
-                                            {
-                                              "label": "Light Blue",
-                                              "value": "LIGHT BLUE"
-                                            }
-                                          ]
+                                          "value": "BLUE"
                                         },
                                         {
                                           "label": "Green",
@@ -4944,24 +4983,22 @@
                                           "value": "RED"
                                         }
                                       ],
-                                      "placeholderText": "Внутренние фильтры",
+                                      "placeholderText": "Статусы",
                                       "isDisabled": false,
-                                      "key": "a8tkdxlaub",
+                                      "key": "acp4vxyk6v",
                                       "labelTextSize": "0.875rem",
                                       "isRequired": false,
                                       "isDeprecated": false,
-                                      "rightColumn": 37,
-                                      "widgetId": "cq9ji7z57a",
+                                      "rightColumn": 64,
+                                      "widgetId": "bxev53ffo3",
                                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                                       "isVisible": true,
                                       "version": 1,
-                                      "expandAll": false,
                                       "parentId": "j7mfwqhiln",
                                       "labelAlignment": "left",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                                      "allowClear": false
+                                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
                                     }
                                   ],
                                   "isDisabled": false,
