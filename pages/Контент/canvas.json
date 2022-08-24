@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1860,
+          "bottomRow": 1010,
           "containerStyle": "none",
           "snapRows": 84,
           "parentRowSpace": 1,
@@ -4063,7 +4063,7 @@
                                   "widgetName": "Canvas19",
                                   "displayName": "Canvas",
                                   "topRow": 0,
-                                  "bottomRow": 780,
+                                  "bottomRow": 790,
                                   "parentRowSpace": 1,
                                   "type": "CANVAS_WIDGET",
                                   "canExtend": true,
@@ -4084,18 +4084,17 @@
                                   "children": [
                                     {
                                       "boxShadow": "none",
-                                      "isVisibleDownload": false,
-                                      "iconSVG": "/static/media/icon.db8a9cbd.svg",
+                                      "isVisibleDownload": true,
+                                      "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
                                       "topRow": 0,
                                       "isSortable": true,
-                                      "type": "TABLE_WIDGET",
+                                      "onPageChange": "{{get_wt_list.run()}}",
+                                      "type": "TABLE_WIDGET_V2",
+                                      "inlineEditingSaveOption": "ROW_LEVEL",
                                       "animateLoading": true,
                                       "dynamicBindingPathList": [
                                         {
                                           "key": "accentColor"
-                                        },
-                                        {
-                                          "key": "borderRadius"
                                         },
                                         {
                                           "key": "childStylesheet.button.buttonColor"
@@ -4116,22 +4115,16 @@
                                           "key": "childStylesheet.iconButton.borderRadius"
                                         },
                                         {
-                                          "key": "derivedColumns.customColumn1.borderRadius"
+                                          "key": "childStylesheet.editActions.saveButtonColor"
                                         },
                                         {
-                                          "key": "primaryColumns.customColumn1.borderRadius"
+                                          "key": "childStylesheet.editActions.saveBorderRadius"
                                         },
                                         {
-                                          "key": "derivedColumns.customColumn1.boxShadow"
+                                          "key": "childStylesheet.editActions.discardButtonColor"
                                         },
                                         {
-                                          "key": "primaryColumns.customColumn1.boxShadow"
-                                        },
-                                        {
-                                          "key": "derivedColumns.customColumn1.menuButtonLabel"
-                                        },
-                                        {
-                                          "key": "primaryColumns.customColumn1.menuButtonLabel"
+                                          "key": "childStylesheet.editActions.discardBorderRadius"
                                         },
                                         {
                                           "key": "tableData"
@@ -4168,15 +4161,19 @@
                                         },
                                         {
                                           "key": "primaryColumns.project_place.computedValue"
+                                        },
+                                        {
+                                          "key": "borderRadius"
                                         }
                                       ],
                                       "leftColumn": 0,
                                       "delimiter": ",",
+                                      "defaultSelectedRowIndex": 0,
                                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                                      "isVisibleFilters": false,
+                                      "isVisibleFilters": true,
                                       "isVisible": true,
                                       "enableClientSideSearch": true,
-                                      "version": 3,
+                                      "version": 1,
                                       "totalRecordsCount": 0,
                                       "isLoading": false,
                                       "childStylesheet": {
@@ -4194,15 +4191,20 @@
                                           "menuColor": "{{appsmith.theme.colors.primaryColor}}",
                                           "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                           "boxShadow": "none"
+                                        },
+                                        "editActions": {
+                                          "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                                          "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                          "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                                          "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
                                         }
                                       },
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                                      "columnSizeMap": {
-                                        "task": 245,
-                                        "step": 62,
-                                        "status": 75
-                                      },
-                                      "widgetName": "Table2",
+                                      "primaryColumnId": "uuid",
+                                      "defaultSelectedRowIndices": [
+                                        0
+                                      ],
+                                      "widgetName": "T_wt_list",
                                       "defaultPageSize": 0,
                                       "columnOrder": [
                                         "uuid",
@@ -4215,341 +4217,305 @@
                                         "wt_es",
                                         "es_settings",
                                         "wt_stack",
-                                        "project_place",
-                                        "customColumn1"
+                                        "project_place"
+                                      ],
+                                      "dynamicPropertyPathList": [
+                                        {
+                                          "key": "textSize"
+                                        }
                                       ],
                                       "compactMode": "SHORT",
-                                      "dynamicPropertyPathList": [],
                                       "displayName": "Table",
-                                      "bottomRow": 76,
+                                      "bottomRow": 77,
+                                      "columnWidthMap": {
+                                        "task": 245,
+                                        "step": 62,
+                                        "status": 75
+                                      },
                                       "parentRowSpace": 10,
-                                      "defaultSelectedRow": "",
                                       "hideCard": false,
-                                      "parentColumnSpace": 17.4755859375,
+                                      "parentColumnSpace": 20.0625,
                                       "dynamicTriggerPathList": [
                                         {
-                                          "key": "primaryColumns.customColumn1.menuItems.menuItemyu42oxelry.onClick"
-                                        },
-                                        {
-                                          "key": "primaryColumns.customColumn1.menuItems.menuItemjq2maqet3e.onClick"
+                                          "key": "onPageChange"
                                         }
                                       ],
                                       "primaryColumns": {
-                                        "customColumn1": {
-                                          "index": 4,
-                                          "width": 150,
-                                          "id": "customColumn1",
-                                          "columnType": "menuButton",
-                                          "enableFilter": true,
-                                          "enableSort": true,
-                                          "isVisible": true,
-                                          "isDisabled": false,
-                                          "isCellVisible": true,
-                                          "isDerived": true,
-                                          "label": "Действие",
-                                          "computedValue": "",
-                                          "buttonStyle": "rgb(3, 179, 101)",
-                                          "labelColor": "#FFFFFF",
-                                          "menuColor": "#2563eb",
-                                          "borderRadius": "{{Table2.sanitizedTableData.map((currentRow) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
-                                          "boxShadow": "{{Table2.sanitizedTableData.map((currentRow) => ( 'none'))}}",
-                                          "iconName": "add-to-artifact",
-                                          "menuButtonLabel": "{{Table2.sanitizedTableData.map((currentRow) => ( 'Действие'))}}",
-                                          "menuItems": {
-                                            "menuItemyu42oxelry": {
-                                              "id": "menuItemyu42oxelry",
-                                              "index": 0,
-                                              "label": "Выполнить",
-                                              "widgetId": "lv47m4o6vk",
-                                              "isDisabled": false,
-                                              "isVisible": true,
-                                              "iconName": "play",
-                                              "iconColor": "#15803d",
-                                              "onClick": "{{showModal('Modal4')}}"
-                                            },
-                                            "menuItemjq2maqet3e": {
-                                              "id": "menuItemjq2maqet3e",
-                                              "index": 1,
-                                              "label": "Отказаться",
-                                              "widgetId": "6v9uievf0t",
-                                              "isDisabled": false,
-                                              "isVisible": true,
-                                              "iconName": "small-cross",
-                                              "iconColor": "#dc2626",
-                                              "onClick": "{{showModal('Modal5')}}"
-                                            }
-                                          },
-                                          "menuVariant": "TERTIARY",
-                                          "isCompact": true
-                                        },
                                         "uuid": {
+                                          "allowCellWrapping": false,
                                           "index": 0,
                                           "width": 150,
+                                          "originalId": "uuid",
                                           "id": "uuid",
+                                          "alias": "uuid",
                                           "horizontalAlignment": "LEFT",
                                           "verticalAlignment": "CENTER",
                                           "columnType": "text",
-                                          "textColor": "",
-                                          "textSize": "0.875rem",
+                                          "textSize": "0.75rem",
                                           "enableFilter": true,
                                           "enableSort": true,
                                           "isVisible": true,
                                           "isDisabled": false,
+                                          "isCellEditable": false,
+                                          "isEditable": false,
                                           "isCellVisible": true,
                                           "isDerived": false,
                                           "label": "uuid",
-                                          "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.uuid))}}",
-                                          "cellBackground": ""
+                                          "isSaveVisible": true,
+                                          "isDiscardVisible": true,
+                                          "computedValue": "{{T_wt_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"uuid\"]))}}"
                                         },
                                         "wt_pack": {
+                                          "allowCellWrapping": false,
                                           "index": 1,
                                           "width": 150,
+                                          "originalId": "wt_pack",
                                           "id": "wt_pack",
+                                          "alias": "wt_pack",
                                           "horizontalAlignment": "LEFT",
                                           "verticalAlignment": "CENTER",
                                           "columnType": "text",
-                                          "textColor": "",
-                                          "textSize": "0.875rem",
+                                          "textSize": "0.75rem",
                                           "enableFilter": true,
                                           "enableSort": true,
                                           "isVisible": true,
                                           "isDisabled": false,
+                                          "isCellEditable": false,
+                                          "isEditable": false,
                                           "isCellVisible": true,
                                           "isDerived": false,
                                           "label": "wt_pack",
-                                          "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.wt_pack))}}",
-                                          "cellBackground": ""
+                                          "isSaveVisible": true,
+                                          "isDiscardVisible": true,
+                                          "computedValue": "{{T_wt_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"wt_pack\"]))}}"
                                         },
                                         "pack_post": {
+                                          "allowCellWrapping": false,
                                           "index": 2,
                                           "width": 150,
+                                          "originalId": "pack_post",
                                           "id": "pack_post",
+                                          "alias": "pack_post",
                                           "horizontalAlignment": "LEFT",
                                           "verticalAlignment": "CENTER",
                                           "columnType": "text",
-                                          "textColor": "",
-                                          "textSize": "0.875rem",
+                                          "textSize": "0.75rem",
                                           "enableFilter": true,
                                           "enableSort": true,
                                           "isVisible": true,
                                           "isDisabled": false,
+                                          "isCellEditable": false,
+                                          "isEditable": false,
                                           "isCellVisible": true,
                                           "isDerived": false,
                                           "label": "pack_post",
-                                          "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.pack_post))}}",
-                                          "cellBackground": ""
+                                          "isSaveVisible": true,
+                                          "isDiscardVisible": true,
+                                          "computedValue": "{{T_wt_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"pack_post\"]))}}"
                                         },
                                         "wt_post": {
+                                          "allowCellWrapping": false,
                                           "index": 3,
                                           "width": 150,
+                                          "originalId": "wt_post",
                                           "id": "wt_post",
+                                          "alias": "wt_post",
                                           "horizontalAlignment": "LEFT",
                                           "verticalAlignment": "CENTER",
                                           "columnType": "text",
-                                          "textColor": "",
-                                          "textSize": "0.875rem",
+                                          "textSize": "0.75rem",
                                           "enableFilter": true,
                                           "enableSort": true,
                                           "isVisible": true,
                                           "isDisabled": false,
+                                          "isCellEditable": false,
+                                          "isEditable": false,
                                           "isCellVisible": true,
                                           "isDerived": false,
                                           "label": "wt_post",
-                                          "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.wt_post))}}",
-                                          "cellBackground": ""
+                                          "isSaveVisible": true,
+                                          "isDiscardVisible": true,
+                                          "computedValue": "{{T_wt_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"wt_post\"]))}}"
                                         },
                                         "wt_tz": {
+                                          "allowCellWrapping": false,
                                           "index": 4,
                                           "width": 150,
+                                          "originalId": "wt_tz",
                                           "id": "wt_tz",
+                                          "alias": "wt_tz",
                                           "horizontalAlignment": "LEFT",
                                           "verticalAlignment": "CENTER",
                                           "columnType": "text",
-                                          "textColor": "",
-                                          "textSize": "0.875rem",
+                                          "textSize": "0.75rem",
                                           "enableFilter": true,
                                           "enableSort": true,
                                           "isVisible": true,
                                           "isDisabled": false,
+                                          "isCellEditable": false,
+                                          "isEditable": false,
                                           "isCellVisible": true,
                                           "isDerived": false,
                                           "label": "wt_tz",
-                                          "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.wt_tz))}}",
-                                          "cellBackground": ""
+                                          "isSaveVisible": true,
+                                          "isDiscardVisible": true,
+                                          "computedValue": "{{T_wt_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"wt_tz\"]))}}"
                                         },
                                         "tz": {
+                                          "allowCellWrapping": false,
                                           "index": 5,
                                           "width": 150,
+                                          "originalId": "tz",
                                           "id": "tz",
+                                          "alias": "tz",
                                           "horizontalAlignment": "LEFT",
                                           "verticalAlignment": "CENTER",
                                           "columnType": "text",
-                                          "textColor": "",
-                                          "textSize": "0.875rem",
+                                          "textSize": "0.75rem",
                                           "enableFilter": true,
                                           "enableSort": true,
                                           "isVisible": true,
                                           "isDisabled": false,
+                                          "isCellEditable": false,
+                                          "isEditable": false,
                                           "isCellVisible": true,
                                           "isDerived": false,
                                           "label": "tz",
-                                          "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.tz))}}",
-                                          "cellBackground": ""
+                                          "isSaveVisible": true,
+                                          "isDiscardVisible": true,
+                                          "computedValue": "{{T_wt_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tz\"]))}}"
                                         },
                                         "tz_payload": {
+                                          "allowCellWrapping": false,
                                           "index": 6,
                                           "width": 150,
+                                          "originalId": "tz_payload",
                                           "id": "tz_payload",
+                                          "alias": "tz_payload",
                                           "horizontalAlignment": "LEFT",
                                           "verticalAlignment": "CENTER",
                                           "columnType": "text",
-                                          "textColor": "",
-                                          "textSize": "0.875rem",
+                                          "textSize": "0.75rem",
                                           "enableFilter": true,
                                           "enableSort": true,
                                           "isVisible": true,
                                           "isDisabled": false,
+                                          "isCellEditable": false,
+                                          "isEditable": false,
                                           "isCellVisible": true,
                                           "isDerived": false,
                                           "label": "tz_payload",
-                                          "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.tz_payload))}}",
-                                          "cellBackground": ""
+                                          "isSaveVisible": true,
+                                          "isDiscardVisible": true,
+                                          "computedValue": "{{T_wt_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tz_payload\"]))}}"
                                         },
                                         "wt_es": {
+                                          "allowCellWrapping": false,
                                           "index": 7,
                                           "width": 150,
+                                          "originalId": "wt_es",
                                           "id": "wt_es",
+                                          "alias": "wt_es",
                                           "horizontalAlignment": "LEFT",
                                           "verticalAlignment": "CENTER",
                                           "columnType": "text",
-                                          "textColor": "",
-                                          "textSize": "0.875rem",
+                                          "textSize": "0.75rem",
                                           "enableFilter": true,
                                           "enableSort": true,
                                           "isVisible": true,
                                           "isDisabled": false,
+                                          "isCellEditable": false,
+                                          "isEditable": false,
                                           "isCellVisible": true,
                                           "isDerived": false,
                                           "label": "wt_es",
-                                          "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.wt_es))}}",
-                                          "cellBackground": ""
+                                          "isSaveVisible": true,
+                                          "isDiscardVisible": true,
+                                          "computedValue": "{{T_wt_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"wt_es\"]))}}"
                                         },
                                         "es_settings": {
+                                          "allowCellWrapping": false,
                                           "index": 8,
                                           "width": 150,
+                                          "originalId": "es_settings",
                                           "id": "es_settings",
+                                          "alias": "es_settings",
                                           "horizontalAlignment": "LEFT",
                                           "verticalAlignment": "CENTER",
                                           "columnType": "text",
-                                          "textColor": "",
-                                          "textSize": "0.875rem",
+                                          "textSize": "0.75rem",
                                           "enableFilter": true,
                                           "enableSort": true,
                                           "isVisible": true,
                                           "isDisabled": false,
+                                          "isCellEditable": false,
+                                          "isEditable": false,
                                           "isCellVisible": true,
                                           "isDerived": false,
                                           "label": "es_settings",
-                                          "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.es_settings))}}",
-                                          "cellBackground": ""
+                                          "isSaveVisible": true,
+                                          "isDiscardVisible": true,
+                                          "computedValue": "{{T_wt_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"es_settings\"]))}}"
                                         },
                                         "wt_stack": {
+                                          "allowCellWrapping": false,
                                           "index": 9,
                                           "width": 150,
+                                          "originalId": "wt_stack",
                                           "id": "wt_stack",
+                                          "alias": "wt_stack",
                                           "horizontalAlignment": "LEFT",
                                           "verticalAlignment": "CENTER",
                                           "columnType": "text",
-                                          "textColor": "",
-                                          "textSize": "0.875rem",
+                                          "textSize": "0.75rem",
                                           "enableFilter": true,
                                           "enableSort": true,
                                           "isVisible": true,
                                           "isDisabled": false,
+                                          "isCellEditable": false,
+                                          "isEditable": false,
                                           "isCellVisible": true,
                                           "isDerived": false,
                                           "label": "wt_stack",
-                                          "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.wt_stack))}}",
-                                          "cellBackground": ""
+                                          "isSaveVisible": true,
+                                          "isDiscardVisible": true,
+                                          "computedValue": "{{T_wt_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"wt_stack\"]))}}"
                                         },
                                         "project_place": {
+                                          "allowCellWrapping": false,
                                           "index": 10,
                                           "width": 150,
+                                          "originalId": "project_place",
                                           "id": "project_place",
+                                          "alias": "project_place",
                                           "horizontalAlignment": "LEFT",
                                           "verticalAlignment": "CENTER",
                                           "columnType": "text",
-                                          "textColor": "",
-                                          "textSize": "0.875rem",
+                                          "textSize": "0.75rem",
                                           "enableFilter": true,
                                           "enableSort": true,
                                           "isVisible": true,
                                           "isDisabled": false,
+                                          "isCellEditable": false,
+                                          "isEditable": false,
                                           "isCellVisible": true,
                                           "isDerived": false,
                                           "label": "project_place",
-                                          "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.project_place))}}",
-                                          "cellBackground": ""
+                                          "isSaveVisible": true,
+                                          "isDiscardVisible": true,
+                                          "computedValue": "{{T_wt_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"project_place\"]))}}"
                                         }
                                       },
-                                      "key": "pr6use39yt",
-                                      "derivedColumns": {
-                                        "customColumn1": {
-                                          "index": 4,
-                                          "width": 150,
-                                          "id": "customColumn1",
-                                          "columnType": "menuButton",
-                                          "enableFilter": true,
-                                          "enableSort": true,
-                                          "isVisible": true,
-                                          "isDisabled": false,
-                                          "isCellVisible": true,
-                                          "isDerived": true,
-                                          "label": "Действие",
-                                          "computedValue": "",
-                                          "buttonStyle": "rgb(3, 179, 101)",
-                                          "labelColor": "#FFFFFF",
-                                          "menuColor": "#2563eb",
-                                          "borderRadius": "{{Table2.sanitizedTableData.map((currentRow) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
-                                          "boxShadow": "{{Table2.sanitizedTableData.map((currentRow) => ( 'none'))}}",
-                                          "iconName": "add-to-artifact",
-                                          "menuButtonLabel": "{{Table2.sanitizedTableData.map((currentRow) => ( 'Действие'))}}",
-                                          "menuItems": {
-                                            "menuItemyu42oxelry": {
-                                              "id": "menuItemyu42oxelry",
-                                              "index": 0,
-                                              "label": "Выполнить",
-                                              "widgetId": "lv47m4o6vk",
-                                              "isDisabled": false,
-                                              "isVisible": true,
-                                              "iconName": "play",
-                                              "iconColor": "#15803d",
-                                              "onClick": "{{showModal('Modal4')}}"
-                                            },
-                                            "menuItemjq2maqet3e": {
-                                              "id": "menuItemjq2maqet3e",
-                                              "index": 1,
-                                              "label": "Отказаться",
-                                              "widgetId": "6v9uievf0t",
-                                              "isDisabled": false,
-                                              "isVisible": true,
-                                              "iconName": "small-cross",
-                                              "iconColor": "#dc2626"
-                                            }
-                                          },
-                                          "menuVariant": "TERTIARY",
-                                          "isCompact": true
-                                        }
-                                      },
+                                      "key": "9xj1oje56u",
                                       "isDeprecated": false,
                                       "rightColumn": 64,
-                                      "textSize": "0.875rem",
-                                      "widgetId": "rnjmez9bus",
-                                      "tableData": "{{get_wt_old.data}}",
+                                      "textSize": "0.75rem",
+                                      "widgetId": "s4cmgo2f0j",
+                                      "tableData": "{{get_wt_list.data}}",
                                       "label": "Data",
                                       "searchKey": "",
                                       "parentId": "azuvw5l4st",
-                                      "serverSidePaginationEnabled": false,
+                                      "serverSidePaginationEnabled": true,
                                       "renderMode": "CANVAS",
                                       "horizontalAlignment": "LEFT",
                                       "isVisibleSearch": true,
@@ -5626,7 +5592,7 @@
                   "index": 1,
                   "menuItems": {},
                   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                  "onClick": "{{get_wt_old.run()}}"
+                  "onClick": "{{get_wt_list.run()}}"
                 }
               },
               "type": "BUTTON_GROUP_WIDGET",
@@ -5661,580 +5627,6 @@
               "isDeprecated": false,
               "rightColumn": 21,
               "widgetId": "yd3qc8og7u",
-              "isVisible": true,
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "childStylesheet": {
-                "button": {
-                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
-                }
-              },
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "buttonVariant": "PRIMARY"
-            },
-            {
-              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "isVisibleDownload": true,
-              "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 114,
-              "isSortable": true,
-              "onPageChange": "{{get_wt_list.run()}}",
-              "type": "TABLE_WIDGET_V2",
-              "inlineEditingSaveOption": "ROW_LEVEL",
-              "animateLoading": true,
-              "dynamicBindingPathList": [
-                {
-                  "key": "accentColor"
-                },
-                {
-                  "key": "borderRadius"
-                },
-                {
-                  "key": "boxShadow"
-                },
-                {
-                  "key": "childStylesheet.button.buttonColor"
-                },
-                {
-                  "key": "childStylesheet.button.borderRadius"
-                },
-                {
-                  "key": "childStylesheet.menuButton.menuColor"
-                },
-                {
-                  "key": "childStylesheet.menuButton.borderRadius"
-                },
-                {
-                  "key": "childStylesheet.iconButton.menuColor"
-                },
-                {
-                  "key": "childStylesheet.iconButton.borderRadius"
-                },
-                {
-                  "key": "childStylesheet.editActions.saveButtonColor"
-                },
-                {
-                  "key": "childStylesheet.editActions.saveBorderRadius"
-                },
-                {
-                  "key": "childStylesheet.editActions.discardButtonColor"
-                },
-                {
-                  "key": "childStylesheet.editActions.discardBorderRadius"
-                },
-                {
-                  "key": "tableData"
-                },
-                {
-                  "key": "primaryColumns.uuid.computedValue"
-                },
-                {
-                  "key": "primaryColumns.wt_pack.computedValue"
-                },
-                {
-                  "key": "primaryColumns.pack_post.computedValue"
-                },
-                {
-                  "key": "primaryColumns.wt_post.computedValue"
-                },
-                {
-                  "key": "primaryColumns.wt_tz.computedValue"
-                },
-                {
-                  "key": "primaryColumns.tz.computedValue"
-                },
-                {
-                  "key": "primaryColumns.tz_payload.computedValue"
-                },
-                {
-                  "key": "primaryColumns.wt_es.computedValue"
-                },
-                {
-                  "key": "primaryColumns.es_settings.computedValue"
-                },
-                {
-                  "key": "primaryColumns.wt_stack.computedValue"
-                },
-                {
-                  "key": "primaryColumns.project_place.computedValue"
-                }
-              ],
-              "leftColumn": 0,
-              "delimiter": ",",
-              "defaultSelectedRowIndex": 0,
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "isVisibleFilters": true,
-              "isVisible": true,
-              "enableClientSideSearch": true,
-              "version": 1,
-              "totalRecordsCount": 0,
-              "isLoading": false,
-              "childStylesheet": {
-                "button": {
-                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                  "boxShadow": "none"
-                },
-                "menuButton": {
-                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
-                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                  "boxShadow": "none"
-                },
-                "iconButton": {
-                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
-                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                  "boxShadow": "none"
-                },
-                "editActions": {
-                  "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                  "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                  "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                  "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
-                }
-              },
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "primaryColumnId": "uuid",
-              "defaultSelectedRowIndices": [
-                0
-              ],
-              "widgetName": "T_wt_list",
-              "defaultPageSize": 0,
-              "columnOrder": [
-                "uuid",
-                "wt_pack",
-                "pack_post",
-                "wt_post",
-                "wt_tz",
-                "tz",
-                "tz_payload",
-                "wt_es",
-                "es_settings",
-                "wt_stack",
-                "project_place"
-              ],
-              "dynamicPropertyPathList": [],
-              "compactMode": "SHORT",
-              "displayName": "Table",
-              "bottomRow": 184,
-              "columnWidthMap": {
-                "task": 245,
-                "step": 62,
-                "status": 75
-              },
-              "parentRowSpace": 10,
-              "hideCard": false,
-              "parentColumnSpace": 20.0625,
-              "dynamicTriggerPathList": [
-                {
-                  "key": "onPageChange"
-                }
-              ],
-              "primaryColumns": {
-                "uuid": {
-                  "allowCellWrapping": false,
-                  "index": 0,
-                  "width": 150,
-                  "originalId": "uuid",
-                  "id": "uuid",
-                  "alias": "uuid",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "uuid",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{T_wt_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"uuid\"]))}}"
-                },
-                "wt_pack": {
-                  "allowCellWrapping": false,
-                  "index": 1,
-                  "width": 150,
-                  "originalId": "wt_pack",
-                  "id": "wt_pack",
-                  "alias": "wt_pack",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "wt_pack",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{T_wt_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"wt_pack\"]))}}"
-                },
-                "pack_post": {
-                  "allowCellWrapping": false,
-                  "index": 2,
-                  "width": 150,
-                  "originalId": "pack_post",
-                  "id": "pack_post",
-                  "alias": "pack_post",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "pack_post",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{T_wt_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"pack_post\"]))}}"
-                },
-                "wt_post": {
-                  "allowCellWrapping": false,
-                  "index": 3,
-                  "width": 150,
-                  "originalId": "wt_post",
-                  "id": "wt_post",
-                  "alias": "wt_post",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "wt_post",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{T_wt_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"wt_post\"]))}}"
-                },
-                "wt_tz": {
-                  "allowCellWrapping": false,
-                  "index": 4,
-                  "width": 150,
-                  "originalId": "wt_tz",
-                  "id": "wt_tz",
-                  "alias": "wt_tz",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "wt_tz",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{T_wt_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"wt_tz\"]))}}"
-                },
-                "tz": {
-                  "allowCellWrapping": false,
-                  "index": 5,
-                  "width": 150,
-                  "originalId": "tz",
-                  "id": "tz",
-                  "alias": "tz",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "tz",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{T_wt_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tz\"]))}}"
-                },
-                "tz_payload": {
-                  "allowCellWrapping": false,
-                  "index": 6,
-                  "width": 150,
-                  "originalId": "tz_payload",
-                  "id": "tz_payload",
-                  "alias": "tz_payload",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "tz_payload",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{T_wt_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tz_payload\"]))}}"
-                },
-                "wt_es": {
-                  "allowCellWrapping": false,
-                  "index": 7,
-                  "width": 150,
-                  "originalId": "wt_es",
-                  "id": "wt_es",
-                  "alias": "wt_es",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "wt_es",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{T_wt_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"wt_es\"]))}}"
-                },
-                "es_settings": {
-                  "allowCellWrapping": false,
-                  "index": 8,
-                  "width": 150,
-                  "originalId": "es_settings",
-                  "id": "es_settings",
-                  "alias": "es_settings",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "es_settings",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{T_wt_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"es_settings\"]))}}"
-                },
-                "wt_stack": {
-                  "allowCellWrapping": false,
-                  "index": 9,
-                  "width": 150,
-                  "originalId": "wt_stack",
-                  "id": "wt_stack",
-                  "alias": "wt_stack",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "wt_stack",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{T_wt_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"wt_stack\"]))}}"
-                },
-                "project_place": {
-                  "allowCellWrapping": false,
-                  "index": 10,
-                  "width": 150,
-                  "originalId": "project_place",
-                  "id": "project_place",
-                  "alias": "project_place",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "project_place",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{T_wt_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"project_place\"]))}}"
-                }
-              },
-              "key": "9xj1oje56u",
-              "isDeprecated": false,
-              "rightColumn": 64,
-              "textSize": "0.875rem",
-              "widgetId": "s4cmgo2f0j",
-              "tableData": "{{get_wt_list.data}}",
-              "label": "Data",
-              "searchKey": "",
-              "parentId": "0",
-              "serverSidePaginationEnabled": true,
-              "renderMode": "CANVAS",
-              "horizontalAlignment": "LEFT",
-              "isVisibleSearch": true,
-              "isVisiblePagination": true,
-              "verticalAlignment": "CENTER"
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "ButtonGroup6",
-              "isCanvas": false,
-              "displayName": "Button Group",
-              "iconSVG": "/static/media/icon.d6773218cfb61dcfa5f460d43371e30d.svg",
-              "searchTags": [
-                "click",
-                "submit"
-              ],
-              "topRow": 106,
-              "bottomRow": 110,
-              "parentRowSpace": 10,
-              "groupButtons": {
-                "groupButton1": {
-                  "label": "Показать",
-                  "iconName": "heart",
-                  "id": "groupButton1",
-                  "widgetId": "",
-                  "buttonType": "SIMPLE",
-                  "placement": "CENTER",
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "index": 0,
-                  "menuItems": {},
-                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                  "onClick": "{{get_wt_list.run()}}"
-                },
-                "groupButton2": {
-                  "label": "Add",
-                  "iconName": "add",
-                  "id": "groupButton2",
-                  "buttonType": "SIMPLE",
-                  "placement": "CENTER",
-                  "widgetId": "",
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "index": 1,
-                  "menuItems": {},
-                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
-                },
-                "groupButton3": {
-                  "label": "More",
-                  "iconName": "more",
-                  "id": "groupButton3",
-                  "buttonType": "MENU",
-                  "placement": "CENTER",
-                  "widgetId": "",
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "index": 2,
-                  "menuItems": {
-                    "menuItem1": {
-                      "label": "First Option",
-                      "backgroundColor": "#FFFFFF",
-                      "id": "menuItem1",
-                      "widgetId": "",
-                      "onClick": "",
-                      "isVisible": true,
-                      "isDisabled": false,
-                      "index": 0
-                    },
-                    "menuItem2": {
-                      "label": "Second Option",
-                      "backgroundColor": "#FFFFFF",
-                      "id": "menuItem2",
-                      "widgetId": "",
-                      "onClick": "",
-                      "isVisible": true,
-                      "isDisabled": false,
-                      "index": 1
-                    },
-                    "menuItem3": {
-                      "label": "Delete",
-                      "iconName": "trash",
-                      "iconColor": "#FFFFFF",
-                      "iconAlign": "right",
-                      "textColor": "#FFFFFF",
-                      "backgroundColor": "#DD4B34",
-                      "id": "menuItem3",
-                      "widgetId": "",
-                      "onClick": "",
-                      "isVisible": true,
-                      "isDisabled": false,
-                      "index": 2
-                    }
-                  },
-                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
-                }
-              },
-              "type": "BUTTON_GROUP_WIDGET",
-              "hideCard": false,
-              "animateLoading": true,
-              "parentColumnSpace": 20.0625,
-              "dynamicTriggerPathList": [
-                {
-                  "key": "groupButtons.groupButton1.onClick"
-                }
-              ],
-              "leftColumn": 4,
-              "dynamicBindingPathList": [
-                {
-                  "key": "borderRadius"
-                },
-                {
-                  "key": "childStylesheet.button.buttonColor"
-                },
-                {
-                  "key": "groupButtons.groupButton1.buttonColor"
-                },
-                {
-                  "key": "groupButtons.groupButton2.buttonColor"
-                },
-                {
-                  "key": "groupButtons.groupButton3.buttonColor"
-                }
-              ],
-              "key": "k1mrnnvwyt",
-              "orientation": "horizontal",
-              "isDeprecated": false,
-              "rightColumn": 28,
-              "widgetId": "rli4hsw46r",
               "isVisible": true,
               "version": 1,
               "parentId": "0",
