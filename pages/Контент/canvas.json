@@ -4063,7 +4063,7 @@
                                   "widgetName": "Canvas19",
                                   "displayName": "Canvas",
                                   "topRow": 0,
-                                  "bottomRow": 790,
+                                  "bottomRow": 780,
                                   "parentRowSpace": 1,
                                   "type": "CANVAS_WIDGET",
                                   "canExtend": true,
@@ -4130,6 +4130,9 @@
                                           "key": "tableData"
                                         },
                                         {
+                                          "key": "borderRadius"
+                                        },
+                                        {
                                           "key": "primaryColumns.uuid.computedValue"
                                         },
                                         {
@@ -4163,7 +4166,7 @@
                                           "key": "primaryColumns.project_place.computedValue"
                                         },
                                         {
-                                          "key": "borderRadius"
+                                          "key": "totalRecordsCount"
                                         }
                                       ],
                                       "leftColumn": 0,
@@ -4174,7 +4177,7 @@
                                       "isVisible": true,
                                       "enableClientSideSearch": true,
                                       "version": 1,
-                                      "totalRecordsCount": 0,
+                                      "totalRecordsCount": "{{get_wt_list.data[0].agg.all_list}}",
                                       "isLoading": false,
                                       "childStylesheet": {
                                         "button": {
@@ -4226,7 +4229,7 @@
                                       ],
                                       "compactMode": "SHORT",
                                       "displayName": "Table",
-                                      "bottomRow": 77,
+                                      "bottomRow": 76,
                                       "columnWidthMap": {
                                         "task": 245,
                                         "step": 62,
@@ -4511,7 +4514,7 @@
                                       "rightColumn": 64,
                                       "textSize": "0.75rem",
                                       "widgetId": "s4cmgo2f0j",
-                                      "tableData": "{{get_wt_list.data}}",
+                                      "tableData": "{{get_wt_list.data[0].table}}",
                                       "label": "Data",
                                       "searchKey": "",
                                       "parentId": "azuvw5l4st",
@@ -4801,7 +4804,7 @@
                                   "widgetName": "Canvas24",
                                   "displayName": "Canvas",
                                   "topRow": 0,
-                                  "bottomRow": 390,
+                                  "bottomRow": 420,
                                   "parentRowSpace": 1,
                                   "type": "CANVAS_WIDGET",
                                   "canExtend": true,
