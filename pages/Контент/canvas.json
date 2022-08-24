@@ -644,7 +644,7 @@
                                       ],
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "#FFC13D",
-                                      "text": "{{List6.selectedItem.ct_name}}",
+                                      "text": "{{List6.selectedItem.ct_name}}\n\n{{List6.selectedItem.mfppt_name}}",
                                       "key": "oxbeyehte1",
                                       "isDeprecated": false,
                                       "rightColumn": 57,
