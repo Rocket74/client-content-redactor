@@ -1125,7 +1125,7 @@
                               "widgetId": "iyqevdrb15",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "defaultTab": "{{List6.selectedItem.ct_uuid}}",
-                              "shouldShowTabs": true,
+                              "shouldShowTabs": false,
                               "tabsObj": {
                                 "tab1kwtjlxvza": {
                                   "id": "tab1kwtjlxvza",
