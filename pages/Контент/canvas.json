@@ -4084,7 +4084,7 @@
                                   "children": [
                                     {
                                       "boxShadow": "none",
-                                      "isVisibleDownload": true,
+                                      "isVisibleDownload": false,
                                       "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
                                       "topRow": 0,
                                       "isSortable": true,
@@ -4173,7 +4173,7 @@
                                       "delimiter": ",",
                                       "defaultSelectedRowIndex": 0,
                                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                                      "isVisibleFilters": true,
+                                      "isVisibleFilters": false,
                                       "isVisible": true,
                                       "enableClientSideSearch": true,
                                       "version": 1,
