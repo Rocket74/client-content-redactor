@@ -4848,7 +4848,11 @@
                                       "defaultOptionValue": "all",
                                       "animateLoading": true,
                                       "parentColumnSpace": 16.3916015625,
-                                      "dynamicTriggerPathList": [],
+                                      "dynamicTriggerPathList": [
+                                        {
+                                          "key": "onOptionChange"
+                                        }
+                                      ],
                                       "leftColumn": 16,
                                       "dynamicBindingPathList": [
                                         {
@@ -4878,7 +4882,8 @@
                                       "labelAlignment": "left",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                      "onOptionChange": "{{get_state.run()}}"
                                     },
                                     {
                                       "boxShadow": "none",
@@ -4955,7 +4960,7 @@
                                       "type": "MULTI_SELECT_WIDGET_V2",
                                       "serverSideFiltering": false,
                                       "hideCard": false,
-                                      "defaultOptionValue": "",
+                                      "defaultOptionValue": "{{utils.select(get_state.data, ['name','uuid'])}}",
                                       "animateLoading": true,
                                       "parentColumnSpace": 16.3916015625,
                                       "dynamicTriggerPathList": [],
@@ -4966,23 +4971,16 @@
                                         },
                                         {
                                           "key": "borderRadius"
+                                        },
+                                        {
+                                          "key": "options"
+                                        },
+                                        {
+                                          "key": "defaultOptionValue"
                                         }
                                       ],
                                       "labelPosition": "Left",
-                                      "options": [
-                                        {
-                                          "label": "Blue",
-                                          "value": "BLUE"
-                                        },
-                                        {
-                                          "label": "Green",
-                                          "value": "GREEN"
-                                        },
-                                        {
-                                          "label": "Red",
-                                          "value": "RED"
-                                        }
-                                      ],
+                                      "options": "{{utils.select(get_state.data, ['name','uuid'])}}",
                                       "placeholderText": "Статусы",
                                       "isDisabled": false,
                                       "key": "acp4vxyk6v",
@@ -5684,6 +5682,14 @@
         },
         "layoutOnLoadActions": [
           [
+            {
+              "id": "Контент_get_state",
+              "name": "get_state",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
             {
               "id": "Контент_get_user",
               "name": "get_user",
