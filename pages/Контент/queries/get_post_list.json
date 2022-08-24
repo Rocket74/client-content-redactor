@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "get_wt_list",
+    "name": "get_post_list",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
@@ -58,7 +58,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Контент_get_wt_list",
+  "id": "Контент_get_post_list",
   "deleted": false,
   "gitSyncId": "62e2a8b5f996037a4e968cde_6305f1f027bbcc51800e3a9e"
 }
