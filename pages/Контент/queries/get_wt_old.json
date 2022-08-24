@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "get_wt",
+    "name": "get_wt_old",
     "datasource": {
       "name": "db_post",
       "pluginId": "postgres-plugin",
@@ -42,7 +42,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Контент_get_wt",
+  "id": "Контент_get_wt_old",
   "deleted": false,
   "gitSyncId": "62e2a8b5f996037a4e968cde_62fa13a6b4141c4df85fa62e"
 }
