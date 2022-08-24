@@ -5676,16 +5676,6 @@
                 "appsmith.user.email"
               ],
               "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Контент_get_wt_list",
-              "name": "get_wt_list",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "(()=>{\n\treturn {\n\t\tuser: appsmith.user.email,\n\t\tproject_place: Select1Copy.selectedOptionValue,\n\t\tsearch:T_wt_list.searchText,\n\t\tsort:T_wt_list.sortOrder,\n\t\tfilter:[],\n\t\tpage_num: T_wt_list.pageNo,\n\t\tpage_size: T_wt_list.pageSize,\n\t\toffset:(T_wt_list.pageNo - 1) * T_wt_list.pageSize\n\t}\n})()"
-              ],
-              "timeoutInMillisecond": 10000
             }
           ]
         ],
