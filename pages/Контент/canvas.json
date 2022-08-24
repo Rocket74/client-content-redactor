@@ -4660,122 +4660,6 @@
                               "borderRadius": "0px"
                             },
                             {
-                              "isCompact": true,
-                              "boxShadow": "none",
-                              "widgetName": "MenuButton1",
-                              "dynamicPropertyPathList": [
-                                {
-                                  "key": "menuItems.menuItem1.onClick"
-                                },
-                                {
-                                  "key": "menuItems.menuItem2.onClick"
-                                }
-                              ],
-                              "displayName": "Menu Button",
-                              "iconSVG": "/static/media/icon.0341d17d.svg",
-                              "topRow": 1,
-                              "bottomRow": 5,
-                              "parentRowSpace": 10,
-                              "type": "MENU_BUTTON_WIDGET",
-                              "hideCard": false,
-                              "animateLoading": true,
-                              "parentColumnSpace": 18.1171875,
-                              "dynamicTriggerPathList": [
-                                {
-                                  "key": "menuItems.menuItem1.onClick"
-                                },
-                                {
-                                  "key": "menuItems.menuItem2.onClick"
-                                }
-                              ],
-                              "leftColumn": 55,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "label"
-                                }
-                              ],
-                              "isDisabled": false,
-                              "key": "mv7exkkga4",
-                              "isDeprecated": false,
-                              "rightColumn": 62,
-                              "menuVariant": "TERTIARY",
-                              "widgetId": "pntg0wxkzi",
-                              "menuItems": {
-                                "menuItem1": {
-                                  "label": "Список заданий",
-                                  "id": "menuItem1",
-                                  "widgetId": "",
-                                  "isVisible": true,
-                                  "isDisabled": false,
-                                  "index": 0,
-                                  "onClick": "{{storeValue('w_m','object|Список заданий')}}",
-                                  "iconName": "symbol-square"
-                                },
-                                "menuItem2": {
-                                  "label": "Список записей",
-                                  "id": "menuItem2",
-                                  "widgetId": "",
-                                  "isVisible": true,
-                                  "isDisabled": false,
-                                  "index": 1,
-                                  "onClick": "{{storeValue('w_m','group_object|Список записей')}}",
-                                  "iconName": "diagram-tree"
-                                }
-                              },
-                              "isVisible": false,
-                              "label": "Вид: {{appsmith.store.w_m.split('|')[1]}}",
-                              "version": 1,
-                              "parentId": "cfxs2mq2ya",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "borderRadius": "0px",
-                              "menuColor": "#71717a",
-                              "iconAlign": "right",
-                              "placement": "BETWEEN"
-                            },
-                            {
-                              "boxShadow": "none",
-                              "widgetName": "IconButton3",
-                              "buttonColor": "#71717a",
-                              "dynamicPropertyPathList": [
-                                {
-                                  "key": "iconName"
-                                }
-                              ],
-                              "displayName": "Icon Button",
-                              "iconSVG": "/static/media/icon.1a0c634a.svg",
-                              "topRow": 1,
-                              "bottomRow": 5,
-                              "parentRowSpace": 10,
-                              "type": "ICON_BUTTON_WIDGET",
-                              "hideCard": false,
-                              "animateLoading": true,
-                              "parentColumnSpace": 18.1171875,
-                              "dynamicTriggerPathList": [],
-                              "leftColumn": 62,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "borderRadius"
-                                },
-                                {
-                                  "key": "iconName"
-                                }
-                              ],
-                              "isDisabled": false,
-                              "key": "czv1ux8dtt",
-                              "isDeprecated": false,
-                              "rightColumn": 64,
-                              "iconName": "{{appsmith.store.w_m.includes('group') ?'diagram-tree':'symbol-square'}}\n\n\n",
-                              "widgetId": "5zkixxlbkc",
-                              "isVisible": false,
-                              "version": 1,
-                              "parentId": "cfxs2mq2ya",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "buttonVariant": "TERTIARY"
-                            },
-                            {
                               "boxShadow": "none",
                               "widgetName": "Tabs6",
                               "isCanvas": true,
@@ -4853,7 +4737,7 @@
                                           "key": "onOptionChange"
                                         }
                                       ],
-                                      "leftColumn": 16,
+                                      "leftColumn": 14,
                                       "dynamicBindingPathList": [
                                         {
                                           "key": "accentColor"
@@ -4873,7 +4757,7 @@
                                       "labelTextSize": "0.875rem",
                                       "isRequired": false,
                                       "isDeprecated": false,
-                                      "rightColumn": 31,
+                                      "rightColumn": 28,
                                       "widgetId": "deuuwzhj89",
                                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                                       "isVisible": true,
@@ -4930,7 +4814,7 @@
                                       "labelTextSize": "0.875rem",
                                       "isRequired": false,
                                       "isDeprecated": false,
-                                      "rightColumn": 15,
+                                      "rightColumn": 14,
                                       "widgetId": "3x2dv316lk",
                                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                                       "isVisible": true,
@@ -4964,7 +4848,7 @@
                                       "animateLoading": true,
                                       "parentColumnSpace": 16.3916015625,
                                       "dynamicTriggerPathList": [],
-                                      "leftColumn": 32,
+                                      "leftColumn": 28,
                                       "dynamicBindingPathList": [
                                         {
                                           "key": "accentColor"
@@ -5099,7 +4983,7 @@
                               ],
                               "key": "dmaegx53rt",
                               "isDeprecated": false,
-                              "rightColumn": 55,
+                              "rightColumn": 64,
                               "widgetId": "29lr8xwiud",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "defaultTab": "{{appsmith.store.w_m.includes('group') ?'f_group_object':'f_object'}}",
