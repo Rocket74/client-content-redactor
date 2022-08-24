@@ -1095,7 +1095,7 @@
                               },
                               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
                               "widgetName": "List3Copy",
-                              "listData": "{{get_wt_list_from_post.data}}",
+                              "listData": "{{get_wt_list_from_post.data[0].list_wt[0].mfppt}}",
                               "isCanvas": true,
                               "displayName": "List",
                               "iconSVG": "/static/media/icon.9925ee17.svg",
@@ -1334,8 +1334,8 @@
                               "widgetName": "Text14Copy",
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
-                              "topRow": 0,
-                              "bottomRow": 64,
+                              "topRow": 55,
+                              "bottomRow": 69,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -1368,6 +1368,57 @@
                               "isLoading": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "fontSize": "0.875rem"
+                            },
+                            {
+                              "widgetName": "Text19",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
+                              "displayName": "Text",
+                              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                              "searchTags": [
+                                "typography",
+                                "paragraph",
+                                "label"
+                              ],
+                              "topRow": 0,
+                              "bottomRow": 55,
+                              "parentRowSpace": 10,
+                              "type": "TEXT_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "overflow": "SCROLL",
+                              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                              "parentColumnSpace": 18.7375,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 45,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "fontFamily"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                }
+                              ],
+                              "shouldTruncate": false,
+                              "truncateButtonColor": "#FFC13D",
+                              "text": "Label",
+                              "key": "oxbeyehte1",
+                              "isDeprecated": false,
+                              "rightColumn": 64,
+                              "textAlign": "LEFT",
+                              "widgetId": "5i85rxfbwj",
+                              "isVisible": true,
+                              "fontStyle": "",
+                              "textColor": "#231F20",
+                              "version": 1,
+                              "parentId": "5arwg2mk0n",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "fontSize": "0.6rem"
                             }
                           ],
                           "isDisabled": false,
@@ -5401,6 +5452,9 @@
                                       "dynamicPropertyPathList": [
                                         {
                                           "key": "textSize"
+                                        },
+                                        {
+                                          "key": "primaryColumns.customColumn1.menuItems.menuItem36ov05pzf1.onClick"
                                         }
                                       ],
                                       "compactMode": "SHORT",
@@ -5486,7 +5540,7 @@
                                               "isDisabled": false,
                                               "isVisible": true,
                                               "iconName": "eye-open",
-                                              "onClick": "{{showModal('Modal1')}}"
+                                              "onClick": "{{\n(()=>{\n\tget_wt_list_from_post.run(()=>{showModal('Mdl_wt_open')})\n})()\n\n\n\n}}"
                                             }
                                           },
                                           "isCompact": true,
