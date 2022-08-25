@@ -86,7 +86,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "{{T_wt_list.triggeredRow.name.join(' ')}}",
+                      "text": "{{T_wt_list.triggeredRow.name}}",
                       "key": "4hevgrdhst",
                       "isDeprecated": false,
                       "rightColumn": 64,
