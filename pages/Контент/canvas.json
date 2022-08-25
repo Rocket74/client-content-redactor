@@ -2763,7 +2763,7 @@
                               "fontSize": "1.25rem"
                             },
                             {
-                              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+                              "boxShadow": "none",
                               "isVisibleDownload": false,
                               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
                               "topRow": 4,
@@ -2777,9 +2777,6 @@
                                 },
                                 {
                                   "key": "borderRadius"
-                                },
-                                {
-                                  "key": "boxShadow"
                                 },
                                 {
                                   "key": "childStylesheet.button.buttonColor"
@@ -2831,9 +2828,6 @@
                                 },
                                 {
                                   "key": "primaryColumns.ct_uuid.computedValue"
-                                },
-                                {
-                                  "key": "primaryColumns.mfppt_name.textSize"
                                 }
                               ],
                               "leftColumn": 0,
@@ -2843,6 +2837,7 @@
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisibleFilters": false,
                               "isVisible": true,
+                              "fontStyle": "BOLD",
                               "enableClientSideSearch": false,
                               "version": 1,
                               "totalRecordsCount": 0,
@@ -2887,6 +2882,9 @@
                               "dynamicPropertyPathList": [
                                 {
                                   "key": "primaryColumns.mfppt_name.textSize"
+                                },
+                                {
+                                  "key": "textSize"
                                 }
                               ],
                               "displayName": "Table",
@@ -2902,7 +2900,7 @@
                               "dynamicTriggerPathList": [],
                               "primaryColumns": {
                                 "mfppt_name": {
-                                  "allowCellWrapping": false,
+                                  "allowCellWrapping": true,
                                   "index": 0,
                                   "width": 150,
                                   "originalId": "mfppt_name",
@@ -2911,7 +2909,7 @@
                                   "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "text",
-                                  "textSize": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( '0.7rem'))}}",
+                                  "textSize": "0.7rem",
                                   "enableFilter": true,
                                   "enableSort": true,
                                   "isVisible": true,
@@ -2924,7 +2922,8 @@
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
                                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"mfppt_name\"]))}}",
-                                  "fontStyle": "BOLD"
+                                  "fontStyle": "BOLD",
+                                  "cellBackground": ""
                                 },
                                 "mfppt_uuid": {
                                   "allowCellWrapping": false,
@@ -2936,7 +2935,7 @@
                                   "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "text",
-                                  "textSize": "0.875rem",
+                                  "textSize": "0.7rem",
                                   "enableFilter": true,
                                   "enableSort": true,
                                   "isVisible": false,
@@ -2948,7 +2947,9 @@
                                   "label": "mfppt_uuid",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"mfppt_uuid\"]))}}"
+                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"mfppt_uuid\"]))}}",
+                                  "fontStyle": "BOLD",
+                                  "cellBackground": ""
                                 },
                                 "mfppt_mf_post_type": {
                                   "allowCellWrapping": false,
@@ -2960,7 +2961,7 @@
                                   "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "text",
-                                  "textSize": "0.875rem",
+                                  "textSize": "0.7rem",
                                   "enableFilter": true,
                                   "enableSort": true,
                                   "isVisible": false,
@@ -2972,7 +2973,9 @@
                                   "label": "mfppt_mf_post_type",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"mfppt_mf_post_type\"]))}}"
+                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"mfppt_mf_post_type\"]))}}",
+                                  "fontStyle": "BOLD",
+                                  "cellBackground": ""
                                 },
                                 "mfppt_project_post_type": {
                                   "allowCellWrapping": false,
@@ -2984,7 +2987,7 @@
                                   "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "text",
-                                  "textSize": "0.875rem",
+                                  "textSize": "0.7rem",
                                   "enableFilter": true,
                                   "enableSort": true,
                                   "isVisible": false,
@@ -2996,7 +2999,9 @@
                                   "label": "mfppt_project_post_type",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"mfppt_project_post_type\"]))}}"
+                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"mfppt_project_post_type\"]))}}",
+                                  "fontStyle": "BOLD",
+                                  "cellBackground": ""
                                 },
                                 "ct_name": {
                                   "allowCellWrapping": false,
@@ -3008,7 +3013,7 @@
                                   "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "text",
-                                  "textSize": "0.875rem",
+                                  "textSize": "0.7rem",
                                   "enableFilter": true,
                                   "enableSort": true,
                                   "isVisible": false,
@@ -3020,7 +3025,9 @@
                                   "label": "ct_name",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ct_name\"]))}}"
+                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ct_name\"]))}}",
+                                  "fontStyle": "BOLD",
+                                  "cellBackground": ""
                                 },
                                 "ct_uuid": {
                                   "allowCellWrapping": false,
@@ -3032,7 +3039,7 @@
                                   "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "text",
-                                  "textSize": "0.875rem",
+                                  "textSize": "0.7rem",
                                   "enableFilter": true,
                                   "enableSort": true,
                                   "isVisible": false,
@@ -3044,13 +3051,15 @@
                                   "label": "ct_uuid",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ct_uuid\"]))}}"
+                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ct_uuid\"]))}}",
+                                  "fontStyle": "BOLD",
+                                  "cellBackground": ""
                                 }
                               },
                               "key": "5ud47972jw",
                               "isDeprecated": false,
                               "rightColumn": 8,
-                              "textSize": "0.875rem",
+                              "textSize": "0.7rem",
                               "widgetId": "wc8y1ycr1h",
                               "tableData": "{{get_wt_list_from_post.data[0].mf_list}}",
                               "label": "Data",
@@ -3061,6 +3070,7 @@
                               "horizontalAlignment": "LEFT",
                               "isVisibleSearch": false,
                               "isVisiblePagination": false,
+                              "cellBackground": "",
                               "verticalAlignment": "CENTER"
                             }
                           ],
