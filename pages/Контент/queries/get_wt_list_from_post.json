@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{{(()=>{\n\treturn {\n\t\tpost: T_wt_list.triggeredRow.uuid\n\t}\n})()}}",
+      "body": "{{(()=>{\n\treturn {\n\t\tpost: appsmith.store.current_post.uuid\n\t}\n})()}}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "pluginSpecifiedTemplates": [
@@ -42,12 +42,16 @@
       }
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "(()=>{\n\treturn {\n\t\tpost: T_wt_list.triggeredRow.uuid\n\t}\n})()"
+      "(()=>{\n\treturn {\n\t\tpost: appsmith.store.current_post.uuid\n\t}\n})()"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,

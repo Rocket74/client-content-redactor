@@ -19,9 +19,9 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {}",
+      "body": "() => {\n  storeValue('current_post', {\n    index: -1,\n    uuid: ''\n  });\n}",
       "jsArguments": [],
-      "isAsync": false
+      "isAsync": true
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -33,7 +33,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {}"
+      "() => {\n  storeValue('current_post', {\n    index: -1,\n    uuid: ''\n  });\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
