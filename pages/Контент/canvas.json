@@ -61,7 +61,7 @@
                   "widgetName": "Canvas26Copy",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 830,
+                  "bottomRow": 820,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -96,7 +96,7 @@
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                       "parentColumnSpace": 19.05,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 46,
+                      "leftColumn": 48,
                       "dynamicBindingPathList": [
                         {
                           "key": "fontFamily"
@@ -3138,6 +3138,9 @@
                         },
                         {
                           "key": "groupButtons.groupButton97prr5j8d8.isDisabled"
+                        },
+                        {
+                          "key": "groupButtons.groupButton2.onClick"
                         }
                       ],
                       "displayName": "Button Group",
@@ -3166,7 +3169,7 @@
                           "buttonType": "SIMPLE",
                           "placement": "CENTER",
                           "widgetId": "",
-                          "isVisible": true,
+                          "isVisible": false,
                           "isDisabled": false,
                           "index": 1,
                           "menuItems": {},
@@ -3174,9 +3177,22 @@
                           "iconName": "small-cross",
                           "onClick": "{{closeModal('Mdl_wt_open')}}"
                         },
+                        "groupButtonxt4gdzje9z": {
+                          "id": "groupButtonxt4gdzje9z",
+                          "index": 2,
+                          "label": "{{(()=>{\n\treturn T_wt_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index) {\n\t\t\treturn row\n\t\t}\n\t})[0].name.join(' ')\n})()}}",
+                          "menuItems": {},
+                          "buttonType": "SIMPLE",
+                          "placement": "CENTER",
+                          "widgetId": "f0i4tsq93c",
+                          "isDisabled": true,
+                          "isVisible": true,
+                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "iconName": "arrow-down"
+                        },
                         "groupButton97prr5j8d8": {
                           "id": "groupButton97prr5j8d8",
-                          "index": 2,
+                          "index": 3,
                           "label": "К следующему",
                           "menuItems": {},
                           "buttonType": "SIMPLE",
@@ -3205,7 +3221,7 @@
                           "key": "groupButtons.groupButtonv04wpfrwhm.onClick"
                         }
                       ],
-                      "leftColumn": 18,
+                      "leftColumn": 16,
                       "dynamicBindingPathList": [
                         {
                           "key": "borderRadius"
@@ -3221,12 +3237,18 @@
                         },
                         {
                           "key": "groupButtons.groupButton97prr5j8d8.isDisabled"
+                        },
+                        {
+                          "key": "groupButtons.groupButtonxt4gdzje9z.buttonColor"
+                        },
+                        {
+                          "key": "groupButtons.groupButtonxt4gdzje9z.label"
                         }
                       ],
                       "key": "42mwnkak0m",
                       "orientation": "horizontal",
                       "isDeprecated": false,
-                      "rightColumn": 46,
+                      "rightColumn": 48,
                       "widgetId": "zltqgl9kef",
                       "isVisible": true,
                       "version": 1,
@@ -3282,7 +3304,7 @@
                       "text": "{{(()=>{\n\treturn T_wt_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index-1) {\n\t\t\treturn row\n\t\t}\n\t})[0].name.join(' ')\n})()}}",
                       "key": "10dmk5c4xz",
                       "isDeprecated": false,
-                      "rightColumn": 18,
+                      "rightColumn": 16,
                       "textAlign": "RIGHT",
                       "widgetId": "z13vh65lj9",
                       "isVisible": true,
