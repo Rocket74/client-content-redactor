@@ -2961,7 +2961,7 @@
                               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                               "parentColumnSpace": 18.7375,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 8,
+                              "leftColumn": 0,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "fontFamily"
@@ -3228,7 +3228,7 @@
                           "key": "groupButtons.groupButton2.onClick"
                         }
                       ],
-                      "leftColumn": 32,
+                      "leftColumn": 1,
                       "dynamicBindingPathList": [
                         {
                           "key": "groupButtons.groupButton3.buttonColor"
@@ -3240,7 +3240,7 @@
                       "key": "42mwnkak0m",
                       "orientation": "horizontal",
                       "isDeprecated": false,
-                      "rightColumn": 64,
+                      "rightColumn": 8,
                       "widgetId": "zltqgl9kef",
                       "isVisible": true,
                       "version": 1,
