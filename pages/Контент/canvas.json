@@ -7821,6 +7821,63 @@
                                   "children": [
                                     {
                                       "boxShadow": "none",
+                                      "widgetName": "Select3Copy",
+                                      "isFilterable": true,
+                                      "displayName": "Select",
+                                      "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+                                      "labelText": "",
+                                      "searchTags": [
+                                        "dropdown"
+                                      ],
+                                      "topRow": 0,
+                                      "bottomRow": 5,
+                                      "parentRowSpace": 10,
+                                      "labelWidth": 5,
+                                      "type": "SELECT_WIDGET",
+                                      "serverSideFiltering": false,
+                                      "hideCard": false,
+                                      "defaultOptionValue": "all",
+                                      "animateLoading": true,
+                                      "parentColumnSpace": 16.3916015625,
+                                      "dynamicTriggerPathList": [
+                                        {
+                                          "key": "onOptionChange"
+                                        }
+                                      ],
+                                      "leftColumn": 24,
+                                      "dynamicBindingPathList": [
+                                        {
+                                          "key": "options"
+                                        },
+                                        {
+                                          "key": "accentColor"
+                                        },
+                                        {
+                                          "key": "borderRadius"
+                                        }
+                                      ],
+                                      "labelPosition": "Left",
+                                      "options": "{{utils.select(get_project_post_type.data, ['name','uuid']).concat((()=>{\n\treturn {label:\"Любой пакет заданий\",\n\t\t\t\t value:\"all\"}\n})())}}",
+                                      "placeholderText": "Пакет заданий",
+                                      "isDisabled": false,
+                                      "key": "vsgvzavr4b",
+                                      "labelTextSize": "0.875rem",
+                                      "isRequired": false,
+                                      "isDeprecated": false,
+                                      "rightColumn": 34,
+                                      "widgetId": "uyjwc1mmrl",
+                                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                                      "isVisible": true,
+                                      "version": 1,
+                                      "parentId": "j7mfwqhiln",
+                                      "labelAlignment": "left",
+                                      "renderMode": "CANVAS",
+                                      "isLoading": false,
+                                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                      "onOptionChange": "{{get_state.run()}}"
+                                    },
+                                    {
+                                      "boxShadow": "none",
                                       "widgetName": "Select3",
                                       "isFilterable": true,
                                       "displayName": "Select",
@@ -7864,7 +7921,7 @@
                                       "labelTextSize": "0.875rem",
                                       "isRequired": false,
                                       "isDeprecated": false,
-                                      "rightColumn": 28,
+                                      "rightColumn": 24,
                                       "widgetId": "deuuwzhj89",
                                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                                       "isVisible": true,
@@ -7955,7 +8012,7 @@
                                       "animateLoading": true,
                                       "parentColumnSpace": 16.3916015625,
                                       "dynamicTriggerPathList": [],
-                                      "leftColumn": 28,
+                                      "leftColumn": 49,
                                       "dynamicBindingPathList": [
                                         {
                                           "key": "options"
