@@ -2393,12 +2393,12 @@
                                   "buttonType": "MENU",
                                   "placement": "CENTER",
                                   "widgetId": "",
-                                  "isVisible": true,
+                                  "isVisible": false,
                                   "isDisabled": false,
                                   "index": 2,
                                   "menuItems": {
                                     "menuItem1": {
-                                      "label": "First Option",
+                                      "label": "1",
                                       "backgroundColor": "#FFFFFF",
                                       "id": "menuItem1",
                                       "widgetId": "",
@@ -2408,7 +2408,7 @@
                                       "index": 0
                                     },
                                     "menuItem2": {
-                                      "label": "Second Option",
+                                      "label": "2",
                                       "backgroundColor": "#FFFFFF",
                                       "id": "menuItem2",
                                       "widgetId": "",
@@ -2418,7 +2418,7 @@
                                       "index": 1
                                     },
                                     "menuItem3": {
-                                      "label": "Delete",
+                                      "label": "3",
                                       "iconName": "trash",
                                       "iconColor": "#FFFFFF",
                                       "iconAlign": "right",
@@ -3227,7 +3227,7 @@
                           "isVisible": true,
                           "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                           "iconName": "arrow-left",
-                          "onClick": "{{(()=>{\n\treturn storeValue('current_post',\n{index:appsmith.store.current_post.index-1,uuid:T_wt_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index-1) {\n\t\t\treturn row\n\t\t}\n\t})[0].uuid}\t\t\t\t\t\t\t\t\t\t),\t\tget_wt_list_from_post.run() \n})()}}"
+                          "onClick": "{{(()=>{\n\treturn storeValue('current_post',\n{index:appsmith.store.current_post.index-1,uuid:T_wt_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index-1) {\n\t\t\treturn row\n\t\t}\n\t})[0].uuid}\t\t\t\t\t\t\t\t\t\t),\tresetWidget(\"List6\",true),\tget_wt_list_from_post.run() \n})()}}"
                         },
                         "groupButton2": {
                           "label": "Закрыть окно",
@@ -3256,7 +3256,7 @@
                           "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                           "iconName": "arrow-right",
                           "iconAlign": "right",
-                          "onClick": "{{(()=>{\n\treturn storeValue('current_post',\n{index:appsmith.store.current_post.index+1,uuid:T_wt_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index+1) {\n\t\t\treturn row\n\t\t}\n\t})[0].uuid}\t\t\t\t\t\t\t\t\t\t),\t\tget_wt_list_from_post.run() \n})()}}"
+                          "onClick": "{{(()=>{\n\treturn storeValue('current_post',\n{index:appsmith.store.current_post.index+1,uuid:T_wt_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index+1) {\n\t\t\treturn row\n\t\t}\n\t})[0].uuid}\t\t\t\t\t\t\t\t\t\t),resetWidget(\"List6\",true),\t\tget_wt_list_from_post.run() \n})()}}"
                         }
                       },
                       "type": "BUTTON_GROUP_WIDGET",
