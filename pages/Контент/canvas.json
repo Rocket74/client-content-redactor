@@ -2107,6 +2107,11 @@
                               "widgetName": "List6",
                               "listData": "{{get_wt_list_from_post.data[0].mf_list}}",
                               "isCanvas": true,
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isVisible"
+                                }
+                              ],
                               "displayName": "List",
                               "iconSVG": "/static/media/icon.9925ee17.svg",
                               "topRow": 8,
@@ -2134,6 +2139,9 @@
                                 },
                                 {
                                   "key": "template.Text13Copy.fontSize"
+                                },
+                                {
+                                  "key": "isVisible"
                                 }
                               ],
                               "gridType": "vertical",
@@ -2337,8 +2345,9 @@
                               "itemBackgroundColor": "#FFFFFF",
                               "widgetId": "6gdr48bmk8",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "isVisible": true,
+                              "isVisible": "{{!get_wt_list_from_post.isLoading}}",
                               "parentId": "5arwg2mk0n",
+                              "serverSidePaginationEnabled": false,
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
@@ -3256,7 +3265,7 @@
                           "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                           "iconName": "arrow-right",
                           "iconAlign": "right",
-                          "onClick": "{{(()=>{\n\treturn storeValue('current_post',\n{index:appsmith.store.current_post.index+1,uuid:T_wt_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index+1) {\n\t\t\treturn row\n\t\t}\n\t})[0].uuid}\t\t\t\t\t\t\t\t\t\t),resetWidget(\"List6\",true),\t\tget_wt_list_from_post.run() \n})()}}"
+                          "onClick": "{{(()=>{\n\t storeValue('current_post',\n{index:appsmith.store.current_post.index+1,uuid:T_wt_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index+1) {\n\t\t\treturn row\n\t\t}\n\t})[0].uuid}\t\t\t\t\t\t\t\t\t\t),\t\tget_wt_list_from_post.run() \n})()}}"
                         }
                       },
                       "type": "BUTTON_GROUP_WIDGET",
