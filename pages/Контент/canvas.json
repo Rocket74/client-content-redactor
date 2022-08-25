@@ -2831,11 +2831,15 @@
                                 },
                                 {
                                   "key": "primaryColumns.ct_uuid.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.mfppt_name.textSize"
                                 }
                               ],
                               "leftColumn": 0,
                               "delimiter": ",",
                               "defaultSelectedRowIndex": "-1",
+                              "showInlineEditingOptionDropdown": true,
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisibleFilters": false,
                               "isVisible": true,
@@ -2880,7 +2884,11 @@
                                 "ct_name",
                                 "ct_uuid"
                               ],
-                              "dynamicPropertyPathList": [],
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "primaryColumns.mfppt_name.textSize"
+                                }
+                              ],
                               "displayName": "Table",
                               "bottomRow": 68,
                               "columnWidthMap": {
@@ -2903,7 +2911,7 @@
                                   "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "text",
-                                  "textSize": "0.875rem",
+                                  "textSize": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( '0.7rem'))}}",
                                   "enableFilter": true,
                                   "enableSort": true,
                                   "isVisible": true,
@@ -2915,7 +2923,8 @@
                                   "label": "Поле",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"mfppt_name\"]))}}"
+                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"mfppt_name\"]))}}",
+                                  "fontStyle": "BOLD"
                                 },
                                 "mfppt_uuid": {
                                   "allowCellWrapping": false,
