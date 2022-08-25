@@ -41,7 +41,7 @@
               "parentRowSpace": 1,
               "type": "MODAL_WIDGET",
               "hideCard": false,
-              "shouldScrollContents": true,
+              "shouldScrollContents": false,
               "animateLoading": true,
               "parentColumnSpace": 1,
               "dynamicTriggerPathList": [
@@ -96,7 +96,7 @@
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                       "parentColumnSpace": 19.05,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 48,
+                      "leftColumn": 46,
                       "dynamicBindingPathList": [
                         {
                           "key": "fontFamily"
@@ -113,7 +113,7 @@
                       "text": "{{(()=>{\n\treturn T_wt_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index+1) {\n\t\t\treturn row\n\t\t}\n\t})[0].name.join(' ')\n})()}}",
                       "key": "10dmk5c4xz",
                       "isDeprecated": false,
-                      "rightColumn": 64,
+                      "rightColumn": 61,
                       "textAlign": "LEFT",
                       "widgetId": "oo2rgd72rh",
                       "isVisible": true,
@@ -2688,12 +2688,12 @@
                               ],
                               "shouldTruncate": false,
                               "truncateButtonColor": "#FFC13D",
-                              "text": "{{(()=>{\n\treturn T_wt_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index) {\n\t\t\treturn row\n\t\t}\n\t})[0].name.join(' ')\n})()}} ->> Выбрано задание для поля: {{List6.selectedItem.mfppt_name.toUpperCase()}}",
+                              "text": "{{(()=>{\n\treturn T_wt_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index) {\n\t\t\treturn row\n\t\t}\n\t})[0].name.join(' ')\n})()}}   ->>   {{Table1.selectedRow.mfppt_name.toUpperCase()}}",
                               "key": "10dmk5c4xz",
                               "isDeprecated": false,
                               "rightColumn": 64,
                               "disableLink": true,
-                              "textAlign": "CENTER",
+                              "textAlign": "LEFT",
                               "widgetId": "59wj2u0ntc",
                               "isVisible": true,
                               "fontStyle": "",
@@ -3221,7 +3221,7 @@
                           "key": "groupButtons.groupButtonv04wpfrwhm.onClick"
                         }
                       ],
-                      "leftColumn": 16,
+                      "leftColumn": 14,
                       "dynamicBindingPathList": [
                         {
                           "key": "borderRadius"
@@ -3248,7 +3248,7 @@
                       "key": "42mwnkak0m",
                       "orientation": "horizontal",
                       "isDeprecated": false,
-                      "rightColumn": 48,
+                      "rightColumn": 46,
                       "widgetId": "zltqgl9kef",
                       "isVisible": true,
                       "version": 1,
@@ -3304,7 +3304,7 @@
                       "text": "{{(()=>{\n\treturn T_wt_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index-1) {\n\t\t\treturn row\n\t\t}\n\t})[0].name.join(' ')\n})()}}",
                       "key": "10dmk5c4xz",
                       "isDeprecated": false,
-                      "rightColumn": 16,
+                      "rightColumn": 14,
                       "textAlign": "RIGHT",
                       "widgetId": "z13vh65lj9",
                       "isVisible": true,
@@ -3358,6 +3358,50 @@
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "progress": 50
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "IconButton6",
+                      "onClick": "{{closeModal('Mdl_wt_open')}}",
+                      "buttonColor": "#dc2626",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "displayName": "Icon Button",
+                      "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
+                      "searchTags": [
+                        "click",
+                        "submit"
+                      ],
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "parentRowSpace": 10,
+                      "type": "ICON_BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 5.8357421875,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 61,
+                      "dynamicBindingPathList": [],
+                      "isDisabled": false,
+                      "key": "hjfm49c5ui",
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "iconName": "cross",
+                      "widgetId": "46qyblbetk",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "9x4mb5h69m",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "1.5rem",
+                      "buttonVariant": "TERTIARY"
                     }
                   ],
                   "isDisabled": false,
