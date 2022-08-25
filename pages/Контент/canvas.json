@@ -2544,7 +2544,7 @@
                               "displayName": "List",
                               "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
                               "topRow": 23,
-                              "bottomRow": 64,
+                              "bottomRow": 69,
                               "parentRowSpace": 10,
                               "type": "LIST_WIDGET",
                               "hideCard": false,
@@ -2794,7 +2794,7 @@
                                 "Text19": true
                               },
                               "key": "lip96dhklr",
-                              "backgroundColor": "transparent",
+                              "backgroundColor": "#fafafa",
                               "isDeprecated": false,
                               "rightColumn": 64,
                               "itemBackgroundColor": "#FFFFFF",
@@ -2819,7 +2819,7 @@
                                 "textarea"
                               ],
                               "topRow": 4,
-                              "bottomRow": 15,
+                              "bottomRow": 19,
                               "parentRowSpace": 10,
                               "labelWidth": 5,
                               "autoFocus": false,
