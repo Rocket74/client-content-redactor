@@ -321,8 +321,8 @@
                               "isCanvas": true,
                               "displayName": "Tabs",
                               "iconSVG": "/static/media/icon.74a6d653.svg",
-                              "topRow": 8,
-                              "bottomRow": 65,
+                              "topRow": 12,
+                              "bottomRow": 69,
                               "parentRowSpace": 10,
                               "type": "TABS_WIDGET",
                               "hideCard": false,
@@ -2344,8 +2344,8 @@
                                 "click",
                                 "submit"
                               ],
-                              "topRow": 65,
-                              "bottomRow": 69,
+                              "topRow": 8,
+                              "bottomRow": 12,
                               "parentRowSpace": 10,
                               "groupButtons": {
                                 "groupButton1": {
