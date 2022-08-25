@@ -7116,8 +7116,8 @@
                                       "defaultPageSize": 0,
                                       "columnOrder": [
                                         "customColumn1",
-                                        "uuid",
-                                        "name"
+                                        "name",
+                                        "uuid"
                                       ],
                                       "dynamicPropertyPathList": [
                                         {
@@ -7133,7 +7133,8 @@
                                       "columnWidthMap": {
                                         "task": 245,
                                         "step": 62,
-                                        "status": 75
+                                        "status": 75,
+                                        "name": 254
                                       },
                                       "parentRowSpace": 10,
                                       "hideCard": false,
@@ -7237,10 +7238,10 @@
                                           "isEditable": false,
                                           "isCellVisible": true,
                                           "isDerived": false,
-                                          "label": "name",
+                                          "label": "Название",
                                           "isSaveVisible": true,
                                           "isDiscardVisible": true,
-                                          "computedValue": "{{T_wt_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"name\"]))}}",
+                                          "computedValue": "{{T_wt_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"name\"].join(' ')))}}",
                                           "cellBackground": ""
                                         }
                                       },
