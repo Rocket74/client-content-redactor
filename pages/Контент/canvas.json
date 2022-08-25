@@ -3265,7 +3265,7 @@
                           "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                           "iconName": "arrow-right",
                           "iconAlign": "right",
-                          "onClick": "{{(()=>{\n\t storeValue('current_post',\n{index:appsmith.store.current_post.index+1,uuid:T_wt_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index+1) {\n\t\t\treturn row\n\t\t}\n\t})[0].uuid}\t\t\t\t\t\t\t\t\t\t),\t\tget_wt_list_from_post.run() \n})()}}"
+                          "onClick": "{{(()=>{\n\t\treturn storeValue('current_post',\n{index:appsmith.store.current_post.index+1,uuid:T_wt_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index+1) {\n\t\t\treturn row\n\t\t}\n\t})[0].uuid}\t\t\t\t\t\t\t\t\t\t),\nget_wt_list_from_post.clear()\t\t\t,get_wt_list_from_post.run() \n})()}}"
                         }
                       },
                       "type": "BUTTON_GROUP_WIDGET",
