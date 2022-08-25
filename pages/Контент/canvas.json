@@ -41,7 +41,7 @@
               "parentRowSpace": 1,
               "type": "MODAL_WIDGET",
               "hideCard": false,
-              "shouldScrollContents": true,
+              "shouldScrollContents": false,
               "animateLoading": true,
               "parentColumnSpace": 1,
               "dynamicTriggerPathList": [
@@ -319,6 +319,11 @@
                               "boxShadow": "none",
                               "widgetName": "Tabs9Copy",
                               "isCanvas": true,
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isVisible"
+                                }
+                              ],
                               "displayName": "Tabs",
                               "iconSVG": "/static/media/icon.74a6d653.svg",
                               "topRow": 12,
@@ -334,6 +339,9 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultTab"
+                                },
+                                {
+                                  "key": "isVisible"
                                 }
                               ],
                               "children": [
@@ -1122,6 +1130,7 @@
                                   "children": [
                                     {
                                       "widgetName": "Text20Copy1Copy1",
+                                      "dynamicPropertyPathList": [],
                                       "displayName": "Text",
                                       "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                                       "searchTags": [
@@ -1877,7 +1886,7 @@
                                   "isDuplicateLabel": false
                                 }
                               },
-                              "isVisible": true,
+                              "isVisible": "{{List6.selectedItem.mfppt_uuid !== ''}}",
                               "version": 3,
                               "parentId": "5arwg2mk0n",
                               "renderMode": "CANVAS",
@@ -2338,6 +2347,11 @@
                               "boxShadow": "none",
                               "widgetName": "ButtonGroup6",
                               "isCanvas": false,
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isVisible"
+                                }
+                              ],
                               "displayName": "Button Group",
                               "iconSVG": "/static/media/icon.d6773218cfb61dcfa5f460d43371e30d.svg",
                               "searchTags": [
@@ -2439,6 +2453,9 @@
                                 },
                                 {
                                   "key": "groupButtons.groupButton3.buttonColor"
+                                },
+                                {
+                                  "key": "isVisible"
                                 }
                               ],
                               "key": "11wej2t4dz",
@@ -2446,7 +2463,7 @@
                               "isDeprecated": false,
                               "rightColumn": 49,
                               "widgetId": "5s92iapz4x",
-                              "isVisible": true,
+                              "isVisible": "{{List6.selectedItem.mfppt_uuid !== ''}}",
                               "version": 1,
                               "parentId": "5arwg2mk0n",
                               "renderMode": "CANVAS",
@@ -2486,12 +2503,15 @@
                                 },
                                 {
                                   "key": "labelTextColor"
+                                },
+                                {
+                                  "key": "defaultText"
                                 }
                               ],
                               "labelPosition": "Top",
                               "labelStyle": "BOLD",
                               "labelTextColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "inputType": "html",
+                              "inputType": "markdown",
                               "isDisabled": false,
                               "key": "rjviw2w3qj",
                               "labelTextSize": "1.25rem",
@@ -2507,7 +2527,7 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "defaultText": "Для начала выполнения задания <b>выберите поле слева</b>, кликнув по нему."
+                              "defaultText": "{{List6.selectedItem.mfppt_uuid === ''?'# Для начала выполнения задания <b>выберите поле слева</b>, кликнув по нему.':List6.selectedItem.mfppt_uuid}}\n\n\n"
                             },
                             {
                               "template": {
@@ -3018,6 +3038,11 @@
                             },
                             {
                               "widgetName": "Text22",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isVisible"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                               "searchTags": [
@@ -3045,6 +3070,9 @@
                                 },
                                 {
                                   "key": "textColor"
+                                },
+                                {
+                                  "key": "isVisible"
                                 }
                               ],
                               "shouldTruncate": false,
@@ -3055,7 +3083,7 @@
                               "rightColumn": 49,
                               "textAlign": "LEFT",
                               "widgetId": "a8i2ea7o4a",
-                              "isVisible": true,
+                              "isVisible": "{{List6.selectedItem.mfppt_uuid !== ''}}",
                               "fontStyle": "BOLD",
                               "textColor": "{{appsmith.theme.colors.primaryColor}}",
                               "version": 1,
