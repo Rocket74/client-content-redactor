@@ -3145,7 +3145,7 @@
                           "menuItems": {},
                           "buttonColor": "#d4d4d8",
                           "iconName": "arrow-bottom-left",
-                          "onClick": "{{closeModal('Modal4')}}"
+                          "onClick": "{{closeModal('Mdl_wt_open')}}"
                         },
                         "groupButton3": {
                           "label": "Сохранить",
@@ -3253,7 +3253,7 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "onClose": "{{resetWidget(\"List6\",true)}}",
+              "onClose": "{{resetWidget(\"List6\",true);\nget_wt_list_from_post.clear()}}",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "width": 1231.2
             },
