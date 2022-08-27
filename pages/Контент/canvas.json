@@ -3160,7 +3160,7 @@
                               "rightColumn": 8,
                               "textSize": "0.7rem",
                               "widgetId": "wc8y1ycr1h",
-                              "tableData": "{{get_wt_list_from_post.data[0].mf_list}}",
+                              "tableData": "{{USER_get_wt_list_from.data[0].mf_list}}",
                               "label": "Data",
                               "searchKey": "",
                               "parentId": "5arwg2mk0n",
@@ -3260,7 +3260,7 @@
                           "isVisible": true,
                           "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                           "iconName": "arrow-left",
-                          "onClick": "{{(()=>{\n\treturn storeValue('current_post',\n{index:appsmith.store.current_post.index-1,uuid:T_wt_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index-1) {\n\t\t\treturn row\n\t\t}\n\t})[0].uuid}\t\t\t\t\t\t\t\t\t\t),resetWidget('Table1',true), get_wt_list_from_post.clear(),\n\t\t\tget_wt_list_from_post.run()\n})()}}"
+                          "onClick": "{{(()=>{\n\treturn storeValue('current_post',\n{index:appsmith.store.current_post.index-1,uuid:T_wt_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index-1) {\n\t\t\treturn row\n\t\t}\n\t})[0].uuid}\t\t\t\t\t\t\t\t\t\t),resetWidget('Table1',true), USER_get_wt_list_from.clear(),\n\t\t\tUSER_get_wt_list_from.run()\n})()}}"
                         },
                         "groupButton2": {
                           "label": "Закрыть окно",
@@ -3302,7 +3302,7 @@
                           "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                           "iconName": "arrow-right",
                           "iconAlign": "right",
-                          "onClick": "{{(()=>{\n\t\treturn storeValue('current_post',\n{index:appsmith.store.current_post.index+1,uuid:T_wt_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index+1) {\n\t\t\treturn row\n\t\t}\n\t})[0].uuid}\t\t\t\t\t\t\t\t\t\t),resetWidget('Table1',true), get_wt_list_from_post.clear(),\n\t\t\tget_wt_list_from_post.run()\n\t\t\n})()}}"
+                          "onClick": "{{(()=>{\n\t\treturn storeValue('current_post',\n{index:appsmith.store.current_post.index+1,uuid:T_wt_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index+1) {\n\t\t\treturn row\n\t\t}\n\t})[0].uuid}\t\t\t\t\t\t\t\t\t\t),resetWidget('Table1',true), USER_get_wt_list_from.clear(),\n\t\t\tUSER_get_wt_list_from.run()\n\t\t\n})()}}"
                         }
                       },
                       "type": "BUTTON_GROUP_WIDGET",
@@ -3485,7 +3485,7 @@
                           "index": 0,
                           "menuItems": {},
                           "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                          "onClick": "{{get_wt_list_from_post.run()}}"
+                          "onClick": "{{USER_get_wt_list_from.run()}}"
                         },
                         "groupButton2": {
                           "label": "Сбросить ответ",
@@ -3499,7 +3499,7 @@
                           "index": 1,
                           "menuItems": {},
                           "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                          "onClick": "{{get_wt_list_from_post.clear()}}"
+                          "onClick": "{{USER_get_wt_list_from.clear()}}"
                         },
                         "groupButton3": {
                           "label": "Еще",
@@ -3677,7 +3677,7 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "onClose": "{{resetWidget('Table1',true);\nget_wt_list_from_post.clear();\nstoreValue('current_post',{index:-1,uuid:''})}}",
+              "onClose": "{{resetWidget('Table1',true);\nUSER_get_wt_list_from.clear();\nstoreValue('current_post',{index:-1,uuid:''})}}",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "width": 1231.2
             },
@@ -7433,7 +7433,7 @@
                                       "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
                                       "topRow": 0,
                                       "isSortable": false,
-                                      "onPageChange": "{{get_post_list.run()}}",
+                                      "onPageChange": "{{USER_get_post_list.run()}}",
                                       "type": "TABLE_WIDGET_V2",
                                       "inlineEditingSaveOption": "ROW_LEVEL",
                                       "animateLoading": true,
@@ -7478,7 +7478,7 @@
                                       "isVisible": true,
                                       "enableClientSideSearch": true,
                                       "version": 1,
-                                      "totalRecordsCount": "{{get_post_list.data[0].agg.all_list}}",
+                                      "totalRecordsCount": "{{USER_get_post_list.data[0].agg.all_list}}",
                                       "isLoading": false,
                                       "childStylesheet": {
                                         "button": {
@@ -7607,7 +7607,7 @@
                                               "isDisabled": false,
                                               "isVisible": true,
                                               "iconName": "eye-open",
-                                              "onClick": "{{\n(()=>{\n\tget_wt_list_from_post.run(()=>{showModal('Mdl_wt_open')}),\n\t\tstoreValue('current_post',{index:T_wt_list.triggeredRowIndex,uuid:T_wt_list.triggeredRow.uuid})\n})()\n\n\n\n}}"
+                                              "onClick": "{{\n(()=>{\n\tUSER_get_wt_list_from.run(()=>{showModal('Mdl_wt_open')}),\n\t\tstoreValue('current_post',{index:T_wt_list.triggeredRowIndex,uuid:T_wt_list.triggeredRow.uuid})\n})()\n\n\n\n}}"
                                             }
                                           },
                                           "isCompact": true,
@@ -7646,7 +7646,7 @@
                                       "rightColumn": 64,
                                       "textSize": "0.75rem",
                                       "widgetId": "s4cmgo2f0j",
-                                      "tableData": "{{get_post_list.data[0].table_post}}",
+                                      "tableData": "{{USER_get_post_list.data[0].table_post}}",
                                       "label": "Data",
                                       "searchKey": "",
                                       "parentId": "azuvw5l4st",
@@ -8631,7 +8631,7 @@
                   "index": 1,
                   "menuItems": {},
                   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                  "onClick": "{{get_post_list.run()}}"
+                  "onClick": "{{USER_get_post_list.run()}}"
                 }
               },
               "type": "BUTTON_GROUP_WIDGET",
