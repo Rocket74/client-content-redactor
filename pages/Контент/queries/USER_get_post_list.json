@@ -20,7 +20,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 60000,
       "paginationType": "NONE",
-      "path": "/webhook/8a62ac38-3413-4dc8-8814-2f85f451c769",
+      "path": "/webhook-test/8a62ac38-3413-4dc8-8814-2f85f451c769",
       "headers": [
         {
           "key": "content-type",
@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{{(()=>{\n\treturn {\n\t\tuser: appsmith.user.email,\n\t\tproject_place: Select1Copy.selectedOptionValue,\n\t\tsearch:T_wt_list.searchText,\n\t\tsort:T_wt_list.sortOrder,\n\t\tfilter:[],\n\t\tpage_num: T_wt_list.pageNo,\n\t\tpage_size: T_wt_list.pageSize,\n\t\toffset:(T_wt_list.pageNo - 1) * T_wt_list.pageSize\n\t}\n})()}}",
+      "body": "{{(()=>{\n\treturn {\n\t\tuser: appsmith.user.email,\n\t\tproject_place: Select1Copy.selectedOptionValue,\n\t\tsearch:T_post_list.searchText,\n\t\tsort:T_post_list.sortOrder,\n\t\tfilter:[],\n\t\tpage_num: T_post_list.pageNo,\n\t\tpage_size: T_post_list.pageSize,\n\t\toffset:(T_post_list.pageNo - 1) * T_post_list.pageSize\n\t}\n})()}}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "pluginSpecifiedTemplates": [
@@ -51,7 +51,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "(()=>{\n\treturn {\n\t\tuser: appsmith.user.email,\n\t\tproject_place: Select1Copy.selectedOptionValue,\n\t\tsearch:T_wt_list.searchText,\n\t\tsort:T_wt_list.sortOrder,\n\t\tfilter:[],\n\t\tpage_num: T_wt_list.pageNo,\n\t\tpage_size: T_wt_list.pageSize,\n\t\toffset:(T_wt_list.pageNo - 1) * T_wt_list.pageSize\n\t}\n})()"
+      "(()=>{\n\treturn {\n\t\tuser: appsmith.user.email,\n\t\tproject_place: Select1Copy.selectedOptionValue,\n\t\tsearch:T_post_list.searchText,\n\t\tsort:T_post_list.sortOrder,\n\t\tfilter:[],\n\t\tpage_num: T_post_list.pageNo,\n\t\tpage_size: T_post_list.pageSize,\n\t\toffset:(T_post_list.pageNo - 1) * T_post_list.pageSize\n\t}\n})()"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
