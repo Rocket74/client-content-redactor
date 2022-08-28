@@ -7028,7 +7028,7 @@
                           "widgetName": "Canvas17",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 880,
+                          "bottomRow": 870,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": true,
@@ -7143,7 +7143,7 @@
                               ],
                               "compactMode": "SHORT",
                               "displayName": "Table",
-                              "bottomRow": 86,
+                              "bottomRow": 85,
                               "columnWidthMap": {
                                 "task": 245,
                                 "step": 62,
