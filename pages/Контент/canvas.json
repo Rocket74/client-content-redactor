@@ -3688,6 +3688,11 @@
               "boxShadow": "none",
               "widgetName": "Slt_p",
               "isFilterable": false,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onOptionChange"
+                }
+              ],
               "displayName": "Select",
               "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
               "labelText": "",
@@ -3739,7 +3744,7 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "onOptionChange": "{{get_project_place.run()}}"
+              "onOptionChange": "{{\n(()=>{\n\tresetWidget('Slt_pp',true),\n\t\tresetWidget('Slt_ppt',true),\n\t\tresetWidget('T_post_list',true),\n\t\tUSER_get_post_list.clear(),\nget_project_place.run()\n})()\n\n\n}}"
             },
             {
               "boxShadow": "none",
@@ -7416,9 +7421,6 @@
                                   "key": "primaryColumns.uuid.computedValue"
                                 },
                                 {
-                                  "key": "totalRecordsCount"
-                                },
-                                {
                                   "key": "accentColor"
                                 },
                                 {
@@ -7443,7 +7445,7 @@
                               "isVisible": true,
                               "enableClientSideSearch": true,
                               "version": 1,
-                              "totalRecordsCount": "{{USER_get_post_list.data[0].agg.all_list}}",
+                              "totalRecordsCount": "",
                               "isLoading": false,
                               "childStylesheet": {
                                 "button": {
@@ -7680,6 +7682,9 @@
                               "dynamicPropertyPathList": [
                                 {
                                   "key": "isDisabled"
+                                },
+                                {
+                                  "key": "onOptionChange"
                                 }
                               ],
                               "displayName": "Select",
@@ -7698,7 +7703,11 @@
                               "defaultOptionValue": "",
                               "animateLoading": true,
                               "parentColumnSpace": 19.4375,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onOptionChange"
+                                }
+                              ],
                               "leftColumn": 0,
                               "dynamicBindingPathList": [
                                 {
@@ -7717,7 +7726,7 @@
                               "labelPosition": "Left",
                               "options": "{{utils.select(get_project_post_type.data, ['name','uuid'])}}",
                               "placeholderText": "Выбрать тип контента",
-                              "isDisabled": "{{Slt_p.selectedOptionValue === ''}}",
+                              "isDisabled": "{{Slt_p.selectedOptionValue === '' || Slt_pp.selectedOptionValue === ''}}",
                               "key": "en9kck9g36",
                               "labelTextSize": "0.875rem",
                               "isRequired": false,
@@ -7731,7 +7740,8 @@
                               "labelAlignment": "left",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "onOptionChange": "{{\n(()=>{\n\t\t\tresetWidget('T_post_list',true),\n\t\tUSER_get_post_list.clear()\n})()\n\n\n}}"
                             },
                             {
                               "boxShadow": "none",
@@ -8235,6 +8245,9 @@
               "dynamicPropertyPathList": [
                 {
                   "key": "isDisabled"
+                },
+                {
+                  "key": "onOptionChange"
                 }
               ],
               "displayName": "Select",
@@ -8291,7 +8304,7 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "onOptionChange": "{{get_project_post_type.run()}}"
+              "onOptionChange": "{{\n(()=>{\n\t\n\t\tresetWidget('Slt_ppt',true),\n\t\tresetWidget('T_post_list',true),\n\t\tUSER_get_post_list.clear(),\nget_project_post_type.run()\n})()\n\n\n}}\n\n\n"
             }
           ]
         },
