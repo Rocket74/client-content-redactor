@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1010,
+          "bottomRow": 1020,
           "containerStyle": "none",
           "snapRows": 84,
           "parentRowSpace": 1,
@@ -3686,7 +3686,7 @@
             },
             {
               "boxShadow": "none",
-              "widgetName": "Select1Copy",
+              "widgetName": "Slt_p",
               "isFilterable": false,
               "displayName": "Select",
               "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
@@ -7390,7 +7390,7 @@
                               "boxShadow": "none",
                               "isVisibleDownload": false,
                               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-                              "topRow": 8,
+                              "topRow": 4,
                               "isSortable": false,
                               "onPageChange": "{{USER_get_post_list.run()}}",
                               "type": "TABLE_WIDGET_V2",
@@ -7675,8 +7675,13 @@
                             },
                             {
                               "boxShadow": "none",
-                              "widgetName": "Select2",
+                              "widgetName": "Slt_ppt",
                               "isFilterable": false,
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isDisabled"
+                                }
+                              ],
                               "displayName": "Select",
                               "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
                               "labelText": "",
@@ -7692,152 +7697,33 @@
                               "hideCard": false,
                               "defaultOptionValue": "",
                               "animateLoading": true,
-                              "parentColumnSpace": 16.3916015625,
-                              "dynamicTriggerPathList": [
-                                {
-                                  "key": "onOptionChange"
-                                }
-                              ],
-                              "leftColumn": 0,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "options"
-                                },
-                                {
-                                  "key": "accentColor"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
-                              "labelPosition": "Top",
-                              "options": "{{utils.select(get_project_place.data, ['name','uuid'])}}",
-                              "placeholderText": "Ресурс размещения",
-                              "isDisabled": false,
-                              "key": "vsgvzavr4b",
-                              "labelTextSize": "0.875rem",
-                              "isRequired": false,
-                              "isDeprecated": false,
-                              "rightColumn": 14,
-                              "widgetId": "3x2dv316lk",
-                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "isVisible": true,
-                              "version": 1,
-                              "parentId": "cfxs2mq2ya",
-                              "labelAlignment": "left",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "onOptionChange": "{{get_project_post_type.run()}}"
-                            },
-                            {
-                              "boxShadow": "none",
-                              "widgetName": "MultiSelect3",
-                              "isFilterable": true,
-                              "displayName": "MultiSelect",
-                              "iconSVG": "/static/media/icon.a3495809ae48291a64404f3bb04b0e69.svg",
-                              "labelText": "",
-                              "searchTags": [
-                                "dropdown",
-                                "tags"
-                              ],
-                              "topRow": 0,
-                              "bottomRow": 4,
-                              "parentRowSpace": 10,
-                              "labelWidth": 5,
-                              "type": "MULTI_SELECT_WIDGET_V2",
-                              "serverSideFiltering": false,
-                              "hideCard": false,
-                              "defaultOptionValue": "{{utils.select(get_project_post_type.data, ['name','uuid'])}}",
-                              "animateLoading": true,
-                              "parentColumnSpace": 19.125,
-                              "dynamicTriggerPathList": [
-                                {
-                                  "key": "onOptionChange"
-                                }
-                              ],
-                              "leftColumn": 14,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "accentColor"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                },
-                                {
-                                  "key": "options"
-                                },
-                                {
-                                  "key": "defaultOptionValue"
-                                }
-                              ],
-                              "labelPosition": "Top",
-                              "options": "{{utils.select(get_project_post_type.data, ['name','uuid'])}}",
-                              "placeholderText": "Выберите типы контента",
-                              "isDisabled": false,
-                              "key": "mp4cdk855q",
-                              "labelTextSize": "0.875rem",
-                              "isRequired": false,
-                              "isDeprecated": false,
-                              "rightColumn": 64,
-                              "widgetId": "s6d95g4hls",
-                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "isVisible": true,
-                              "version": 1,
-                              "parentId": "cfxs2mq2ya",
-                              "labelAlignment": "left",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "onOptionChange": "{{get_state.run()}}"
-                            },
-                            {
-                              "boxShadow": "none",
-                              "widgetName": "MultiSelect1",
-                              "isFilterable": true,
-                              "displayName": "MultiSelect",
-                              "iconSVG": "/static/media/icon.a3495809ae48291a64404f3bb04b0e69.svg",
-                              "labelText": "",
-                              "searchTags": [
-                                "dropdown",
-                                "tags"
-                              ],
-                              "topRow": 4,
-                              "bottomRow": 8,
-                              "parentRowSpace": 10,
-                              "labelWidth": 5,
-                              "type": "MULTI_SELECT_WIDGET_V2",
-                              "serverSideFiltering": false,
-                              "hideCard": false,
-                              "defaultOptionValue": "{{utils.select(get_state.data, ['name','uuid'])}}",
-                              "animateLoading": true,
-                              "parentColumnSpace": 16.3916015625,
+                              "parentColumnSpace": 19.4375,
                               "dynamicTriggerPathList": [],
                               "leftColumn": 0,
                               "dynamicBindingPathList": [
                                 {
-                                  "key": "options"
-                                },
-                                {
-                                  "key": "defaultOptionValue"
+                                  "key": "accentColor"
                                 },
                                 {
                                   "key": "borderRadius"
                                 },
                                 {
-                                  "key": "accentColor"
+                                  "key": "options"
+                                },
+                                {
+                                  "key": "isDisabled"
                                 }
                               ],
-                              "labelPosition": "Top",
-                              "options": "{{utils.select(get_state.data, ['name','uuid'])}}",
-                              "placeholderText": "Выберите статусы заданий",
-                              "isDisabled": false,
-                              "key": "acp4vxyk6v",
+                              "labelPosition": "Left",
+                              "options": "{{utils.select(get_project_post_type.data, ['name','uuid'])}}",
+                              "placeholderText": "Выбрать тип контента",
+                              "isDisabled": "{{Slt_p.selectedOptionValue === ''}}",
+                              "key": "en9kck9g36",
                               "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "isDeprecated": false,
-                              "rightColumn": 64,
-                              "widgetId": "bxev53ffo3",
+                              "rightColumn": 57,
+                              "widgetId": "l7aew689si",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
@@ -7846,6 +7732,79 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                            },
+                            {
+                              "boxShadow": "none",
+                              "widgetName": "ButtonGroup5Copy",
+                              "isCanvas": false,
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "groupButtons.groupButton1.isDisabled"
+                                }
+                              ],
+                              "displayName": "Button Group",
+                              "iconSVG": "/static/media/icon.d6773218cfb61dcfa5f460d43371e30d.svg",
+                              "searchTags": [
+                                "click",
+                                "submit"
+                              ],
+                              "topRow": 0,
+                              "bottomRow": 4,
+                              "parentRowSpace": 10,
+                              "groupButtons": {
+                                "groupButton1": {
+                                  "label": "Показать задания",
+                                  "iconName": "manually-entered-data",
+                                  "id": "groupButton1",
+                                  "widgetId": "",
+                                  "buttonType": "SIMPLE",
+                                  "placement": "CENTER",
+                                  "isVisible": true,
+                                  "isDisabled": "{{Slt_pp.selectedOptionValue === '' || Slt_ppt.selectedOptionValue === ''}}",
+                                  "index": 0,
+                                  "menuItems": {},
+                                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                                  "onClick": "{{USER_get_post_list.run()}}"
+                                }
+                              },
+                              "type": "BUTTON_GROUP_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 20.0625,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "groupButtons.groupButton1.onClick"
+                                }
+                              ],
+                              "leftColumn": 57,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "groupButtons.groupButton1.buttonColor"
+                                },
+                                {
+                                  "key": "groupButtons.groupButton1.isDisabled"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                }
+                              ],
+                              "key": "8ype0u3w31",
+                              "orientation": "horizontal",
+                              "isDeprecated": false,
+                              "rightColumn": 64,
+                              "widgetId": "tds42sqfe8",
+                              "isVisible": true,
+                              "version": 1,
+                              "parentId": "cfxs2mq2ya",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "childStylesheet": {
+                                "button": {
+                                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+                                }
+                              },
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "buttonVariant": "PRIMARY"
                             }
                           ],
                           "isDisabled": false,
@@ -8271,92 +8230,68 @@
             },
             {
               "boxShadow": "none",
-              "widgetName": "ButtonGroup5",
-              "isCanvas": false,
+              "widgetName": "Slt_pp",
+              "isFilterable": false,
               "dynamicPropertyPathList": [
                 {
-                  "key": "groupButtons.groupButton1.isDisabled"
+                  "key": "isDisabled"
                 }
               ],
-              "displayName": "Button Group",
-              "iconSVG": "/static/media/icon.d6773218cfb61dcfa5f460d43371e30d.svg",
+              "displayName": "Select",
+              "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+              "labelText": "",
               "searchTags": [
-                "click",
-                "submit"
+                "dropdown"
               ],
               "topRow": 0,
               "bottomRow": 4,
               "parentRowSpace": 10,
-              "groupButtons": {
-                "groupButton2": {
-                  "label": "Очистить",
-                  "iconName": "clean",
-                  "id": "groupButton2",
-                  "buttonType": "SIMPLE",
-                  "placement": "CENTER",
-                  "widgetId": "",
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "index": 0,
-                  "menuItems": {},
-                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
-                },
-                "groupButton1": {
-                  "label": "Обновить",
-                  "iconName": "refresh",
-                  "id": "groupButton1",
-                  "widgetId": "",
-                  "buttonType": "SIMPLE",
-                  "placement": "CENTER",
-                  "isVisible": true,
-                  "isDisabled": "{{Select1Copy.selectedOptionValue === ''}}",
-                  "index": 1,
-                  "menuItems": {},
-                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                  "onClick": "{{USER_get_post_list.run()}}"
-                }
-              },
-              "type": "BUTTON_GROUP_WIDGET",
+              "labelWidth": 5,
+              "type": "SELECT_WIDGET",
+              "serverSideFiltering": false,
               "hideCard": false,
+              "defaultOptionValue": "",
               "animateLoading": true,
-              "parentColumnSpace": 20.0625,
+              "parentColumnSpace": 16.3916015625,
               "dynamicTriggerPathList": [
                 {
-                  "key": "groupButtons.groupButton1.onClick"
+                  "key": "onOptionChange"
                 }
               ],
               "leftColumn": 12,
               "dynamicBindingPathList": [
                 {
-                  "key": "groupButtons.groupButton1.buttonColor"
+                  "key": "options"
                 },
                 {
-                  "key": "groupButtons.groupButton1.isDisabled"
-                },
-                {
-                  "key": "groupButtons.groupButton2.buttonColor"
+                  "key": "accentColor"
                 },
                 {
                   "key": "borderRadius"
+                },
+                {
+                  "key": "isDisabled"
                 }
               ],
-              "key": "8ype0u3w31",
-              "orientation": "horizontal",
+              "labelPosition": "Top",
+              "options": "{{utils.select(get_project_place.data, ['name','uuid'])}}",
+              "placeholderText": "Ресурс размещения",
+              "isDisabled": "{{Slt_p.selectedOptionValue === ''}}",
+              "key": "vsgvzavr4b",
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
               "isDeprecated": false,
-              "rightColumn": 21,
-              "widgetId": "yd3qc8og7u",
+              "rightColumn": 23,
+              "widgetId": "3x2dv316lk",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
               "version": 1,
               "parentId": "0",
+              "labelAlignment": "left",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "childStylesheet": {
-                "button": {
-                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
-                }
-              },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "buttonVariant": "PRIMARY"
+              "onOptionChange": "{{get_project_post_type.run()}}"
             }
           ]
         },

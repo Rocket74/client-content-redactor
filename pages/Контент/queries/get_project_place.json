@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT pp.uuid AS uuid, pp.name AS name\n\n\nFROM public.\"project_place\" pp\nWHERE pp.project = '{{Select1Copy.selectedOptionValue}}'\nORDER BY pp.name;\n\n",
+      "body": "SELECT pp.uuid AS uuid, pp.name AS name\n\n\nFROM public.\"project_place\" pp\nWHERE pp.project = '{{Slt_p.selectedOptionValue}}'\nORDER BY pp.name;\n\n",
       "pluginSpecifiedTemplates": [
         {
           "value": false
@@ -35,7 +35,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Select1Copy.selectedOptionValue"
+      "Slt_p.selectedOptionValue"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
