@@ -348,7 +348,7 @@
                                       ],
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "#FFC13D",
-                                      "text": "{{Table1.selectedRow.ct_name}}",
+                                      "text": "{{T_mf_list.selectedRow.ct_name}}",
                                       "key": "oxbeyehte1",
                                       "isDeprecated": false,
                                       "rightColumn": 64,
@@ -457,7 +457,7 @@
                                       "widgetId": "mg8p4bka43",
                                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                                       "isVisible": true,
-                                      "label": "{{Table1.selectedRow.mfppt_name}}",
+                                      "label": "{{T_mf_list.selectedRow.mfppt_name}}",
                                       "version": 2,
                                       "parentId": "5w2hzxat6x",
                                       "labelAlignment": "left",
@@ -586,7 +586,7 @@
                                       ],
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "#FFC13D",
-                                      "text": "{{Table1.selectedRow.ct_name}}",
+                                      "text": "{{T_mf_list.selectedRow.ct_name}}",
                                       "key": "oxbeyehte1",
                                       "isDeprecated": false,
                                       "rightColumn": 64,
@@ -648,7 +648,7 @@
                                       "widgetId": "zi8cjx21wf",
                                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                                       "isVisible": true,
-                                      "label": "{{Table1.selectedRow.mfppt_name}}",
+                                      "label": "{{T_mf_list.selectedRow.mfppt_name}}",
                                       "version": 2,
                                       "parentId": "bd7sn0ne8m",
                                       "labelAlignment": "left",
@@ -824,7 +824,7 @@
                                       ],
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "#FFC13D",
-                                      "text": "{{Table1.selectedRow.ct_name}}",
+                                      "text": "{{T_mf_list.selectedRow.ct_name}}",
                                       "key": "oxbeyehte1",
                                       "isDeprecated": false,
                                       "rightColumn": 64,
@@ -886,7 +886,7 @@
                                       "widgetId": "8n4yp5ruqq",
                                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                                       "isVisible": true,
-                                      "label": "{{Table1.selectedRow.mfppt_name}}",
+                                      "label": "{{T_mf_list.selectedRow.mfppt_name}}",
                                       "version": 2,
                                       "parentId": "nhygak66dp",
                                       "labelAlignment": "left",
@@ -1062,7 +1062,7 @@
                                       ],
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "#FFC13D",
-                                      "text": "{{Table1.selectedRow.ct_name}}",
+                                      "text": "{{T_mf_list.selectedRow.ct_name}}",
                                       "key": "oxbeyehte1",
                                       "isDeprecated": false,
                                       "rightColumn": 64,
@@ -1124,7 +1124,7 @@
                                       "widgetId": "2htejldmjg",
                                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                                       "isVisible": true,
-                                      "label": "{{Table1.selectedRow.mfppt_name}}",
+                                      "label": "{{T_mf_list.selectedRow.mfppt_name}}",
                                       "version": 2,
                                       "parentId": "jouuostedb",
                                       "labelAlignment": "left",
@@ -1208,7 +1208,7 @@
                                       ],
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "#FFC13D",
-                                      "text": "{{Table1.selectedRow.ct_name}}",
+                                      "text": "{{T_mf_list.selectedRow.ct_name}}",
                                       "key": "oxbeyehte1",
                                       "isDeprecated": false,
                                       "rightColumn": 64,
@@ -1229,7 +1229,7 @@
                                       "widgetName": "RichTextEditor3",
                                       "displayName": "Rich Text Editor",
                                       "iconSVG": "/static/media/icon.b35e139c93907b5eab3c68c1db842330.svg",
-                                      "labelText": "{{Table1.selectedRow.mfppt_name}}",
+                                      "labelText": "{{T_mf_list.selectedRow.mfppt_name}}",
                                       "searchTags": [
                                         "input",
                                         "rte"
@@ -1343,7 +1343,7 @@
                                       ],
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "#FFC13D",
-                                      "text": "{{Table1.selectedRow.ct_name}}",
+                                      "text": "{{T_mf_list.selectedRow.ct_name}}",
                                       "key": "oxbeyehte1",
                                       "isDeprecated": false,
                                       "rightColumn": 64,
@@ -1405,7 +1405,7 @@
                                       "widgetId": "havyg70apb",
                                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                                       "isVisible": true,
-                                      "label": "{{Table1.selectedRow.mfppt_name}}",
+                                      "label": "{{T_mf_list.selectedRow.mfppt_name}}",
                                       "version": 2,
                                       "parentId": "dlahxpy9cj",
                                       "labelAlignment": "left",
@@ -1488,7 +1488,7 @@
                                       ],
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "#FFC13D",
-                                      "text": "{{Table1.selectedRow.ct_name}}",
+                                      "text": "{{T_mf_list.selectedRow.ct_name}}",
                                       "key": "oxbeyehte1",
                                       "isDeprecated": false,
                                       "rightColumn": 64,
@@ -1510,7 +1510,7 @@
                                       "isFilterable": true,
                                       "displayName": "MultiSelect",
                                       "iconSVG": "/static/media/icon.a3495809ae48291a64404f3bb04b0e69.svg",
-                                      "labelText": "{{Table1.selectedRow.mfppt_name}}",
+                                      "labelText": "{{T_mf_list.selectedRow.mfppt_name}}",
                                       "searchTags": [
                                         "dropdown",
                                         "tags"
@@ -1579,7 +1579,7 @@
                                       "isFilterable": true,
                                       "displayName": "Select",
                                       "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-                                      "labelText": "{{Table1.selectedRow.mfppt_name}}",
+                                      "labelText": "{{T_mf_list.selectedRow.mfppt_name}}",
                                       "searchTags": [
                                         "dropdown"
                                       ],
@@ -1711,7 +1711,7 @@
                                       ],
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "#FFC13D",
-                                      "text": "{{Table1.selectedRow.ct_name}}",
+                                      "text": "{{T_mf_list.selectedRow.ct_name}}",
                                       "key": "oxbeyehte1",
                                       "isDeprecated": false,
                                       "rightColumn": 64,
@@ -1733,7 +1733,7 @@
                                       "isFilterable": true,
                                       "displayName": "Select",
                                       "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-                                      "labelText": "{{Table1.selectedRow.mfppt_name}}",
+                                      "labelText": "{{T_mf_list.selectedRow.mfppt_name}}",
                                       "searchTags": [
                                         "dropdown"
                                       ],
@@ -1798,7 +1798,7 @@
                                       "isFilterable": true,
                                       "displayName": "MultiSelect",
                                       "iconSVG": "/static/media/icon.a3495809ae48291a64404f3bb04b0e69.svg",
-                                      "labelText": "{{Table1.selectedRow.mfppt_name}}",
+                                      "labelText": "{{T_mf_list.selectedRow.mfppt_name}}",
                                       "searchTags": [
                                         "dropdown",
                                         "tags"
@@ -1883,7 +1883,7 @@
                               "rightColumn": 49,
                               "widgetId": "iyqevdrb15",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "defaultTab": "{{Table1.selectedRow.ct_uuid}}",
+                              "defaultTab": "{{T_mf_list.selectedRow.ct_uuid}}",
                               "shouldShowTabs": false,
                               "tabsObj": {
                                 "tabps42rz6b2a": {
@@ -1951,7 +1951,7 @@
                                   "isDuplicateLabel": false
                                 }
                               },
-                              "isVisible": "{{Table1.selectedRow.mfppt_uuid !== ''}}",
+                              "isVisible": "{{T_mf_list.selectedRow.mfppt_uuid !== ''}}",
                               "version": 3,
                               "parentId": "5arwg2mk0n",
                               "renderMode": "CANVAS",
@@ -2078,7 +2078,7 @@
                               "isDeprecated": false,
                               "rightColumn": 49,
                               "widgetId": "5s92iapz4x",
-                              "isVisible": "{{Table1.selectedRow.mfppt_uuid !== ''}}",
+                              "isVisible": "{{T_mf_list.selectedRow.mfppt_uuid !== ''}}",
                               "version": 1,
                               "parentId": "5arwg2mk0n",
                               "renderMode": "CANVAS",
@@ -2142,7 +2142,7 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "defaultText": "{{Table1.selectedRow.mfppt_uuid === ''?'# ← <br>Для начала выполнения задания выберите поле слева, кликнув по нему.':Table1.selectedRow.mfppt_uuid}}\n\n\n"
+                              "defaultText": "{{T_mf_list.selectedRow.mfppt_uuid === ''?'# ← <br>Для начала выполнения задания выберите поле слева, кликнув по нему.':T_mf_list.selectedRow.mfppt_uuid}}\n\n\n"
                             },
                             {
                               "template": {
@@ -2634,7 +2634,7 @@
                               ],
                               "shouldTruncate": false,
                               "truncateButtonColor": "#FFC13D",
-                              "text": "{{(()=>{\n\treturn T_post_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index) {\n\t\t\treturn row\n\t\t}\n\t})[0].name.join(' ')\n})()}}   ->>   {{Table1.selectedRow.mfppt_name.toUpperCase()}}",
+                              "text": "{{(()=>{\n\treturn T_post_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index) {\n\t\t\treturn row\n\t\t}\n\t})[0].name.join(' ')\n})()}}   ->>   {{T_mf_list.selectedRow.mfppt_name.toUpperCase()}}",
                               "key": "10dmk5c4xz",
                               "isDeprecated": false,
                               "rightColumn": 64,
@@ -2698,7 +2698,7 @@
                               "rightColumn": 49,
                               "textAlign": "LEFT",
                               "widgetId": "a8i2ea7o4a",
-                              "isVisible": "{{Table1.selectedRow.mfppt_uuid !== ''}}",
+                              "isVisible": "{{T_mf_list.selectedRow.mfppt_uuid !== ''}}",
                               "fontStyle": "BOLD",
                               "textColor": "{{appsmith.theme.colors.primaryColor}}",
                               "version": 1,
@@ -2815,7 +2815,7 @@
                               "defaultSelectedRowIndices": [
                                 0
                               ],
-                              "widgetName": "Table1",
+                              "widgetName": "T_mf_list",
                               "defaultPageSize": 0,
                               "columnOrder": [
                                 "mfppt_name",
@@ -2867,7 +2867,7 @@
                                   "label": "Поле",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"mfppt_name\"]))}}",
+                                  "computedValue": "{{T_mf_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"mfppt_name\"]))}}",
                                   "fontStyle": "BOLD",
                                   "cellBackground": ""
                                 },
@@ -2893,7 +2893,7 @@
                                   "label": "mfppt_uuid",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"mfppt_uuid\"]))}}",
+                                  "computedValue": "{{T_mf_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"mfppt_uuid\"]))}}",
                                   "fontStyle": "BOLD",
                                   "cellBackground": ""
                                 },
@@ -2919,7 +2919,7 @@
                                   "label": "mfppt_mf_post_type",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"mfppt_mf_post_type\"]))}}",
+                                  "computedValue": "{{T_mf_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"mfppt_mf_post_type\"]))}}",
                                   "fontStyle": "BOLD",
                                   "cellBackground": ""
                                 },
@@ -2945,7 +2945,7 @@
                                   "label": "mfppt_project_post_type",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"mfppt_project_post_type\"]))}}",
+                                  "computedValue": "{{T_mf_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"mfppt_project_post_type\"]))}}",
                                   "fontStyle": "BOLD",
                                   "cellBackground": ""
                                 },
@@ -2971,7 +2971,7 @@
                                   "label": "ct_name",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ct_name\"]))}}",
+                                  "computedValue": "{{T_mf_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ct_name\"]))}}",
                                   "fontStyle": "BOLD",
                                   "cellBackground": ""
                                 },
@@ -2997,7 +2997,7 @@
                                   "label": "ct_uuid",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ct_uuid\"]))}}",
+                                  "computedValue": "{{T_mf_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ct_uuid\"]))}}",
                                   "fontStyle": "BOLD",
                                   "cellBackground": ""
                                 }
@@ -3107,7 +3107,7 @@
                           "isVisible": true,
                           "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                           "iconName": "arrow-left",
-                          "onClick": "{{(()=>{\n\treturn storeValue('current_post',\n{index:appsmith.store.current_post.index-1,uuid:T_post_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index-1) {\n\t\t\treturn row\n\t\t}\n\t})[0].uuid}\t\t\t\t\t\t\t\t\t\t),resetWidget('Table1',true), USER_get_wt_list_from.clear(),\n\t\t\tUSER_get_wt_list_from.run()\n})()}}"
+                          "onClick": "{{(()=>{\n\treturn storeValue('current_post',\n{index:appsmith.store.current_post.index-1,uuid:T_post_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index-1) {\n\t\t\treturn row\n\t\t}\n\t})[0].uuid}\t\t\t\t\t\t\t\t\t\t),resetWidget('T_mf_list',true), USER_get_wt_list_from.clear(),\n\t\t\tUSER_get_wt_list_from.run()\n})()}}"
                         },
                         "groupButton2": {
                           "label": "Закрыть окно",
@@ -3149,7 +3149,7 @@
                           "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                           "iconName": "arrow-right",
                           "iconAlign": "right",
-                          "onClick": "{{(()=>{\n\t\treturn storeValue('current_post',\n{index:appsmith.store.current_post.index+1,uuid:T_post_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index+1) {\n\t\t\treturn row\n\t\t}\n\t})[0].uuid}\t\t\t\t\t\t\t\t\t\t),resetWidget('Table1',true), USER_get_wt_list_from.clear(),\n\t\t\tUSER_get_wt_list_from.run()\n\t\t\n})()}}"
+                          "onClick": "{{(()=>{\n\t\treturn storeValue('current_post',\n{index:appsmith.store.current_post.index+1,uuid:T_post_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index+1) {\n\t\t\treturn row\n\t\t}\n\t})[0].uuid}\t\t\t\t\t\t\t\t\t\t),resetWidget('T_mf_list',true), USER_get_wt_list_from.clear(),\n\t\t\tUSER_get_wt_list_from.run()\n\t\t\n})()}}"
                         }
                       },
                       "type": "BUTTON_GROUP_WIDGET",
@@ -3329,7 +3329,7 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "onClose": "{{resetWidget('Table1',true);\nUSER_get_wt_list_from.clear();\nstoreValue('current_post',{index:-1,uuid:''})}}",
+              "onClose": "{{resetWidget('T_mf_list',true);\nUSER_get_wt_list_from.clear();\nstoreValue('current_post',{index:-1,uuid:''})}}",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "width": 1231.2
             },
