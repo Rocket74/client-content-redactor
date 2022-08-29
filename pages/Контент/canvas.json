@@ -262,6 +262,60 @@
                           "dynamicBindingPathList": [],
                           "children": [
                             {
+                              "widgetName": "Text24Copy",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
+                              "displayName": "Text",
+                              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                              "searchTags": [
+                                "typography",
+                                "paragraph",
+                                "label"
+                              ],
+                              "topRow": 13,
+                              "bottomRow": 21,
+                              "parentRowSpace": 10,
+                              "type": "TEXT_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "overflow": "SCROLL",
+                              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                              "parentColumnSpace": 18.7375,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 8,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "fontFamily"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "text"
+                                }
+                              ],
+                              "shouldTruncate": false,
+                              "truncateButtonColor": "#FFC13D",
+                              "text": "CLICK\nmfppt: {{T_mf_list.selectedRow.mfppt_uuid}}\n\n{{T_mf_list.selectedRow.mfppt_uuid === ''}}\n{{T_mf_list.selectedRow.mfppt_uuid !== ''}}",
+                              "key": "tqcpmz879u",
+                              "isDeprecated": false,
+                              "rightColumn": 28,
+                              "textAlign": "LEFT",
+                              "widgetId": "1vdzuoqnfl",
+                              "isVisible": true,
+                              "fontStyle": "",
+                              "textColor": "#231F20",
+                              "version": 1,
+                              "parentId": "5arwg2mk0n",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "fontSize": "0.7rem"
+                            },
+                            {
                               "boxShadow": "none",
                               "widgetName": "Tabs9Copy",
                               "isCanvas": true,
@@ -2101,7 +2155,7 @@
                                 "input",
                                 "rte"
                               ],
-                              "topRow": 4,
+                              "topRow": 28,
                               "bottomRow": 68,
                               "parentRowSpace": 10,
                               "labelWidth": 5,
@@ -2620,7 +2674,7 @@
                               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                               "parentColumnSpace": 18.7375,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 37,
+                              "leftColumn": 0,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "fontFamily"
@@ -2831,6 +2885,9 @@
                                 },
                                 {
                                   "key": "textSize"
+                                },
+                                {
+                                  "key": "onRowSelected"
                                 }
                               ],
                               "displayName": "Table",
@@ -2843,7 +2900,11 @@
                               "parentRowSpace": 10,
                               "hideCard": false,
                               "parentColumnSpace": 19.05,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onRowSelected"
+                                }
+                              ],
                               "primaryColumns": {
                                 "mfppt_name": {
                                   "allowCellWrapping": true,
@@ -3002,6 +3063,7 @@
                                   "cellBackground": ""
                                 }
                               },
+                              "onRowSelected": "{{\n(()=>{\n\t\n\tif(appsmith.store.current_mfppt.uuid === '' && T_mf_list.selectedRow.mfppt_uuid !== '') {\n\t\treturn storeValue('current_mfppt',{uuid:T_mf_list.selectedRow.mfppt_uuid})\n\t} else if(appsmith.store.current_mfppt.uuid !== '' && T_mf_list.selectedRow.mfppt_uuid !== '') {\n\t\treturn\t\tstoreValue('current_mfppt',{uuid:''})\n\t}\n\t\n\t\n\t\n})()\n}}",
                               "key": "5ud47972jw",
                               "isDeprecated": false,
                               "rightColumn": 8,
@@ -3018,6 +3080,60 @@
                               "isVisiblePagination": false,
                               "cellBackground": "",
                               "verticalAlignment": "CENTER"
+                            },
+                            {
+                              "widgetName": "Text24",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
+                              "displayName": "Text",
+                              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                              "searchTags": [
+                                "typography",
+                                "paragraph",
+                                "label"
+                              ],
+                              "topRow": 4,
+                              "bottomRow": 12,
+                              "parentRowSpace": 10,
+                              "type": "TEXT_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "overflow": "SCROLL",
+                              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                              "parentColumnSpace": 18.7375,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 8,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "fontFamily"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "text"
+                                }
+                              ],
+                              "shouldTruncate": false,
+                              "truncateButtonColor": "#FFC13D",
+                              "text": "CURRENT\npost: {{appsmith.store.current_post.uuid}}\nmfppt: {{appsmith.store.current_mfppt.uuid}}",
+                              "key": "tqcpmz879u",
+                              "isDeprecated": false,
+                              "rightColumn": 28,
+                              "textAlign": "LEFT",
+                              "widgetId": "1ylxqhyfxv",
+                              "isVisible": true,
+                              "fontStyle": "",
+                              "textColor": "#231F20",
+                              "version": 1,
+                              "parentId": "5arwg2mk0n",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "fontSize": "0.7rem"
                             }
                           ],
                           "isDisabled": false,
@@ -3329,7 +3445,7 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "onClose": "{{resetWidget('T_mf_list',true);\nUSER_get_wt_list_from.clear();\nstoreValue('current_post',{index:-1,uuid:''})}}",
+              "onClose": "{{resetWidget('T_mf_list',true);\nUSER_get_wt_list_from.clear();\nstoreValue('current_post',{index:-1,uuid:''});\nstoreValue('current_mfppt',{uuid:''})}}",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "width": 1231.2
             },
