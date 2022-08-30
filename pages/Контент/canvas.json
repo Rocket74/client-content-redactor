@@ -299,7 +299,7 @@
                               ],
                               "shouldTruncate": false,
                               "truncateButtonColor": "#FFC13D",
-                              "text": "CLICK\nmfppt: {{T_mf_list.selectedRow.mfppt_uuid}}\n\n{{T_mf_list.selectedRow.mfppt_uuid === ''}}\n{{T_mf_list.selectedRow.mfppt_uuid !== ''}}",
+                              "text": "CLICK\nwt: {{T_mf_list.selectedRow.mfppt_uuid}}\n\n{{T_mf_list.selectedRow.mfppt_uuid === ''}}\n{{T_mf_list.selectedRow.mfppt_uuid !== ''}}",
                               "key": "tqcpmz879u",
                               "isDeprecated": false,
                               "rightColumn": 28,
@@ -3063,7 +3063,7 @@
                                   "cellBackground": ""
                                 }
                               },
-                              "onRowSelected": "{{\n(()=>{\n\t\n\tif(appsmith.store.current_mfppt.uuid === '' && T_mf_list.selectedRow.mfppt_uuid !== '') {\n\t\treturn storeValue('current_mfppt',{uuid:T_mf_list.selectedRow.mfppt_uuid})\n\t} else if(appsmith.store.current_mfppt.uuid !== '' && T_mf_list.selectedRow.mfppt_uuid !== '') {\n\t\treturn\t\tstoreValue('current_mfppt',{uuid:''})\n\t}\n\t\n\t\n\t\n})()\n}}",
+                              "onRowSelected": "{{\n(()=>{\n\t\n\tif(appsmith.store.current_wt.uuid === '' && T_mf_list.selectedRow.wt_uuid !== '') {\n\t\treturn storeValue('current_wt',{uuid:T_mf_list.selectedRow.wt_uuid})\n\t} else if(appsmith.store.current_wt.uuid !== '' && T_mf_list.selectedRow.wt_uuid !== '') {\n\t\treturn\t\tstoreValue('current_wt',{uuid:''})\n\t}\n\t\n\t\n\t\n})()\n}}",
                               "key": "5ud47972jw",
                               "isDeprecated": false,
                               "rightColumn": 8,
@@ -3119,7 +3119,7 @@
                               ],
                               "shouldTruncate": false,
                               "truncateButtonColor": "#FFC13D",
-                              "text": "CURRENT\npost: {{appsmith.store.current_post.uuid}}\nmfppt: {{appsmith.store.current_mfppt.uuid}}",
+                              "text": "CURRENT\npost: {{appsmith.store.current_post.uuid}}\nwt: {{appsmith.store.current_mfppt.uuid}}",
                               "key": "tqcpmz879u",
                               "isDeprecated": false,
                               "rightColumn": 28,
@@ -3445,7 +3445,7 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "onClose": "{{resetWidget('T_mf_list',true);\nUSER_get_wt_list_from.clear();\nstoreValue('current_post',{index:-1,uuid:''});\nstoreValue('current_mfppt',{uuid:''})}}",
+              "onClose": "{{resetWidget('T_mf_list',true);\nUSER_get_wt_list_from.clear();\nstoreValue('current_post',{index:-1,uuid:''});\nstoreValue('current_wt',{uuid:''})}}",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "width": 1231.2
             },
