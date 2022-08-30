@@ -7342,7 +7342,7 @@
                                       "isDisabled": false,
                                       "isVisible": true,
                                       "iconName": "eye-open",
-                                      "onClick": "{{\n(()=>{\n\tUSER_get_wt_list_from.run(()=>{showModal('Mdl_wt_open')}),\n\t\tstoreValue('current_post',{index:T_post_list.triggeredRowIndex,uuid:T_post_list.triggeredRow.uuid})\n})()\n\n\n\n}}"
+                                      "onClick": "{{\n(()=>{\n\tUSER_get_wt_current.run(()=>{showModal('Mdl_wt_open')}),\n\t\tstoreValue('current_post',{index:T_post_list.triggeredRowIndex,uuid:T_post_list.triggeredRow.uuid})\n})()\n\n\n\n}}"
                                     }
                                   },
                                   "isCompact": true,
