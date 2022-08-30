@@ -41,7 +41,7 @@
         "apiContentType": "application/json"
       }
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -53,7 +53,7 @@
     "jsonPathKeys": [
       "(()=>{\n\treturn {\n\t\tuser: appsmith.user.email,\n\t\tproject_place: Slt_pp.selectedOptionValue,\n\t\tproject_post_type: Slt_ppt.selectedOptionValue,\n\t\tsearch:T_post_list.searchText,\n\t\tsort:T_post_list.sortOrder,\n\t\tfilter:[],\n\t\tpage_num: T_post_list.pageNo,\n\t\tpage_size: T_post_list.pageSize,\n\t\toffset:(T_post_list.pageNo - 1) * T_post_list.pageSize,\n\t\tcurrent_post: appsmith.store.current_post,\n\t\tcurrent_wt: appsmith.store.current_wt\n\t}\n})()"
     ],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
