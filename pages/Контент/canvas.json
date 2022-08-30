@@ -3069,7 +3069,7 @@
                               "rightColumn": 8,
                               "textSize": "0.7rem",
                               "widgetId": "wc8y1ycr1h",
-                              "tableData": "{{USER_get_wt_list_from.data[0].mf_list}}",
+                              "tableData": "{{USER_get_wt_current.data[0].mf_list}}",
                               "label": "Data",
                               "searchKey": "",
                               "parentId": "5arwg2mk0n",
@@ -3445,7 +3445,7 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "onClose": "{{resetWidget('T_mf_list',true);\nUSER_get_wt_list_from.clear();\nstoreValue('current_post',{index:-1,uuid:''});\nstoreValue('current_wt',{uuid:''})}}",
+              "onClose": "{{resetWidget('T_mf_list',true);\nstoreValue('current_post',{index:-1,uuid:''});\nstoreValue('current_wt',{uuid:''});\nUSER_get_wt_current.run()\n}}",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "width": 1231.2
             },
@@ -7165,7 +7165,7 @@
                               "onPageChange": "{{USER_get_wt_current.run()}}",
                               "type": "TABLE_WIDGET_V2",
                               "inlineEditingSaveOption": "ROW_LEVEL",
-                              "animateLoading": true,
+                              "animateLoading": false,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "tableData"
@@ -7515,6 +7515,9 @@
                               "dynamicPropertyPathList": [
                                 {
                                   "key": "groupButtons.groupButton1.isDisabled"
+                                },
+                                {
+                                  "key": "groupButtons.groupButton1.onClick"
                                 }
                               ],
                               "displayName": "Button Group",

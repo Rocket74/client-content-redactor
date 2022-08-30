@@ -20,7 +20,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 20000,
       "paginationType": "NONE",
-      "path": "/webhook-test/d70d100d-2dd5-4374-9aa3-a7280e3834f0",
+      "path": "/webhook/d70d100d-2dd5-4374-9aa3-a7280e3834f0",
       "headers": [
         {
           "key": "content-type",
