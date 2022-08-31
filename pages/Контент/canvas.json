@@ -262,60 +262,6 @@
                           "dynamicBindingPathList": [],
                           "children": [
                             {
-                              "widgetName": "Text24Copy",
-                              "dynamicPropertyPathList": [
-                                {
-                                  "key": "fontSize"
-                                }
-                              ],
-                              "displayName": "Text",
-                              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-                              "searchTags": [
-                                "typography",
-                                "paragraph",
-                                "label"
-                              ],
-                              "topRow": 13,
-                              "bottomRow": 21,
-                              "parentRowSpace": 10,
-                              "type": "TEXT_WIDGET",
-                              "hideCard": false,
-                              "animateLoading": true,
-                              "overflow": "SCROLL",
-                              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-                              "parentColumnSpace": 18.7375,
-                              "dynamicTriggerPathList": [],
-                              "leftColumn": 8,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "fontFamily"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                },
-                                {
-                                  "key": "text"
-                                }
-                              ],
-                              "shouldTruncate": false,
-                              "truncateButtonColor": "#FFC13D",
-                              "text": "CLICK\nwt: {{T_mf_list.selectedRow.mfppt_uuid}}\n\n{{T_mf_list.selectedRow.mfppt_uuid === ''}}\n{{T_mf_list.selectedRow.mfppt_uuid !== ''}}",
-                              "key": "tqcpmz879u",
-                              "isDeprecated": false,
-                              "rightColumn": 28,
-                              "textAlign": "LEFT",
-                              "widgetId": "1vdzuoqnfl",
-                              "isVisible": true,
-                              "fontStyle": "",
-                              "textColor": "#231F20",
-                              "version": 1,
-                              "parentId": "5arwg2mk0n",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "fontSize": "0.7rem"
-                            },
-                            {
                               "boxShadow": "none",
                               "widgetName": "Tabs9Copy",
                               "isCanvas": true,
@@ -402,7 +348,7 @@
                                       ],
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "#FFC13D",
-                                      "text": "{{T_mf_list.selectedRow.ct_name}}",
+                                      "text": "{{T_mf_list.selectedRow.uuid}}",
                                       "key": "oxbeyehte1",
                                       "isDeprecated": false,
                                       "rightColumn": 64,
@@ -2005,7 +1951,7 @@
                                   "isDuplicateLabel": false
                                 }
                               },
-                              "isVisible": "{{T_mf_list.selectedRow.mfppt_uuid !== ''}}",
+                              "isVisible": "{{T_mf_list.selectedRow.uuid !== ''}}",
                               "version": 3,
                               "parentId": "5arwg2mk0n",
                               "renderMode": "CANVAS",
@@ -2132,7 +2078,7 @@
                               "isDeprecated": false,
                               "rightColumn": 49,
                               "widgetId": "5s92iapz4x",
-                              "isVisible": "{{T_mf_list.selectedRow.mfppt_uuid !== ''}}",
+                              "isVisible": "{{T_mf_list.selectedRow.uuid !== ''}}",
                               "version": 1,
                               "parentId": "5arwg2mk0n",
                               "renderMode": "CANVAS",
@@ -2155,7 +2101,7 @@
                                 "input",
                                 "rte"
                               ],
-                              "topRow": 28,
+                              "topRow": 9,
                               "bottomRow": 68,
                               "parentRowSpace": 10,
                               "labelWidth": 5,
@@ -2196,7 +2142,7 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "defaultText": "{{T_mf_list.selectedRow.mfppt_uuid === ''?'# ← <br>Для начала выполнения задания выберите поле слева, кликнув по нему.':T_mf_list.selectedRow.mfppt_uuid}}\n\n\n"
+                              "defaultText": "{{T_mf_list.selectedRow.uuid === ''?'# ← <br>Для начала выполнения задания выберите поле слева, кликнув по нему.':T_mf_list.selectedRow.uuid}}\n\n\n"
                             },
                             {
                               "template": {
@@ -2752,7 +2698,7 @@
                               "rightColumn": 49,
                               "textAlign": "LEFT",
                               "widgetId": "a8i2ea7o4a",
-                              "isVisible": "{{T_mf_list.selectedRow.mfppt_uuid !== ''}}",
+                              "isVisible": "{{T_mf_list.selectedRow.uuid !== ''}}",
                               "fontStyle": "BOLD",
                               "textColor": "{{appsmith.theme.colors.primaryColor}}",
                               "version": 1,
@@ -2975,7 +2921,7 @@
                                 "label"
                               ],
                               "topRow": 4,
-                              "bottomRow": 12,
+                              "bottomRow": 9,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -3102,25 +3048,11 @@
                           "isVisible": true,
                           "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                           "iconName": "arrow-left",
-                          "onClick": "{{(()=>{\n\treturn storeValue('current_post',\n{index:appsmith.store.current_post.index-1,uuid:T_post_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index-1) {\n\t\t\treturn row\n\t\t}\n\t})[0].uuid}\t\t\t\t\t\t\t\t\t\t),resetWidget('T_mf_list',true), USER_get_wt_list_from.clear(),\n\t\t\tUSER_get_wt_list_from.run()\n})()}}"
-                        },
-                        "groupButton2": {
-                          "label": "Закрыть окно",
-                          "id": "groupButton2",
-                          "buttonType": "SIMPLE",
-                          "placement": "CENTER",
-                          "widgetId": "",
-                          "isVisible": false,
-                          "isDisabled": false,
-                          "index": 1,
-                          "menuItems": {},
-                          "buttonColor": "#dc2626",
-                          "iconName": "small-cross",
-                          "onClick": "{{closeModal('Mdl_wt_open')}}"
+                          "onClick": "{{(()=>{\n\treturn storeValue('current_post',\n{index:appsmith.store.current_post.index-1,uuid:T_post_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index-1) {\n\t\t\treturn row\n\t\t}\n\t})[0].uuid}\t\t\t\t\t\t\t\t\t\t),resetWidget('T_mf_list',true), USER_get_wt_list.clear(),\n\t\t\tUSER_get_wt_list.run()\n})()}}"
                         },
                         "groupButtonxt4gdzje9z": {
                           "id": "groupButtonxt4gdzje9z",
-                          "index": 2,
+                          "index": 1,
                           "label": "{{(()=>{\n\treturn T_post_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index) {\n\t\t\treturn row\n\t\t}\n\t})[0].name.join(' ')\n})()}}",
                           "menuItems": {},
                           "buttonType": "SIMPLE",
@@ -3133,7 +3065,7 @@
                         },
                         "groupButton97prr5j8d8": {
                           "id": "groupButton97prr5j8d8",
-                          "index": 3,
+                          "index": 2,
                           "label": "{{(()=>{ \treturn T_post_list.tableData.filter((row,index)=>{ \t\tif (index === appsmith.store.current_post.index+1) { \t\t\treturn row \t\t} \t})[0].name.join(' ') })()}}",
                           "menuItems": {},
                           "buttonType": "SIMPLE",
@@ -3144,7 +3076,7 @@
                           "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                           "iconName": "arrow-right",
                           "iconAlign": "right",
-                          "onClick": "{{(()=>{\n\t\treturn storeValue('current_post',\n{index:appsmith.store.current_post.index+1,uuid:T_post_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index+1) {\n\t\t\treturn row\n\t\t}\n\t})[0].uuid}\t\t\t\t\t\t\t\t\t\t),resetWidget('T_mf_list',true), USER_get_wt_list_from.clear(),\n\t\t\tUSER_get_wt_list_from.run()\n\t\t\n})()}}"
+                          "onClick": "{{(()=>{\n\t\treturn storeValue('current_post',\n{index:appsmith.store.current_post.index+1,uuid:T_post_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index+1) {\n\t\t\treturn row\n\t\t}\n\t})[0].uuid}\t\t\t\t\t\t\t\t\t\t),resetWidget('T_mf_list',true), USER_get_wt_list.clear(),\n\t\t\tUSER_get_wt_list.run()\n\t\t\n})()}}"
                         }
                       },
                       "type": "BUTTON_GROUP_WIDGET",
@@ -3152,9 +3084,6 @@
                       "animateLoading": true,
                       "parentColumnSpace": 20,
                       "dynamicTriggerPathList": [
-                        {
-                          "key": "groupButtons.groupButton2.onClick"
-                        },
                         {
                           "key": "groupButtons.groupButton97prr5j8d8.onClick"
                         },
@@ -3324,7 +3253,7 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "onClose": "{{resetWidget('T_mf_list',true);\nstoreValue('current_post',{index:-1,uuid:''});\nstoreValue('current_wt',{uuid:''});\nUSER_get_wt_current.run()\n}}",
+              "onClose": "{{resetWidget('T_mf_list',true);\nstoreValue('current_post',{index:-1,uuid:''});\nstoreValue('current_wt',{uuid:''});\nUSER_get_post_list.run()\n}}",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "width": 1231.2
             },
