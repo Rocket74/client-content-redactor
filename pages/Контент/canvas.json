@@ -7961,7 +7961,7 @@
               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
               "parentColumnSpace": 20.0625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 49,
+              "leftColumn": 52,
               "dynamicBindingPathList": [
                 {
                   "key": "text"
@@ -7975,7 +7975,7 @@
               "text": "{{get_user.data.filter((usr)=>{\n\treturn usr.email === appsmith.user.email\n})[0].email}}",
               "key": "kqbh83iasq",
               "isDeprecated": false,
-              "rightColumn": 55,
+              "rightColumn": 58,
               "disableLink": true,
               "textAlign": "RIGHT",
               "widgetId": "bpba7gxijm",
@@ -8009,7 +8009,7 @@
               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
               "parentColumnSpace": 20.0625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 55,
+              "leftColumn": 58,
               "dynamicBindingPathList": [
                 {
                   "key": "text"
@@ -8103,6 +8103,56 @@
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "onOptionChange": "{{\n(()=>{\n\t\n\t\tresetWidget('Slt_ppt',true),\n\t\tresetWidget('T_post_list',true),\n\t\tUSER_get_post_list.clear(),\nget_project_post_type.run()\n})()\n\n\n}}\n\n\n"
+            },
+            {
+              "widgetName": "Progress2",
+              "progressType": "linear",
+              "isCanvas": false,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "isVisible"
+                }
+              ],
+              "displayName": "Progress",
+              "iconSVG": "/static/media/icon.9b0d7b96a0223e8120bf6f14aca4154a.svg",
+              "searchTags": [
+                "percent"
+              ],
+              "topRow": 0,
+              "bottomRow": 4,
+              "parentRowSpace": 10,
+              "type": "PROGRESS_WIDGET",
+              "isIndeterminate": true,
+              "hideCard": false,
+              "fillColor": "{{appsmith.theme.colors.primaryColor}}",
+              "parentColumnSpace": 20.0625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 24,
+              "dynamicBindingPathList": [
+                {
+                  "key": "fillColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "isVisible"
+                }
+              ],
+              "key": "0e6aj51e7s",
+              "showResult": false,
+              "isDeprecated": false,
+              "rightColumn": 52,
+              "counterClosewise": false,
+              "widgetId": "4imtito9vn",
+              "isVisible": "{{USER_get_wt_current.isLoading}}",
+              "steps": 1,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "progress": 50
             }
           ]
         },
