@@ -8065,18 +8065,6 @@
               ],
               "timeoutInMillisecond": 10000
             }
-          ],
-          [
-            {
-              "id": "Контент_USER_get_wt_list",
-              "name": "USER_get_wt_list",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "(()=>{\n\treturn {\n\t\tuser: appsmith.user.email,\n\t\tpost: appsmith.store.current_post\n\t}\n})()"
-              ],
-              "timeoutInMillisecond": 60000
-            }
           ]
         ],
         "validOnPageLoadActions": true,
