@@ -7246,12 +7246,12 @@
                               "widgetName": "T_post_list",
                               "defaultPageSize": 0,
                               "columnOrder": [
-                                "uuid",
+                                "customColumn1",
+                                "wt_stack",
                                 "name",
                                 "project_post_type",
                                 "project_place",
-                                "wt_stack",
-                                "customColumn1"
+                                "uuid"
                               ],
                               "dynamicPropertyPathList": [
                                 {
@@ -7447,10 +7447,10 @@
                                   "isEditable": false,
                                   "isCellVisible": true,
                                   "isDerived": false,
-                                  "label": "wt_stack",
+                                  "label": "Заданий",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{T_post_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"wt_stack\"]))}}",
+                                  "computedValue": "{{T_post_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"wt_stack\"].length))}}",
                                   "cellBackground": ""
                                 }
                               },
