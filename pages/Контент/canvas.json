@@ -8103,6 +8103,55 @@
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "onOptionChange": "{{\n(()=>{\n\t\n\t\tresetWidget('Slt_ppt',true),\n\t\tresetWidget('T_post_list',true),\n\t\tUSER_get_post_list.clear(),\nUSER_get_project_post_type.run()\n})()\n\n\n}}\n\n\n"
+            },
+            {
+              "widgetName": "Text25",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+              "searchTags": [
+                "typography",
+                "paragraph",
+                "label"
+              ],
+              "topRow": 0,
+              "bottomRow": 4,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 20.0625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 25,
+              "dynamicBindingPathList": [
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "text"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "#FFC13D",
+              "text": "{{USER_get_project_post_type.data.length == 0?'Для вас нет заданий':''}}",
+              "key": "xbhtfj9i1x",
+              "isDeprecated": false,
+              "rightColumn": 41,
+              "textAlign": "LEFT",
+              "widgetId": "8dfs3bxby4",
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "fontSize": "1rem"
             }
           ]
         },
