@@ -7572,7 +7572,7 @@
                                   "index": 0,
                                   "menuItems": {},
                                   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                                  "onClick": "{{USER_get_wt_current.run()}}"
+                                  "onClick": "{{USER_get_post_list.run()}}"
                                 }
                               },
                               "type": "BUTTON_GROUP_WIDGET",
