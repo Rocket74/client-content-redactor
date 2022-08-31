@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1010,
+          "bottomRow": 1020,
           "containerStyle": "none",
           "snapRows": 84,
           "parentRowSpace": 1,
@@ -8103,105 +8103,6 @@
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "onOptionChange": "{{\n(()=>{\n\t\n\t\tresetWidget('Slt_ppt',true),\n\t\tresetWidget('T_post_list',true),\n\t\tUSER_get_post_list.clear(),\nget_project_post_type.run()\n})()\n\n\n}}\n\n\n"
-            },
-            {
-              "widgetName": "Progress2",
-              "progressType": "linear",
-              "isCanvas": false,
-              "dynamicPropertyPathList": [
-                {
-                  "key": "isVisible"
-                }
-              ],
-              "displayName": "Progress",
-              "iconSVG": "/static/media/icon.9b0d7b96a0223e8120bf6f14aca4154a.svg",
-              "searchTags": [
-                "percent"
-              ],
-              "topRow": 0,
-              "bottomRow": 4,
-              "parentRowSpace": 10,
-              "type": "PROGRESS_WIDGET",
-              "isIndeterminate": true,
-              "hideCard": false,
-              "fillColor": "{{appsmith.theme.colors.primaryColor}}",
-              "parentColumnSpace": 20.0625,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 24,
-              "dynamicBindingPathList": [
-                {
-                  "key": "fillColor"
-                },
-                {
-                  "key": "borderRadius"
-                },
-                {
-                  "key": "isVisible"
-                }
-              ],
-              "key": "0e6aj51e7s",
-              "showResult": false,
-              "isDeprecated": false,
-              "rightColumn": 29,
-              "counterClosewise": false,
-              "widgetId": "4imtito9vn",
-              "isVisible": "{{USER_get_wt_current.isLoading}}",
-              "steps": 1,
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "progress": 50
-            },
-            {
-              "widgetName": "Text25",
-              "displayName": "Text",
-              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-              "searchTags": [
-                "typography",
-                "paragraph",
-                "label"
-              ],
-              "topRow": 0,
-              "bottomRow": 4,
-              "parentRowSpace": 10,
-              "type": "TEXT_WIDGET",
-              "hideCard": false,
-              "animateLoading": false,
-              "overflow": "NONE",
-              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-              "parentColumnSpace": 20.0625,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 33,
-              "dynamicBindingPathList": [
-                {
-                  "key": "fontFamily"
-                },
-                {
-                  "key": "borderRadius"
-                },
-                {
-                  "key": "text"
-                }
-              ],
-              "shouldTruncate": false,
-              "truncateButtonColor": "#FFC13D",
-              "text": "{{USER_get_wt_current.isLoading}}",
-              "key": "xbhtfj9i1x",
-              "isDeprecated": false,
-              "rightColumn": 49,
-              "textAlign": "LEFT",
-              "widgetId": "6ljubvbuew",
-              "isVisible": true,
-              "fontStyle": "BOLD",
-              "textColor": "#231F20",
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "fontSize": "1rem"
             }
           ]
         },
