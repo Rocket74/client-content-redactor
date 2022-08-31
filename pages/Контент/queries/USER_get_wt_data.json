@@ -41,7 +41,7 @@
         "apiContentType": "application/json"
       }
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -53,7 +53,7 @@
     "jsonPathKeys": [
       "(()=>{\n\treturn {\n\t\tuser: appsmith.user.email,\n\t\tpost: appsmith.store.current_post,\n\t\twt: {uuid:T_mf_list.selectedRow.uuid}\n\t}\n})()"
     ],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
