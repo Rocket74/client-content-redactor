@@ -2812,22 +2812,10 @@
                                   "key": "tableData"
                                 },
                                 {
-                                  "key": "primaryColumns.mfppt_name.computedValue"
+                                  "key": "primaryColumns.uuid.computedValue"
                                 },
                                 {
-                                  "key": "primaryColumns.mfppt_uuid.computedValue"
-                                },
-                                {
-                                  "key": "primaryColumns.mfppt_mf_post_type.computedValue"
-                                },
-                                {
-                                  "key": "primaryColumns.mfppt_project_post_type.computedValue"
-                                },
-                                {
-                                  "key": "primaryColumns.ct_name.computedValue"
-                                },
-                                {
-                                  "key": "primaryColumns.ct_uuid.computedValue"
+                                  "key": "primaryColumns.name.computedValue"
                                 }
                               ],
                               "leftColumn": 0,
@@ -2872,17 +2860,10 @@
                               "widgetName": "T_mf_list",
                               "defaultPageSize": 0,
                               "columnOrder": [
-                                "mfppt_name",
-                                "mfppt_uuid",
-                                "mfppt_mf_post_type",
-                                "mfppt_project_post_type",
-                                "ct_name",
-                                "ct_uuid"
+                                "uuid",
+                                "name"
                               ],
                               "dynamicPropertyPathList": [
-                                {
-                                  "key": "primaryColumns.mfppt_name.textSize"
-                                },
                                 {
                                   "key": "textSize"
                                 },
@@ -2906,17 +2887,46 @@
                                 }
                               ],
                               "primaryColumns": {
-                                "mfppt_name": {
-                                  "allowCellWrapping": true,
+                                "uuid": {
+                                  "allowCellWrapping": false,
                                   "index": 0,
                                   "width": 150,
-                                  "originalId": "mfppt_name",
-                                  "id": "mfppt_name",
-                                  "alias": "mfppt_name",
+                                  "originalId": "uuid",
+                                  "id": "uuid",
+                                  "alias": "uuid",
                                   "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "text",
+                                  "textColor": "",
                                   "textSize": "0.7rem",
+                                  "fontStyle": "BOLD",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": false,
+                                  "isDisabled": false,
+                                  "isCellEditable": false,
+                                  "isEditable": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "uuid",
+                                  "isSaveVisible": true,
+                                  "isDiscardVisible": true,
+                                  "computedValue": "{{T_mf_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"uuid\"]))}}",
+                                  "cellBackground": ""
+                                },
+                                "name": {
+                                  "allowCellWrapping": false,
+                                  "index": 1,
+                                  "width": 150,
+                                  "originalId": "name",
+                                  "id": "name",
+                                  "alias": "name",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textColor": "",
+                                  "textSize": "0.7rem",
+                                  "fontStyle": "BOLD",
                                   "enableFilter": true,
                                   "enableSort": true,
                                   "isVisible": true,
@@ -2925,141 +2935,10 @@
                                   "isEditable": false,
                                   "isCellVisible": true,
                                   "isDerived": false,
-                                  "label": "Поле",
+                                  "label": "name",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{T_mf_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"mfppt_name\"]))}}",
-                                  "fontStyle": "BOLD",
-                                  "cellBackground": ""
-                                },
-                                "mfppt_uuid": {
-                                  "allowCellWrapping": false,
-                                  "index": 1,
-                                  "width": 150,
-                                  "originalId": "mfppt_uuid",
-                                  "id": "mfppt_uuid",
-                                  "alias": "mfppt_uuid",
-                                  "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "text",
-                                  "textSize": "0.7rem",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": false,
-                                  "isDisabled": false,
-                                  "isCellEditable": false,
-                                  "isEditable": false,
-                                  "isCellVisible": true,
-                                  "isDerived": false,
-                                  "label": "mfppt_uuid",
-                                  "isSaveVisible": true,
-                                  "isDiscardVisible": true,
-                                  "computedValue": "{{T_mf_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"mfppt_uuid\"]))}}",
-                                  "fontStyle": "BOLD",
-                                  "cellBackground": ""
-                                },
-                                "mfppt_mf_post_type": {
-                                  "allowCellWrapping": false,
-                                  "index": 2,
-                                  "width": 150,
-                                  "originalId": "mfppt_mf_post_type",
-                                  "id": "mfppt_mf_post_type",
-                                  "alias": "mfppt_mf_post_type",
-                                  "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "text",
-                                  "textSize": "0.7rem",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": false,
-                                  "isDisabled": false,
-                                  "isCellEditable": false,
-                                  "isEditable": false,
-                                  "isCellVisible": true,
-                                  "isDerived": false,
-                                  "label": "mfppt_mf_post_type",
-                                  "isSaveVisible": true,
-                                  "isDiscardVisible": true,
-                                  "computedValue": "{{T_mf_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"mfppt_mf_post_type\"]))}}",
-                                  "fontStyle": "BOLD",
-                                  "cellBackground": ""
-                                },
-                                "mfppt_project_post_type": {
-                                  "allowCellWrapping": false,
-                                  "index": 3,
-                                  "width": 150,
-                                  "originalId": "mfppt_project_post_type",
-                                  "id": "mfppt_project_post_type",
-                                  "alias": "mfppt_project_post_type",
-                                  "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "text",
-                                  "textSize": "0.7rem",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": false,
-                                  "isDisabled": false,
-                                  "isCellEditable": false,
-                                  "isEditable": false,
-                                  "isCellVisible": true,
-                                  "isDerived": false,
-                                  "label": "mfppt_project_post_type",
-                                  "isSaveVisible": true,
-                                  "isDiscardVisible": true,
-                                  "computedValue": "{{T_mf_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"mfppt_project_post_type\"]))}}",
-                                  "fontStyle": "BOLD",
-                                  "cellBackground": ""
-                                },
-                                "ct_name": {
-                                  "allowCellWrapping": false,
-                                  "index": 4,
-                                  "width": 150,
-                                  "originalId": "ct_name",
-                                  "id": "ct_name",
-                                  "alias": "ct_name",
-                                  "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "text",
-                                  "textSize": "0.7rem",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": false,
-                                  "isDisabled": false,
-                                  "isCellEditable": false,
-                                  "isEditable": false,
-                                  "isCellVisible": true,
-                                  "isDerived": false,
-                                  "label": "ct_name",
-                                  "isSaveVisible": true,
-                                  "isDiscardVisible": true,
-                                  "computedValue": "{{T_mf_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ct_name\"]))}}",
-                                  "fontStyle": "BOLD",
-                                  "cellBackground": ""
-                                },
-                                "ct_uuid": {
-                                  "allowCellWrapping": false,
-                                  "index": 5,
-                                  "width": 150,
-                                  "originalId": "ct_uuid",
-                                  "id": "ct_uuid",
-                                  "alias": "ct_uuid",
-                                  "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "text",
-                                  "textSize": "0.7rem",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": false,
-                                  "isDisabled": false,
-                                  "isCellEditable": false,
-                                  "isEditable": false,
-                                  "isCellVisible": true,
-                                  "isDerived": false,
-                                  "label": "ct_uuid",
-                                  "isSaveVisible": true,
-                                  "isDiscardVisible": true,
-                                  "computedValue": "{{T_mf_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ct_uuid\"]))}}",
-                                  "fontStyle": "BOLD",
+                                  "computedValue": "{{T_mf_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"name\"].name))}}",
                                   "cellBackground": ""
                                 }
                               },
@@ -3069,7 +2948,7 @@
                               "rightColumn": 8,
                               "textSize": "0.7rem",
                               "widgetId": "wc8y1ycr1h",
-                              "tableData": "{{USER_get_wt_current.data[0].mf_list}}",
+                              "tableData": "{{USER_get_wt_list.data[0].wt_list}}",
                               "label": "Data",
                               "searchKey": "",
                               "parentId": "5arwg2mk0n",
@@ -7346,7 +7225,7 @@
                                       "isDisabled": false,
                                       "isVisible": true,
                                       "iconName": "eye-open",
-                                      "onClick": "{{\n(()=>{\n\tUSER_get_wt_current.run(()=>{showModal('Mdl_wt_open')}),\n\t\tstoreValue('current_post',{index:T_post_list.triggeredRowIndex,uuid:T_post_list.triggeredRow.uuid})\n})()\n\n\n\n}}"
+                                      "onClick": "{{\n(()=>{\n\tUSER_get_wt_list.run(()=>{showModal('Mdl_wt_open')}),\n\t\tstoreValue('current_post',{index:T_post_list.triggeredRowIndex,uuid:T_post_list.triggeredRow.uuid})\n})()\n\n\n\n}}"
                                     }
                                   },
                                   "isCompact": true,
@@ -8185,6 +8064,18 @@
                 "async () => {\n  if (appsmith.mode != \"EDIT\" && appsmith.URL.queryParams.embed === undefined) {\n    if (Object.keys(appsmith.URL.queryParams).length > 0) {\n      navigateTo(appsmith.URL.fullPath + '&embed=true');\n    } else {\n      navigateTo(appsmith.URL.fullPath + '?embed=true');\n    }\n  }\n}"
               ],
               "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Контент_USER_get_wt_list",
+              "name": "USER_get_wt_list",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "(()=>{\n\treturn {\n\t\tuser: appsmith.user.email,\n\t\tpost: appsmith.store.current_post\n\t}\n})()"
+              ],
+              "timeoutInMillisecond": 60000
             }
           ]
         ],
