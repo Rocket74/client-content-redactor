@@ -7521,7 +7521,7 @@
                               "labelPosition": "Left",
                               "options": "{{utils.select(USER_get_project_post_type.data[0].ppt_list, ['name','uuid'])}}",
                               "placeholderText": "Выбрать тип контента",
-                              "isDisabled": "{{Slt_p.selectedOptionValue === '' || Slt_pp.selectedOptionValue === ''}}",
+                              "isDisabled": "{{Slt_p.selectedOptionValue === '' || Slt_pp.selectedOptionValue === '' || USER_get_project_post_type.data.length == 0}}",
                               "key": "en9kck9g36",
                               "labelTextSize": "0.875rem",
                               "isRequired": false,
