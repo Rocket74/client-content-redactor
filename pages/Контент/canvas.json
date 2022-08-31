@@ -348,7 +348,7 @@
                                       ],
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "#FFC13D",
-                                      "text": "{{T_mf_list.selectedRow.uuid}}",
+                                      "text": "{{USER_get_wt_data.data[0].wt_data[0].content_type.name}}",
                                       "key": "oxbeyehte1",
                                       "isDeprecated": false,
                                       "rightColumn": 64,
@@ -457,7 +457,7 @@
                                       "widgetId": "mg8p4bka43",
                                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                                       "isVisible": true,
-                                      "label": "{{T_mf_list.selectedRow.mfppt_name}}",
+                                      "label": "{{T_mf_list.selectedRow.name}}",
                                       "version": 2,
                                       "parentId": "5w2hzxat6x",
                                       "labelAlignment": "left",
@@ -586,7 +586,7 @@
                                       ],
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "#FFC13D",
-                                      "text": "{{T_mf_list.selectedRow.ct_name}}",
+                                      "text": "{{USER_get_wt_data.data[0].wt_data[0].content_type.name}}",
                                       "key": "oxbeyehte1",
                                       "isDeprecated": false,
                                       "rightColumn": 64,
@@ -648,7 +648,7 @@
                                       "widgetId": "zi8cjx21wf",
                                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                                       "isVisible": true,
-                                      "label": "{{T_mf_list.selectedRow.mfppt_name}}",
+                                      "label": "{{T_mf_list.selectedRow.name}}",
                                       "version": 2,
                                       "parentId": "bd7sn0ne8m",
                                       "labelAlignment": "left",
@@ -824,7 +824,7 @@
                                       ],
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "#FFC13D",
-                                      "text": "{{T_mf_list.selectedRow.ct_name}}",
+                                      "text": "{{USER_get_wt_data.data[0].wt_data[0].content_type.name}}",
                                       "key": "oxbeyehte1",
                                       "isDeprecated": false,
                                       "rightColumn": 64,
@@ -886,7 +886,7 @@
                                       "widgetId": "8n4yp5ruqq",
                                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                                       "isVisible": true,
-                                      "label": "{{T_mf_list.selectedRow.mfppt_name}}",
+                                      "label": "{{T_mf_list.selectedRow.name}}",
                                       "version": 2,
                                       "parentId": "nhygak66dp",
                                       "labelAlignment": "left",
@@ -1062,7 +1062,7 @@
                                       ],
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "#FFC13D",
-                                      "text": "{{T_mf_list.selectedRow.ct_name}}",
+                                      "text": "{{USER_get_wt_data.data[0].wt_data[0].content_type.name}}",
                                       "key": "oxbeyehte1",
                                       "isDeprecated": false,
                                       "rightColumn": 64,
@@ -1124,7 +1124,7 @@
                                       "widgetId": "2htejldmjg",
                                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                                       "isVisible": true,
-                                      "label": "{{T_mf_list.selectedRow.mfppt_name}}",
+                                      "label": "{{T_mf_list.selectedRow.name}}",
                                       "version": 2,
                                       "parentId": "jouuostedb",
                                       "labelAlignment": "left",
@@ -1208,7 +1208,7 @@
                                       ],
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "#FFC13D",
-                                      "text": "{{T_mf_list.selectedRow.ct_name}}",
+                                      "text": "{{USER_get_wt_data.data[0].wt_data[0].content_type.name}}",
                                       "key": "oxbeyehte1",
                                       "isDeprecated": false,
                                       "rightColumn": 64,
@@ -1229,7 +1229,7 @@
                                       "widgetName": "RichTextEditor3",
                                       "displayName": "Rich Text Editor",
                                       "iconSVG": "/static/media/icon.b35e139c93907b5eab3c68c1db842330.svg",
-                                      "labelText": "{{T_mf_list.selectedRow.mfppt_name}}",
+                                      "labelText": "{{T_mf_list.selectedRow.name}}",
                                       "searchTags": [
                                         "input",
                                         "rte"
@@ -1343,7 +1343,7 @@
                                       ],
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "#FFC13D",
-                                      "text": "{{T_mf_list.selectedRow.ct_name}}",
+                                      "text": "{{USER_get_wt_data.data[0].wt_data[0].content_type.name}}",
                                       "key": "oxbeyehte1",
                                       "isDeprecated": false,
                                       "rightColumn": 64,
@@ -1405,7 +1405,7 @@
                                       "widgetId": "havyg70apb",
                                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                                       "isVisible": true,
-                                      "label": "{{T_mf_list.selectedRow.mfppt_name}}",
+                                      "label": "{{T_mf_list.selectedRow.name}}",
                                       "version": 2,
                                       "parentId": "dlahxpy9cj",
                                       "labelAlignment": "left",
@@ -1488,7 +1488,7 @@
                                       ],
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "#FFC13D",
-                                      "text": "{{T_mf_list.selectedRow.ct_name}}",
+                                      "text": "{{USER_get_wt_data.data[0].wt_data[0].content_type.name}}",
                                       "key": "oxbeyehte1",
                                       "isDeprecated": false,
                                       "rightColumn": 64,
@@ -1711,7 +1711,7 @@
                                       ],
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "#FFC13D",
-                                      "text": "{{T_mf_list.selectedRow.ct_name}}",
+                                      "text": "{{USER_get_wt_data.data[0].wt_data[0].content_type.name}}",
                                       "key": "oxbeyehte1",
                                       "isDeprecated": false,
                                       "rightColumn": 64,
@@ -1883,7 +1883,7 @@
                               "rightColumn": 49,
                               "widgetId": "iyqevdrb15",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "defaultTab": "{{T_mf_list.selectedRow.ct_uuid}}",
+                              "defaultTab": "{{USER_get_wt_data.data[0].wt_data[0].content_type.uuid}}",
                               "shouldShowTabs": false,
                               "tabsObj": {
                                 "tabps42rz6b2a": {
@@ -3111,7 +3111,7 @@
                       "fillColor": "{{appsmith.theme.colors.primaryColor}}",
                       "parentColumnSpace": 19.05,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 15,
+                      "leftColumn": 0,
                       "dynamicBindingPathList": [
                         {
                           "key": "fillColor"
@@ -3178,60 +3178,6 @@
                       "isLoading": false,
                       "borderRadius": "1.5rem",
                       "buttonVariant": "TERTIARY"
-                    },
-                    {
-                      "widgetName": "Text26",
-                      "dynamicPropertyPathList": [
-                        {
-                          "key": "fontSize"
-                        }
-                      ],
-                      "displayName": "Text",
-                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-                      "searchTags": [
-                        "typography",
-                        "paragraph",
-                        "label"
-                      ],
-                      "topRow": 4,
-                      "bottomRow": 8,
-                      "parentRowSpace": 10,
-                      "type": "TEXT_WIDGET",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "overflow": "SCROLL",
-                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-                      "parentColumnSpace": 18.7375,
-                      "dynamicTriggerPathList": [],
-                      "leftColumn": 0,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "fontFamily"
-                        },
-                        {
-                          "key": "borderRadius"
-                        },
-                        {
-                          "key": "text"
-                        }
-                      ],
-                      "shouldTruncate": false,
-                      "truncateButtonColor": "#FFC13D",
-                      "text": "{{USER_get_wt_data.data[0].wt_data[0].tz.payload}}",
-                      "key": "xbhtfj9i1x",
-                      "isDeprecated": false,
-                      "rightColumn": 15,
-                      "textAlign": "LEFT",
-                      "widgetId": "neo64i3vrn",
-                      "isVisible": true,
-                      "fontStyle": "",
-                      "textColor": "#231F20",
-                      "version": 1,
-                      "parentId": "9x4mb5h69m",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "fontSize": "0.6rem"
                     }
                   ],
                   "isDisabled": false,
