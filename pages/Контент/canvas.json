@@ -7519,7 +7519,7 @@
                                 }
                               ],
                               "labelPosition": "Left",
-                              "options": "{{utils.select(get_project_post_type.data, ['name','uuid'])}}",
+                              "options": "{{utils.select(USER_get_project_post_type.data[0].ppt_list, ['name','uuid'])}}",
                               "placeholderText": "Выбрать тип контента",
                               "isDisabled": "{{Slt_p.selectedOptionValue === '' || Slt_pp.selectedOptionValue === ''}}",
                               "key": "en9kck9g36",
@@ -8102,7 +8102,7 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "onOptionChange": "{{\n(()=>{\n\t\n\t\tresetWidget('Slt_ppt',true),\n\t\tresetWidget('T_post_list',true),\n\t\tUSER_get_post_list.clear(),\nget_project_post_type.run()\n})()\n\n\n}}\n\n\n"
+              "onOptionChange": "{{\n(()=>{\n\t\n\t\tresetWidget('Slt_ppt',true),\n\t\tresetWidget('T_post_list',true),\n\t\tUSER_get_post_list.clear(),\nUSER_get_project_post_type.run()\n})()\n\n\n}}\n\n\n"
             }
           ]
         },
