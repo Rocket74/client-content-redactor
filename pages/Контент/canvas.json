@@ -7199,6 +7199,9 @@
                                 },
                                 {
                                   "key": "primaryColumns.project_post_type.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.wt_stack.computedValue"
                                 }
                               ],
                               "leftColumn": 0,
@@ -7243,11 +7246,12 @@
                               "widgetName": "T_post_list",
                               "defaultPageSize": 0,
                               "columnOrder": [
-                                "customColumn1",
+                                "uuid",
                                 "name",
-                                "project_post_type",
                                 "project_place",
-                                "uuid"
+                                "project_post_type",
+                                "wt_stack",
+                                "customColumn1"
                               ],
                               "dynamicPropertyPathList": [
                                 {
@@ -7264,7 +7268,7 @@
                                 "task": 245,
                                 "step": 62,
                                 "status": 75,
-                                "name": 254,
+                                "name": 536,
                                 "project_post_type": 276
                               },
                               "parentRowSpace": 10,
@@ -7422,6 +7426,32 @@
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
                                   "computedValue": "{{T_post_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"project_post_type\"]))}}"
+                                },
+                                "wt_stack": {
+                                  "allowCellWrapping": false,
+                                  "index": 4,
+                                  "width": 150,
+                                  "originalId": "wt_stack",
+                                  "id": "wt_stack",
+                                  "alias": "wt_stack",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textColor": "",
+                                  "textSize": "0.75rem",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellEditable": false,
+                                  "isEditable": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "wt_stack",
+                                  "isSaveVisible": true,
+                                  "isDiscardVisible": true,
+                                  "computedValue": "{{T_post_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"wt_stack\"]))}}",
+                                  "cellBackground": ""
                                 }
                               },
                               "key": "9xj1oje56u",
