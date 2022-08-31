@@ -83,7 +83,7 @@
                       "parentRowSpace": 10,
                       "type": "TABS_WIDGET",
                       "hideCard": false,
-                      "shouldScrollContents": false,
+                      "shouldScrollContents": true,
                       "animateLoading": true,
                       "parentColumnSpace": 20,
                       "dynamicTriggerPathList": [],
@@ -249,7 +249,7 @@
                           "widgetName": "Canvas29Copy",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 710,
+                          "bottomRow": 720,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": true,
@@ -272,8 +272,8 @@
                               ],
                               "displayName": "Tabs",
                               "iconSVG": "/static/media/icon.74a6d653.svg",
-                              "topRow": 12,
-                              "bottomRow": 69,
+                              "topRow": 13,
+                              "bottomRow": 70,
                               "parentRowSpace": 10,
                               "type": "TABS_WIDGET",
                               "hideCard": false,
@@ -1973,8 +1973,8 @@
                                 "click",
                                 "submit"
                               ],
-                              "topRow": 8,
-                              "bottomRow": 12,
+                              "topRow": 9,
+                              "bottomRow": 13,
                               "parentRowSpace": 10,
                               "groupButtons": {
                                 "groupButton1": {
@@ -2094,6 +2094,11 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "RichTextEditor4",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isVisible"
+                                }
+                              ],
                               "displayName": "Rich Text Editor",
                               "iconSVG": "/static/media/icon.b35e139c93907b5eab3c68c1db842330.svg",
                               "labelText": "Задание",
@@ -2101,8 +2106,8 @@
                                 "input",
                                 "rte"
                               ],
-                              "topRow": 9,
-                              "bottomRow": 68,
+                              "topRow": 5,
+                              "bottomRow": 69,
                               "parentRowSpace": 10,
                               "labelWidth": 5,
                               "type": "RICH_TEXT_EDITOR_WIDGET",
@@ -2121,13 +2126,16 @@
                                 },
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "isVisible"
                                 }
                               ],
                               "labelPosition": "Top",
                               "labelStyle": "BOLD",
                               "labelTextColor": "{{appsmith.theme.colors.primaryColor}}",
                               "inputType": "markdown",
-                              "isDisabled": false,
+                              "isDisabled": true,
                               "key": "rjviw2w3qj",
                               "labelTextSize": "1.25rem",
                               "isRequired": false,
@@ -2135,14 +2143,14 @@
                               "rightColumn": 28,
                               "isDefaultClickDisabled": true,
                               "widgetId": "po49bi5n4c",
-                              "isVisible": true,
+                              "isVisible": "{{!USER_get_wt_data.isLoading}}",
                               "version": 1,
                               "parentId": "5arwg2mk0n",
                               "labelAlignment": "left",
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "defaultText": "{{T_mf_list.selectedRow.uuid === ''?'# ← <br>Для начала выполнения задания выберите поле слева, кликнув по нему.':T_mf_list.selectedRow.uuid}}\n\n\n"
+                              "defaultText": "{{T_mf_list.selectedRow.uuid === ''?'# ← <br>Для начала выполнения задания выберите поле слева, кликнув по нему.':(\n'**Описание**<br>'\n\n+USER_get_wt_data.data[0].wt_data[0].tz.payload.description+\n\n'<br><br>**Пример**<br>'\n\n+USER_get_wt_data.data[0].wt_data[0].tz.payload.sample+\n\n'<br><br>**Недопустимо**<br>'\n\n+USER_get_wt_data.data[0].wt_data[0].tz.payload.arr_forbidden.map((fb) => {\n\treturn fb.forbidden\n}).join(' <br><br> ')+\n\n'<br><br>**Обязательно**<br>'\n\t\n\t+USER_get_wt_data.data[0].wt_data[0].tz.payload.arr_required.map((rq) => {\n\treturn rq.required\n}).join(' <br><br> ')\n\n\n\n)}}\n\n\n"
                             },
                             {
                               "template": {
@@ -2202,8 +2210,8 @@
                               "isCanvas": true,
                               "displayName": "List",
                               "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
-                              "topRow": 23,
-                              "bottomRow": 69,
+                              "topRow": 24,
+                              "bottomRow": 70,
                               "parentRowSpace": 10,
                               "type": "LIST_WIDGET",
                               "hideCard": false,
@@ -2477,8 +2485,8 @@
                                 "number",
                                 "textarea"
                               ],
-                              "topRow": 4,
-                              "bottomRow": 19,
+                              "topRow": 5,
+                              "bottomRow": 20,
                               "parentRowSpace": 10,
                               "labelWidth": 5,
                               "autoFocus": false,
@@ -2533,8 +2541,8 @@
                                 "click",
                                 "submit"
                               ],
-                              "topRow": 19,
-                              "bottomRow": 23,
+                              "topRow": 20,
+                              "bottomRow": 24,
                               "parentRowSpace": 10,
                               "groupButtons": {
                                 "groupButton1": {
@@ -2665,8 +2673,8 @@
                                 "paragraph",
                                 "label"
                               ],
-                              "topRow": 4,
-                              "bottomRow": 8,
+                              "topRow": 5,
+                              "bottomRow": 9,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -2712,7 +2720,7 @@
                               "boxShadow": "none",
                               "isVisibleDownload": false,
                               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-                              "topRow": 4,
+                              "topRow": 5,
                               "isSortable": false,
                               "type": "TABLE_WIDGET_V2",
                               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -2818,7 +2826,7 @@
                                 }
                               ],
                               "displayName": "Table",
-                              "bottomRow": 68,
+                              "bottomRow": 69,
                               "columnWidthMap": {
                                 "task": 245,
                                 "step": 62,
@@ -2888,7 +2896,7 @@
                                   "cellBackground": ""
                                 }
                               },
-                              "onRowSelected": "{{\n(()=>{\n\t\n\tif(appsmith.store.current_wt.uuid === '' && T_mf_list.selectedRow.wt_uuid !== '') {\n\t\treturn storeValue('current_wt',{uuid:T_mf_list.selectedRow.wt_uuid})\n\t} else if(appsmith.store.current_wt.uuid !== '' && T_mf_list.selectedRow.wt_uuid !== '') {\n\t\treturn\t\tstoreValue('current_wt',{uuid:''})\n\t}\n\t\n\t\n\t\n})()\n}}",
+                              "onRowSelected": "{{\n(()=>{\n\t\n\tUSER_get_wt_data.run()\n\t\n\t\n})()\n}}",
                               "key": "5ud47972jw",
                               "isDeprecated": false,
                               "rightColumn": 8,
@@ -2905,60 +2913,6 @@
                               "isVisiblePagination": false,
                               "cellBackground": "",
                               "verticalAlignment": "CENTER"
-                            },
-                            {
-                              "widgetName": "Text24",
-                              "dynamicPropertyPathList": [
-                                {
-                                  "key": "fontSize"
-                                }
-                              ],
-                              "displayName": "Text",
-                              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-                              "searchTags": [
-                                "typography",
-                                "paragraph",
-                                "label"
-                              ],
-                              "topRow": 4,
-                              "bottomRow": 9,
-                              "parentRowSpace": 10,
-                              "type": "TEXT_WIDGET",
-                              "hideCard": false,
-                              "animateLoading": true,
-                              "overflow": "SCROLL",
-                              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-                              "parentColumnSpace": 18.7375,
-                              "dynamicTriggerPathList": [],
-                              "leftColumn": 8,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "fontFamily"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                },
-                                {
-                                  "key": "text"
-                                }
-                              ],
-                              "shouldTruncate": false,
-                              "truncateButtonColor": "#FFC13D",
-                              "text": "CURRENT\npost: {{appsmith.store.current_post.uuid}}\nwt: {{appsmith.store.current_mfppt.uuid}}",
-                              "key": "tqcpmz879u",
-                              "isDeprecated": false,
-                              "rightColumn": 28,
-                              "textAlign": "LEFT",
-                              "widgetId": "1ylxqhyfxv",
-                              "isVisible": true,
-                              "fontStyle": "",
-                              "textColor": "#231F20",
-                              "version": 1,
-                              "parentId": "5arwg2mk0n",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "fontSize": "0.7rem"
                             }
                           ],
                           "isDisabled": false,
@@ -3157,7 +3111,7 @@
                       "fillColor": "{{appsmith.theme.colors.primaryColor}}",
                       "parentColumnSpace": 19.05,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 0,
+                      "leftColumn": 15,
                       "dynamicBindingPathList": [
                         {
                           "key": "fillColor"
@@ -3224,6 +3178,60 @@
                       "isLoading": false,
                       "borderRadius": "1.5rem",
                       "buttonVariant": "TERTIARY"
+                    },
+                    {
+                      "widgetName": "Text26",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "fontSize"
+                        }
+                      ],
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                      "searchTags": [
+                        "typography",
+                        "paragraph",
+                        "label"
+                      ],
+                      "topRow": 4,
+                      "bottomRow": 8,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "SCROLL",
+                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "parentColumnSpace": 18.7375,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "fontFamily"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "{{USER_get_wt_data.data[0].wt_data[0].tz.payload}}",
+                      "key": "xbhtfj9i1x",
+                      "isDeprecated": false,
+                      "rightColumn": 15,
+                      "textAlign": "LEFT",
+                      "widgetId": "neo64i3vrn",
+                      "isVisible": true,
+                      "fontStyle": "",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "9x4mb5h69m",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "fontSize": "0.6rem"
                     }
                   ],
                   "isDisabled": false,
@@ -7076,8 +7084,9 @@
                                 "task": 245,
                                 "step": 62,
                                 "status": 75,
-                                "name": 536,
-                                "project_post_type": 276
+                                "name": 389,
+                                "project_post_type": 276,
+                                "wt_stack": 76
                               },
                               "parentRowSpace": 10,
                               "hideCard": false,
@@ -7993,6 +8002,18 @@
                 "async () => {\n  if (appsmith.mode != \"EDIT\" && appsmith.URL.queryParams.embed === undefined) {\n    if (Object.keys(appsmith.URL.queryParams).length > 0) {\n      navigateTo(appsmith.URL.fullPath + '&embed=true');\n    } else {\n      navigateTo(appsmith.URL.fullPath + '?embed=true');\n    }\n  }\n}"
               ],
               "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Контент_USER_get_wt_data",
+              "name": "USER_get_wt_data",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "(()=>{\n\treturn {\n\t\tuser: appsmith.user.email,\n\t\tpost: appsmith.store.current_post,\n\t\twt: {uuid:T_mf_list.selectedRow.uuid}\n\t}\n})()"
+              ],
+              "timeoutInMillisecond": 60000
             }
           ]
         ],
