@@ -7459,7 +7459,7 @@
                               "rightColumn": 64,
                               "textSize": "0.75rem",
                               "widgetId": "s4cmgo2f0j",
-                              "tableData": "{{USER_get_wt_current.data[0].table_post}}",
+                              "tableData": "{{USER_get_post_list.data[0].table_post}}",
                               "label": "Data",
                               "searchKey": "",
                               "parentId": "cfxs2mq2ya",
