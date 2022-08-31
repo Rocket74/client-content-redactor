@@ -7248,8 +7248,8 @@
                               "columnOrder": [
                                 "uuid",
                                 "name",
-                                "project_place",
                                 "project_post_type",
+                                "project_place",
                                 "wt_stack",
                                 "customColumn1"
                               ],
