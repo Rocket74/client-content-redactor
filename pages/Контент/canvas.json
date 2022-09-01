@@ -2150,7 +2150,7 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "defaultText": "{{T_mf_list.selectedRow.uuid === ''?'# ← <br>Для начала выполнения задания выберите поле слева, кликнув по нему.':(\n'**Описание**<br>'\n\n+USER_get_wt_data.data[0].wt_data[0].tz.payload.description+\n\n'<br><br>**Пример**<br>'\n\n+USER_get_wt_data.data[0].wt_data[0].tz.payload.sample+\n\n'<br><br>**Недопустимо**<br>'\n\n+USER_get_wt_data.data[0].wt_data[0].tz.payload.arr_forbidden.map((fb) => {\n\treturn fb.forbidden\n}).join(' <br><br> ')+\n\n'<br><br>**Обязательно**<br>'\n\t\n\t+USER_get_wt_data.data[0].wt_data[0].tz.payload.arr_required.map((rq) => {\n\treturn rq.required\n}).join(' <br><br> ')\n\n\n\n)}}\n\n\n"
+                              "defaultText": "{{T_mf_list.selectedRow.uuid === ''?'# ← <br>Для начала выполнения задания выберите поле слева, кликнув по нему.':(\n'**Описание**<br>' \n\n+USER_get_wt_data.data[0].wt_data[0].tz.payload.description+\n\n'<br><br>**Пример**<br>'\n\n+USER_get_wt_data.data[0].wt_data[0].tz.payload.sample+\n\n'<br><br>**Недопустимо**<br>'\n\n+USER_get_wt_data.data[0].wt_data[0].tz.payload.arr_forbidden.map((fb) => {\n\treturn fb.forbidden\n}).join(' <br><br> ')+\n\n'<br><br>**Обязательно**<br>'\n\t\n\t+USER_get_wt_data.data[0].wt_data[0].tz.payload.arr_required.map((rq) => {\n\treturn rq.required\n}).join(' <br><br> ')\n\n\n\n)}}\n\n\n"
                             },
                             {
                               "template": {
@@ -6963,7 +6963,7 @@
                                   "key": "primaryColumns.project_post_type.computedValue"
                                 },
                                 {
-                                  "key": "primaryColumns.wt_stack.computedValue"
+                                  "key": "primaryColumns.wt.computedValue"
                                 }
                               ],
                               "leftColumn": 0,
@@ -7009,8 +7009,8 @@
                               "defaultPageSize": 0,
                               "columnOrder": [
                                 "customColumn1",
-                                "wt_stack",
                                 "name",
+                                "wt",
                                 "project_post_type",
                                 "project_place",
                                 "uuid"
@@ -7030,9 +7030,10 @@
                                 "task": 245,
                                 "step": 62,
                                 "status": 75,
-                                "name": 389,
+                                "name": 402,
                                 "project_post_type": 276,
-                                "wt_stack": 76
+                                "wt_stack": 76,
+                                "wt": 88
                               },
                               "parentRowSpace": 10,
                               "hideCard": false,
@@ -7190,13 +7191,13 @@
                                   "isDiscardVisible": true,
                                   "computedValue": "{{T_post_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"project_post_type\"]))}}"
                                 },
-                                "wt_stack": {
+                                "wt": {
                                   "allowCellWrapping": false,
                                   "index": 4,
                                   "width": 150,
-                                  "originalId": "wt_stack",
-                                  "id": "wt_stack",
-                                  "alias": "wt_stack",
+                                  "originalId": "wt",
+                                  "id": "wt",
+                                  "alias": "wt",
                                   "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "text",
@@ -7213,7 +7214,7 @@
                                   "label": "Заданий",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{T_post_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"wt_stack\"].length))}}",
+                                  "computedValue": "{{T_post_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"wt\"].length))}}",
                                   "cellBackground": ""
                                 }
                               },
@@ -7881,7 +7882,7 @@
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
-              "animateLoading": true,
+              "animateLoading": false,
               "overflow": "NONE",
               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
               "parentColumnSpace": 20.0625,
@@ -7903,7 +7904,7 @@
               "text": "{{USER_get_project_post_type.data.length == 0?'Для вас нет заданий':''}}",
               "key": "xbhtfj9i1x",
               "isDeprecated": false,
-              "rightColumn": 41,
+              "rightColumn": 36,
               "textAlign": "LEFT",
               "widgetId": "8dfs3bxby4",
               "isVisible": true,
