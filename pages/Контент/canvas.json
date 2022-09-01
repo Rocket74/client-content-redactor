@@ -2642,7 +2642,7 @@
                               ],
                               "shouldTruncate": false,
                               "truncateButtonColor": "#FFC13D",
-                              "text": "{{(()=>{\n\treturn T_post_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index) {\n\t\t\treturn row\n\t\t}\n\t})[0].name.join(' ')\n})()}}   ->>   {{T_mf_list.selectedRow.mfppt_name.toUpperCase()}}",
+                              "text": "{{(()=>{\n\treturn T_post_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index) {\n\t\t\treturn row\n\t\t}\n\t})[0].name.join(' ')\n})()}}   ->>   {{T_mf_list.selectedRow.name.toUpperCase()}}",
                               "key": "10dmk5c4xz",
                               "isDeprecated": false,
                               "rightColumn": 64,
