@@ -7144,7 +7144,7 @@
                                   "label": "Название",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{T_post_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"name\"].join(' ') === ''?currentRow[\"project_post_type\"]+' '+currentRow[\"num\"]:currentRow[\"name\"].join(' ') === ''))}}",
+                                  "computedValue": "{{T_post_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"name\"].join(' ') === ''?currentRow[\"project_post_type\"]+' '+currentRow[\"num\"]:currentRow[\"name\"].join(' ')))}}",
                                   "cellBackground": ""
                                 },
                                 "project_place": {
