@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1020,
+          "bottomRow": 1010,
           "containerStyle": "none",
           "snapRows": 84,
           "parentRowSpace": 1,
@@ -2059,7 +2059,7 @@
                                   "key": "isDisabled"
                                 }
                               ],
-                              "isDisabled": "{{USER_get_wt_data.data[0].wt_data[0].wt_version !== null}}",
+                              "isDisabled": "{{USER_get_wt_data.data[0].wt_data[0].wt_version !== null }}",
                               "key": "11wej2t4dz",
                               "orientation": "horizontal",
                               "isDeprecated": false,
@@ -2532,7 +2532,7 @@
                           "isVisible": true,
                           "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                           "iconName": "arrow-left",
-                          "onClick": "{{(()=>{\n\treturn storeValue('current_post',\n{index:appsmith.store.current_post.index-1,uuid:T_post_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index-1) {\n\t\t\treturn row\n\t\t}\n\t})[0].uuid}\t\t\t\t\t\t\t\t\t\t),resetWidget('T_mf_list',true), USER_get_wt_list.clear(),\n\t\t\tUSER_get_wt_list.run()\n})()}}"
+                          "onClick": "{{(()=>{\n\treturn storeValue('current_post',\n{index:appsmith.store.current_post.index-1,uuid:T_post_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index-1) {\n\t\t\treturn row\n\t\t}\n\t})[0].uuid}\t\t\t\t\t\t\t\t\t\t),resetWidget('T_mf_list',true), USER_get_wt_list.clear(),\n\t\t\tUSER_get_wt_list.run(),\n\t\t(()=>{\n\tresetWidget('Inp_text',true),\n\t\tresetWidget('Inp_html',true),\n\t\tresetWidget('Inp_num',true),\n\t\tresetWidget('Inp_img',true),\n\t\tresetWidget('Inp_doc',true),\n\t\tresetWidget('Inp_video',true),\n\t\tresetWidget('Slt_core',true),\n\t\tresetWidget('Mslt_cores',true),\n\t\tresetWidget('Slt_post',true),\n\t\tresetWidget('Mslt_posts',true)\n})()\n})()}}"
                         },
                         "groupButtonxt4gdzje9z": {
                           "id": "groupButtonxt4gdzje9z",
@@ -2560,7 +2560,7 @@
                           "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                           "iconName": "arrow-right",
                           "iconAlign": "right",
-                          "onClick": "{{(()=>{\n\t\treturn storeValue('current_post',\n{index:appsmith.store.current_post.index+1,uuid:T_post_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index+1) {\n\t\t\treturn row\n\t\t}\n\t})[0].uuid}\t\t\t\t\t\t\t\t\t\t),resetWidget('T_mf_list',true), USER_get_wt_list.clear(),\n\t\t\tUSER_get_wt_list.run()\n\t\t\n})()}}"
+                          "onClick": "{{(()=>{\n\t\treturn storeValue('current_post',\n{index:appsmith.store.current_post.index+1,uuid:T_post_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index+1) {\n\t\t\treturn row\n\t\t}\n\t})[0].uuid}\t\t\t\t\t\t\t\t\t\t),resetWidget('T_mf_list',true), USER_get_wt_list.clear(),\n\t\t\tUSER_get_wt_list.run(),\n\t\t\t(()=>{\n\tresetWidget('Inp_text',true),\n\t\tresetWidget('Inp_html',true),\n\t\tresetWidget('Inp_num',true),\n\t\tresetWidget('Inp_img',true),\n\t\tresetWidget('Inp_doc',true),\n\t\tresetWidget('Inp_video',true),\n\t\tresetWidget('Slt_core',true),\n\t\tresetWidget('Mslt_cores',true),\n\t\tresetWidget('Slt_post',true),\n\t\tresetWidget('Mslt_posts',true)\n})()\n\t\t\n})()}}"
                         }
                       },
                       "type": "BUTTON_GROUP_WIDGET",
@@ -7422,7 +7422,7 @@
               "text": "{{USER_get_project_post_type.data.length == 0?'Для вас нет заданий':''}}",
               "key": "xbhtfj9i1x",
               "isDeprecated": false,
-              "rightColumn": 36,
+              "rightColumn": 37,
               "textAlign": "LEFT",
               "widgetId": "8dfs3bxby4",
               "isVisible": true,
