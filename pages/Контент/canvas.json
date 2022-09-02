@@ -6964,6 +6964,9 @@
                                 },
                                 {
                                   "key": "primaryColumns.wt.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.num.computedValue"
                                 }
                               ],
                               "leftColumn": 0,
@@ -7013,6 +7016,7 @@
                                 "wt",
                                 "project_post_type",
                                 "project_place",
+                                "num",
                                 "uuid"
                               ],
                               "dynamicPropertyPathList": [
@@ -7140,7 +7144,7 @@
                                   "label": "Название",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{T_post_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"name\"].join(' ')))}}",
+                                  "computedValue": "{{T_post_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"name\"].join(' ') === ''?currentRow[\"project_post_type\"]+' '+currentRow[\"num\"]:currentRow[\"name\"].join(' ') === ''))}}",
                                   "cellBackground": ""
                                 },
                                 "project_place": {
@@ -7215,6 +7219,32 @@
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
                                   "computedValue": "{{T_post_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"wt\"].length))}}",
+                                  "cellBackground": ""
+                                },
+                                "num": {
+                                  "allowCellWrapping": false,
+                                  "index": 5,
+                                  "width": 150,
+                                  "originalId": "num",
+                                  "id": "num",
+                                  "alias": "num",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textColor": "",
+                                  "textSize": "0.75rem",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": false,
+                                  "isDisabled": false,
+                                  "isCellEditable": false,
+                                  "isEditable": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "num",
+                                  "isSaveVisible": true,
+                                  "isDiscardVisible": true,
+                                  "computedValue": "{{T_post_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"num\"]))}}",
                                   "cellBackground": ""
                                 }
                               },
