@@ -2642,7 +2642,7 @@
                               ],
                               "shouldTruncate": false,
                               "truncateButtonColor": "#FFC13D",
-                              "text": "{{(()=>{\n\treturn T_post_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index) {\n\t\t\treturn row\n\t\t}\n\t})[0].name.join(' ')\n})()}}   ->>   {{T_mf_list.selectedRow.name.toUpperCase()}}",
+                              "text": "{{(()=>{\n\treturn T_post_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index) {\n\t\t\treturn row\n\t\t}\n\t})[0].name.join(' ') === ''? T_post_list.tableData.filter((row1,index)=>{\n\t\tif (index === appsmith.store.current_post.index) {\n\t\t\treturn row1\n\t\t}\n\t})[0].project_post_type+' '+ T_post_list.tableData.filter((row2,index)=>{\n\t\tif (index === appsmith.store.current_post.index) {\n\t\t\treturn row2\n\t\t}\n\t})[0].num:\t T_post_list.tableData.filter((row3,index)=>{\n\t\tif (index === appsmith.store.current_post.index) {\n\t\t\treturn row3\n\t\t}\n\t})[0].name.join(' ')\n})()}}",
                               "key": "10dmk5c4xz",
                               "isDeprecated": false,
                               "rightColumn": 64,
@@ -2814,8 +2814,8 @@
                               "widgetName": "T_mf_list",
                               "defaultPageSize": 0,
                               "columnOrder": [
-                                "uuid",
-                                "name"
+                                "name",
+                                "uuid"
                               ],
                               "dynamicPropertyPathList": [
                                 {
@@ -2889,7 +2889,7 @@
                                   "isEditable": false,
                                   "isCellVisible": true,
                                   "isDerived": false,
-                                  "label": "name",
+                                  "label": "Поле",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
                                   "computedValue": "{{T_mf_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"name\"].name))}}",
@@ -2993,7 +2993,7 @@
                         "groupButtonv04wpfrwhm": {
                           "id": "groupButtonv04wpfrwhm",
                           "index": 0,
-                          "label": "{{(()=>{ \treturn T_post_list.tableData.filter((row,index)=>{ \t\tif (index === appsmith.store.current_post.index-1) { \t\t\treturn row \t\t} \t})[0].name.join(' ') })()}}",
+                          "label": "{{(()=>{\n\treturn T_post_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index-1) {\n\t\t\treturn row\n\t\t}\n\t})[0].name.join(' ') === ''? T_post_list.tableData.filter((row1,index)=>{\n\t\tif (index === appsmith.store.current_post.index-1) {\n\t\t\treturn row1\n\t\t}\n\t})[0].project_post_type+' '+ T_post_list.tableData.filter((row2,index)=>{\n\t\tif (index === appsmith.store.current_post.index-1) {\n\t\t\treturn row2\n\t\t}\n\t})[0].num:\t T_post_list.tableData.filter((row3,index)=>{\n\t\tif (index === appsmith.store.current_post.index-1) {\n\t\t\treturn row3\n\t\t}\n\t})[0].name.join(' ')\n})()}}",
                           "menuItems": {},
                           "buttonType": "SIMPLE",
                           "placement": "CENTER",
@@ -3007,7 +3007,7 @@
                         "groupButtonxt4gdzje9z": {
                           "id": "groupButtonxt4gdzje9z",
                           "index": 1,
-                          "label": "{{(()=>{\n\treturn T_post_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index) {\n\t\t\treturn row\n\t\t}\n\t})[0].name.join(' ')\n})()}}",
+                          "label": "{{(()=>{\n\treturn T_post_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index) {\n\t\t\treturn row\n\t\t}\n\t})[0].name.join(' ') === ''? T_post_list.tableData.filter((row1,index)=>{\n\t\tif (index === appsmith.store.current_post.index) {\n\t\t\treturn row1\n\t\t}\n\t})[0].project_post_type+' '+ T_post_list.tableData.filter((row2,index)=>{\n\t\tif (index === appsmith.store.current_post.index) {\n\t\t\treturn row2\n\t\t}\n\t})[0].num:\t T_post_list.tableData.filter((row3,index)=>{\n\t\tif (index === appsmith.store.current_post.index) {\n\t\t\treturn row3\n\t\t}\n\t})[0].name.join(' ')\n})()}}",
                           "menuItems": {},
                           "buttonType": "SIMPLE",
                           "placement": "CENTER",
@@ -3020,7 +3020,7 @@
                         "groupButton97prr5j8d8": {
                           "id": "groupButton97prr5j8d8",
                           "index": 2,
-                          "label": "{{(()=>{ \treturn T_post_list.tableData.filter((row,index)=>{ \t\tif (index === appsmith.store.current_post.index+1) { \t\t\treturn row \t\t} \t})[0].name.join(' ') })()}}",
+                          "label": "{{(()=>{\n\treturn T_post_list.tableData.filter((row,index)=>{\n\t\tif (index === appsmith.store.current_post.index+1) {\n\t\t\treturn row\n\t\t}\n\t})[0].name.join(' ') === ''? T_post_list.tableData.filter((row1,index)=>{\n\t\tif (index === appsmith.store.current_post.index+1) {\n\t\t\treturn row1\n\t\t}\n\t})[0].project_post_type+' '+ T_post_list.tableData.filter((row2,index)=>{\n\t\tif (index === appsmith.store.current_post.index+1) {\n\t\t\treturn row2\n\t\t}\n\t})[0].num:\t T_post_list.tableData.filter((row3,index)=>{\n\t\tif (index === appsmith.store.current_post.index+1) {\n\t\t\treturn row3\n\t\t}\n\t})[0].name.join(' ')\n})()}}",
                           "menuItems": {},
                           "buttonType": "SIMPLE",
                           "placement": "CENTER",
