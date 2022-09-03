@@ -2448,7 +2448,7 @@
                                   "cellBackground": ""
                                 }
                               },
-                              "onRowSelected": "{{\n(()=>{\n\t\n\tUSER_get_wt_data.run(),\n\t\t(()=>{\n\t\tif(USER_get_wt_data.data[0].wt_data[0].state.payload.ex_method === '14f747a9-a67f-49fd-b1b0-0fa338673a81') {\n\t\t\tget_select_core.run()\n\t\t} else {}\n\t})()\n\t\n\t\n})()\n}}",
+                              "onRowSelected": "{{\n(()=>{\n\t\n\tUSER_get_wt_data.run(),\n\t\t(()=>{\n\t\tif(USER_get_wt_data.data[0].wt_data[0].state.payload.ex_method === '14f747a9-a67f-49fd-b1b0-0fa338673a81') {\n\t\t\t(()=>{\n\t\t\t\tget_select_core.run()\n\t\t\t})()\n\t\t} else {}\n\t})()\n\t\n\t\n})()\n}}",
                               "key": "5ud47972jw",
                               "isDeprecated": false,
                               "rightColumn": 8,
