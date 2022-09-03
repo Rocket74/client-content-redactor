@@ -1726,6 +1726,11 @@
                                       "boxShadow": "none",
                                       "widgetName": "Slt_core",
                                       "isFilterable": true,
+                                      "dynamicPropertyPathList": [
+                                        {
+                                          "key": "isVisible"
+                                        }
+                                      ],
                                       "displayName": "Select",
                                       "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
                                       "labelText": "{{T_mf_list.selectedRow.name}}",
@@ -1759,6 +1764,9 @@
                                         },
                                         {
                                           "key": "options"
+                                        },
+                                        {
+                                          "key": "isVisible"
                                         }
                                       ],
                                       "labelPosition": "Top",
@@ -1772,7 +1780,7 @@
                                       "rightColumn": 64,
                                       "widgetId": "jidw7zb2kc",
                                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                                      "isVisible": true,
+                                      "isVisible": "{{!USER_get_wt_data.data[0].wt_data[0].tz.payload.many}}",
                                       "version": 1,
                                       "parentId": "haqyajd48y",
                                       "labelAlignment": "left",
@@ -1784,6 +1792,11 @@
                                       "boxShadow": "none",
                                       "widgetName": "Mslt_cores",
                                       "isFilterable": true,
+                                      "dynamicPropertyPathList": [
+                                        {
+                                          "key": "isVisible"
+                                        }
+                                      ],
                                       "displayName": "MultiSelect",
                                       "iconSVG": "/static/media/icon.a3495809ae48291a64404f3bb04b0e69.svg",
                                       "labelText": "{{T_mf_list.selectedRow.name}}",
@@ -1815,10 +1828,16 @@
                                         },
                                         {
                                           "key": "defaultOptionValue"
+                                        },
+                                        {
+                                          "key": "options"
+                                        },
+                                        {
+                                          "key": "isVisible"
                                         }
                                       ],
                                       "labelPosition": "Top",
-                                      "options": "",
+                                      "options": "{{utils.select(get_select_core.data,['name','uuid'])}}",
                                       "placeholderText": "Выбрать ядра",
                                       "isDisabled": false,
                                       "key": "2a1irigrc6",
@@ -1828,7 +1847,7 @@
                                       "rightColumn": 64,
                                       "widgetId": "okyjpsryr8",
                                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                                      "isVisible": true,
+                                      "isVisible": "{{USER_get_wt_data.data[0].wt_data[0].tz.payload.many}}",
                                       "version": 1,
                                       "parentId": "haqyajd48y",
                                       "labelAlignment": "left",
@@ -2429,7 +2448,7 @@
                                   "cellBackground": ""
                                 }
                               },
-                              "onRowSelected": "{{\n(()=>{\n\t\n\tUSER_get_wt_data.run()\n\t\n\t\n})()\n}}",
+                              "onRowSelected": "{{\n(()=>{\n\t\n\tUSER_get_wt_data.run(),\n\t\t(()=>{\n\t\tif(USER_get_wt_data.data[0].wt_data[0].state.payload.ex_method === '14f747a9-a67f-49fd-b1b0-0fa338673a81') {\n\t\t\tget_select_core.run()\n\t\t} else {}\n\t})()\n\t\n\t\n})()\n}}",
                               "key": "5ud47972jw",
                               "isDeprecated": false,
                               "rightColumn": 8,
