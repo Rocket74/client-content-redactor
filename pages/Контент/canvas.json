@@ -1756,10 +1756,13 @@
                                         },
                                         {
                                           "key": "defaultOptionValue"
+                                        },
+                                        {
+                                          "key": "options"
                                         }
                                       ],
                                       "labelPosition": "Top",
-                                      "options": "",
+                                      "options": "{{utils.select(get_select_core.data,['name','uuid'])}}",
                                       "placeholderText": "Выбрать ядро",
                                       "isDisabled": false,
                                       "key": "nw1ukez3is",
@@ -2137,7 +2140,7 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "defaultText": "{{T_mf_list.selectedRow.uuid === ''?'# ← <br>Для начала выполнения задания выберите поле слева, кликнув по нему.':(\n'**Описание**<br>' \n\n+USER_get_wt_data.data[0].wt_data[0].tz.payload.description+\n\n'<br><br>**Пример**<br>'\n\n+USER_get_wt_data.data[0].wt_data[0].tz.payload.sample+\n\n'<br><br>**Недопустимо**<br>'\n\n+USER_get_wt_data.data[0].wt_data[0].tz.payload.arr_forbidden.map((fb) => {\n\treturn fb.forbidden\n}).join(' <br><br> ')+\n\n'<br><br>**Обязательно**<br>'\n\t\n\t+USER_get_wt_data.data[0].wt_data[0].tz.payload.arr_required.map((rq) => {\n\treturn rq.required\n}).join(' <br><br> ')\n\n\n\n)}}\n\n\n"
+                              "defaultText": "{{T_mf_list.selectedRow.uuid === ''?'# ← <br>Для начала выполнения задания выберите поле слева, кликнув по нему.':(\n'**Описание**<br>' \n\n+USER_get_wt_data.data[0].wt_data[0].tz.payload.description+(()=>{\n\tif(USER_get_wt_data.data[0].wt_data[0].state.payload.ex_method === '14f747a9-a67f-49fd-b1b0-0fa338673a81' || USER_get_wt_data.data[0].wt_data[0].state.payload.ex_method === '6a5ce8f9-d02d-4caa-91bb-ff9328a94ff0') {\n\t\treturn ''\n\t} else {\n\t\treturn '<br><br>**Пример**<br>'\n\n+USER_get_wt_data.data[0].wt_data[0].tz.payload.sample+\n\n'<br><br>**Недопустимо**<br>'\n\n+USER_get_wt_data.data[0].wt_data[0].tz.payload.arr_forbidden.map((fb) => {\n\treturn fb.forbidden\n}).join(' <br><br> ')+\n\n'<br><br>**Обязательно**<br>'\n\t\n\t+USER_get_wt_data.data[0].wt_data[0].tz.payload.arr_required.map((rq) => {\n\treturn rq.required\n}).join(' <br><br> ')\n\t}\n})()\n\n\n\n\n\n)}}\n\n\n"
                             },
                             {
                               "widgetName": "Text21",
@@ -7465,6 +7468,19 @@
               "pluginType": "JS",
               "jsonPathKeys": [
                 "async () => {\n  if (appsmith.mode != \"EDIT\" && appsmith.URL.queryParams.embed === undefined) {\n    if (Object.keys(appsmith.URL.queryParams).length > 0) {\n      navigateTo(appsmith.URL.fullPath + '&embed=true');\n    } else {\n      navigateTo(appsmith.URL.fullPath + '?embed=true');\n    }\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Контент_get_select_core",
+              "name": "get_select_core",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "USER_get_wt_data.data[0].wt_data[0].tz.payload.core_type",
+                "USER_get_wt_data.data[0].wt_data[0].tz.payload.limit_cores.length > 0? 'AND uuid  IN('+\"'\"+USER_get_wt_data.data[0].wt_data[0].tz.payload.limit_cores.join(\"','\")+\"'\"+')' :''"
               ],
               "timeoutInMillisecond": 10000
             }
