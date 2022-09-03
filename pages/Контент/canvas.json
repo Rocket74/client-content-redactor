@@ -7471,19 +7471,6 @@
               ],
               "timeoutInMillisecond": 10000
             }
-          ],
-          [
-            {
-              "id": "Контент_get_select_core",
-              "name": "get_select_core",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "USER_get_wt_data.data[0].wt_data[0].tz.payload.core_type",
-                "USER_get_wt_data.data[0].wt_data[0].tz.payload.limit_cores.length > 0? 'AND uuid  IN('+\"'\"+USER_get_wt_data.data[0].wt_data[0].tz.payload.limit_cores.join(\"','\")+\"'\"+')' :''"
-              ],
-              "timeoutInMillisecond": 10000
-            }
           ]
         ],
         "validOnPageLoadActions": true,

@@ -25,7 +25,7 @@
         }
       ]
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -38,7 +38,7 @@
       "USER_get_wt_data.data[0].wt_data[0].tz.payload.core_type",
       "USER_get_wt_data.data[0].wt_data[0].tz.payload.limit_cores.length > 0? 'AND uuid  IN('+\"'\"+USER_get_wt_data.data[0].wt_data[0].tz.payload.limit_cores.join(\"','\")+\"'\"+')' :''"
     ],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
