@@ -2717,7 +2717,7 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "onClose": "{{resetWidget('T_mf_list',true);\nstoreValue('current_post',{index:-1,uuid:''});\nstoreValue('current_wt',{uuid:''});\nUSER_get_post_list.run();\n(()=>{\n\tresetWidget('Inp_text',true),\n\t\tresetWidget('Inp_html',true),\n\t\tresetWidget('Inp_num',true),\n\t\tresetWidget('Inp_img',true),\n\t\tresetWidget('Inp_doc',true),\n\t\tresetWidget('Inp_video',true),\n\t\tresetWidget('Slt_core',true),\n\t\tresetWidget('Mslt_cores',true),\n\t\tresetWidget('Slt_post',true),\n\t\tresetWidget('Mslt_posts',true)\n})()\n}}",
+              "onClose": "{{resetWidget('T_mf_list',true);\nstoreValue('current_post',{index:-1,uuid:''});\nstoreValue('current_wt',{uuid:''});\nUSER_get_post_list.run();\nget_select_core.clear();\n(()=>{\n\tresetWidget('Inp_text',true),\n\t\tresetWidget('Inp_html',true),\n\t\tresetWidget('Inp_num',true),\n\t\tresetWidget('Inp_img',true),\n\t\tresetWidget('Inp_doc',true),\n\t\tresetWidget('Inp_video',true),\n\t\tresetWidget('Slt_core',true),\n\t\tresetWidget('Mslt_cores',true),\n\t\tresetWidget('Slt_post',true),\n\t\tresetWidget('Mslt_posts',true)\n})()\n}}",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "width": 1231.2
             },
