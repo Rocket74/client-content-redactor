@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "SELECT wt.uuid AS uuid, wtpa.uuid AS wt_pack, wtpa.payload_post AS pack_post, wtpo.uuid AS wt_post, wttz.uuid AS wt_tz, tz.uuid AS tz, tz.payload AS tz_payload, wtes.uuid AS wt_es, wtes.settings AS es_settings, wtst.uuid AS wt_stack, pp.name AS project_place\n\nFROM public.\"wt\" wt\nLEFT JOIN public.\"wt_pack\" wtpa ON wtpa.uuid = wt.wt_pack AND wtpa.active = true AND wtpa.deleted = false\nLEFT JOIN public.\"project_place\" pp ON pp.uuid = wtpa.project_place AND pp.active = true AND pp.deleted = false\nLEFT JOIN public.\"wt_post\" wtpo ON wtpo.wt = wt.uuid AND wtpo.active = true AND wtpo.deleted = false\nLEFT JOIN public.\"wt_tz\" wttz ON wttz.wt = wt.uuid AND wttz.active = true AND wttz.deleted = false\nLEFT JOIN public.\"tz\" tz ON wttz.tz = tz.uuid AND tz.active = true AND tz.deleted = false\nLEFT JOIN public.\"mf_project_post_type\" mfppt ON mfppt.uuid = tz.mf_project_post_type AND mfppt.active = true AND mfppt.deleted = false\nLEFT JOIN public.\"_mf_post_type\" mfpt ON mfpt.uuid = mfppt.mf_post_type AND mfpt.active = true AND mfpt.deleted = false\nLEFT JOIN public.\"wt_execution_settings\" wtes ON wtes.wt = wt.uuid AND wtes.active = true AND wtes.deleted = false\nLEFT JOIN public.\"wt_stack\" wtst ON wtst.wt = wt.uuid AND wtst.active = true AND wtst.deleted = false\n\nWHERE pp.project = '{{Slt_p.selectedOptionValue}}'\nORDER BY wt.uuid\nLIMIT 100;",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": false

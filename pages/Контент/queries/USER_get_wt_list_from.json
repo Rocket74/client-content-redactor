@@ -32,6 +32,7 @@
       "body": "{{(()=>{\n\treturn {\n\t\tpost: appsmith.store.current_post.uuid,\n\t\tuser: appsmith.user.email\n\t}\n})()}}",
       "bodyFormData": [],
       "httpMethod": "POST",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

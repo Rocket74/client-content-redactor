@@ -20,6 +20,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "(data, fields) => {\n  return data.map(d => ({\n    label: d[fields[0]],\n    value: d[fields[1]]\n  }));\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [
         {
           "name": "data"

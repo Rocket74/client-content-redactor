@@ -32,6 +32,7 @@
       "body": "{{(()=>{\n\treturn {\n\t\tuser: appsmith.user.email,\n\t\tpost: appsmith.store.current_post,\n\t\twt: {uuid:T_mf_list.selectedRow.uuid},\n\t\tcontent: (()=>{\n\t\t\treturn {\n\t\t\t\ttext:Inp_text.text,\n\t\t\t\thtml:Inp_html.text,\n\t\t\t\tnum:Inp_num.text,\n\t\t\t\timg:Inp_img.text,\n\t\t\t\tdoc:Inp_doc.text,\n\t\t\t\tvideo:Inp_video.text,\n\t\t\t\tcore: Slt_core.selectedOptionValue,\n\t\t\t\tcores: Mslt_cores.selectedOptionValues,\n\t\t\t\tpost: Slt_post.selectedOptionValue,\n\t\t\t\tposts: Mslt_posts.selectedOptionValues\n\t\t\t}\n\t\t})()\n\t}\n})()}}",
       "bodyFormData": [],
       "httpMethod": "POST",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

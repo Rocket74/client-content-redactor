@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 60,
+          "version": 64,
           "minHeight": 850,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -1540,7 +1540,7 @@
                                       "type": "MULTI_SELECT_WIDGET_V2",
                                       "serverSideFiltering": false,
                                       "hideCard": false,
-                                      "defaultOptionValue": "{{USER_get_wt_data.data[0].wt_data[0].wt_version.content.posts}}",
+                                      "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( USER_get_wt_data.data[0].wt_data[0].wt_version.content.posts))(Mslt_posts.options, Mslt_posts.serverSideFiltering) }}",
                                       "animateLoading": true,
                                       "parentColumnSpace": 11.983984375,
                                       "dynamicTriggerPathList": [],
@@ -1595,7 +1595,7 @@
                                       "type": "SELECT_WIDGET",
                                       "serverSideFiltering": false,
                                       "hideCard": false,
-                                      "defaultOptionValue": "{{USER_get_wt_data.data[0].wt_data[0].wt_version.content.post}}",
+                                      "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( USER_get_wt_data.data[0].wt_data[0].wt_version.content.post))(Slt_post.options, Slt_post.serverSideFiltering) }}",
                                       "animateLoading": true,
                                       "parentColumnSpace": 11.983984375,
                                       "dynamicTriggerPathList": [],
@@ -1744,7 +1744,7 @@
                                       "type": "SELECT_WIDGET",
                                       "serverSideFiltering": false,
                                       "hideCard": false,
-                                      "defaultOptionValue": "{{USER_get_wt_data.data[0].wt_data[0].wt_version.content.core}}",
+                                      "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( USER_get_wt_data.data[0].wt_data[0].wt_version.content.core))(Slt_core.options, Slt_core.serverSideFiltering) }}",
                                       "animateLoading": true,
                                       "parentColumnSpace": 11.983984375,
                                       "dynamicTriggerPathList": [],
@@ -1811,7 +1811,7 @@
                                       "type": "MULTI_SELECT_WIDGET_V2",
                                       "serverSideFiltering": false,
                                       "hideCard": false,
-                                      "defaultOptionValue": "{{USER_get_wt_data.data[0].wt_data[0].wt_version.content.cores}}",
+                                      "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( USER_get_wt_data.data[0].wt_data[0].wt_version.content.cores))(Mslt_cores.options, Mslt_cores.serverSideFiltering) }}",
                                       "animateLoading": true,
                                       "parentColumnSpace": 11.983984375,
                                       "dynamicTriggerPathList": [],
@@ -2101,67 +2101,6 @@
                               "buttonVariant": "PRIMARY"
                             },
                             {
-                              "boxShadow": "none",
-                              "widgetName": "RichTextEditor4",
-                              "dynamicPropertyPathList": [
-                                {
-                                  "key": "isVisible"
-                                }
-                              ],
-                              "displayName": "Rich Text Editor",
-                              "iconSVG": "/static/media/icon.b35e139c93907b5eab3c68c1db842330.svg",
-                              "labelText": "Задание",
-                              "searchTags": [
-                                "input",
-                                "rte"
-                              ],
-                              "topRow": 5,
-                              "bottomRow": 69,
-                              "parentRowSpace": 10,
-                              "labelWidth": 5,
-                              "type": "RICH_TEXT_EDITOR_WIDGET",
-                              "hideCard": false,
-                              "animateLoading": true,
-                              "parentColumnSpace": 18.7375,
-                              "isToolbarHidden": true,
-                              "dynamicTriggerPathList": [],
-                              "leftColumn": 8,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "borderRadius"
-                                },
-                                {
-                                  "key": "labelTextColor"
-                                },
-                                {
-                                  "key": "defaultText"
-                                },
-                                {
-                                  "key": "isVisible"
-                                }
-                              ],
-                              "labelPosition": "Top",
-                              "labelStyle": "BOLD",
-                              "labelTextColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "inputType": "markdown",
-                              "isDisabled": true,
-                              "key": "rjviw2w3qj",
-                              "labelTextSize": "1.25rem",
-                              "isRequired": false,
-                              "isDeprecated": false,
-                              "rightColumn": 28,
-                              "isDefaultClickDisabled": true,
-                              "widgetId": "po49bi5n4c",
-                              "isVisible": "{{!USER_get_wt_data.isLoading}}",
-                              "version": 1,
-                              "parentId": "5arwg2mk0n",
-                              "labelAlignment": "left",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "defaultText": "{{T_mf_list.selectedRow.uuid === ''?'# ← <br>Для начала выполнения задания выберите поле слева, кликнув по нему.':(\n'**Описание**<br>' \n\n+USER_get_wt_data.data[0].wt_data[0].tz.payload.description+(()=>{\n\tif(USER_get_wt_data.data[0].wt_data[0].state.payload.ex_method === '14f747a9-a67f-49fd-b1b0-0fa338673a81' || USER_get_wt_data.data[0].wt_data[0].state.payload.ex_method === '6a5ce8f9-d02d-4caa-91bb-ff9328a94ff0') {\n\t\treturn ''\n\t} else {\n\t\treturn '<br><br>**Пример**<br>'\n\n+USER_get_wt_data.data[0].wt_data[0].tz.payload.sample+\n\n'<br><br>**Недопустимо**<br>'\n\n+USER_get_wt_data.data[0].wt_data[0].tz.payload.arr_forbidden.map((fb) => {\n\treturn fb.forbidden\n}).join(' <br><br> ')+\n\n'<br><br>**Обязательно**<br>'\n\t\n\t+USER_get_wt_data.data[0].wt_data[0].tz.payload.arr_required.map((rq) => {\n\treturn rq.required\n}).join(' <br><br> ')\n\t}\n})()\n\n\n\n\n\n)}}\n\n\n"
-                            },
-                            {
                               "widgetName": "Text21",
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
@@ -2326,6 +2265,7 @@
                               ],
                               "leftColumn": 0,
                               "delimiter": ",",
+                              "variant": "VARIANT2",
                               "defaultSelectedRowIndex": "-1",
                               "showInlineEditingOptionDropdown": true,
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -2418,7 +2358,8 @@
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
                                   "computedValue": "{{T_mf_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"uuid\"]))}}",
-                                  "cellBackground": ""
+                                  "cellBackground": "",
+                                  "validation": {}
                                 },
                                 "name": {
                                   "allowCellWrapping": false,
@@ -2445,7 +2386,8 @@
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
                                   "computedValue": "{{T_mf_list.processedTableData.map((currentRow, currentIndex) => ( \ncurrentRow[\"name\"][\"label\"]?'🟢'+currentRow[\"name\"].name:currentRow[\"name\"].name\n))}}",
-                                  "cellBackground": ""
+                                  "cellBackground": "",
+                                  "validation": {}
                                 }
                               },
                               "onRowSelected": "{{\n(()=>{\n\t\n\tUSER_get_wt_data.run(()=>{\n\t\t(()=>{\n\t\tif(USER_get_wt_data.data[0].wt_data[0].state.payload.ex_method === '14f747a9-a67f-49fd-b1b0-0fa338673a81') {\n\t\t\n\t\t\t\tget_select_core.run()\n\t\t\n\t\t} else {}\n\t})()\n\t})\n\t\t\n\t\n\t\n})()\n}}",
@@ -2465,6 +2407,57 @@
                               "isVisiblePagination": false,
                               "cellBackground": "",
                               "verticalAlignment": "CENTER"
+                            },
+                            {
+                              "widgetName": "Text26",
+                              "borderColor": "",
+                              "displayName": "Text",
+                              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                              "searchTags": [
+                                "typography",
+                                "paragraph",
+                                "label"
+                              ],
+                              "topRow": 5,
+                              "bottomRow": 69,
+                              "parentRowSpace": 10,
+                              "type": "TEXT_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "overflow": "SCROLL",
+                              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                              "parentColumnSpace": 18.7375,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 9,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "fontFamily"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "text"
+                                }
+                              ],
+                              "shouldTruncate": false,
+                              "borderWidth": "",
+                              "text": "{{T_mf_list.selectedRow.uuid === ''?'<h2>←</h2>Для начала выполнения задания выберите поле слева, кликнув по нему.':(\n'<h2>Описание</h2>' \n\n+USER_get_wt_data.data[0].wt_data[0].tz.payload.description+(()=>{\n\tif(USER_get_wt_data.data[0].wt_data[0].state.payload.ex_method === '14f747a9-a67f-49fd-b1b0-0fa338673a81' || USER_get_wt_data.data[0].wt_data[0].state.payload.ex_method === '6a5ce8f9-d02d-4caa-91bb-ff9328a94ff0') {\n\t\treturn ''\n\t} else {\n\t\treturn '<h2>Пример</h2>'\n\n+USER_get_wt_data.data[0].wt_data[0].tz.payload.sample+\n\n'<h2>Недопустимо</h2><ul><li>'\n\n+USER_get_wt_data.data[0].wt_data[0].tz.payload.arr_forbidden.map((fb) => {\n\treturn fb.forbidden\n}).join('</li> <li>')+\n\n'</ul><h2>Обязательно</h2><ul><li>'\n\t\n\t+USER_get_wt_data.data[0].wt_data[0].tz.payload.arr_required.map((rq) => {\n\treturn rq.required\n}).join('</li> <li>')+'</ul>'\n\t}\n})()\n\n\n\n\n\n)}}\n\n\n",
+                              "key": "0uwjw9s13w",
+                              "isDeprecated": false,
+                              "rightColumn": 27,
+                              "disableLink": false,
+                              "textAlign": "LEFT",
+                              "widgetId": "3t9gnnz6pe",
+                              "isVisible": true,
+                              "fontStyle": "",
+                              "textColor": "#231F20",
+                              "version": 1,
+                              "parentId": "5arwg2mk0n",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "fontSize": "0.875rem"
                             }
                           ],
                           "isDisabled": false,
@@ -6583,7 +6576,8 @@
                                   "label": "uuid",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{T_post_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"uuid\"]))}}"
+                                  "computedValue": "{{T_post_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"uuid\"]))}}",
+                                  "validation": {}
                                 },
                                 "customColumn1": {
                                   "allowCellWrapping": false,
@@ -6629,7 +6623,8 @@
                                   },
                                   "isCompact": true,
                                   "menuVariant": "TERTIARY",
-                                  "menuButtoniconName": "menu"
+                                  "menuButtoniconName": "menu",
+                                  "validation": {}
                                 },
                                 "name": {
                                   "allowCellWrapping": false,
@@ -6655,7 +6650,8 @@
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
                                   "computedValue": "{{T_post_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"name\"].join(' ') === ''?currentRow[\"project_post_type\"]+' '+currentRow[\"num\"]:currentRow[\"name\"].join(' ')))}}",
-                                  "cellBackground": ""
+                                  "cellBackground": "",
+                                  "validation": {}
                                 },
                                 "project_place": {
                                   "allowCellWrapping": false,
@@ -6679,7 +6675,8 @@
                                   "label": "Ресурс размещения",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{T_post_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"project_place\"]))}}"
+                                  "computedValue": "{{T_post_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"project_place\"]))}}",
+                                  "validation": {}
                                 },
                                 "project_post_type": {
                                   "allowCellWrapping": false,
@@ -6703,7 +6700,8 @@
                                   "label": "Тип контента",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{T_post_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"project_post_type\"]))}}"
+                                  "computedValue": "{{T_post_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"project_post_type\"]))}}",
+                                  "validation": {}
                                 },
                                 "wt": {
                                   "allowCellWrapping": false,
@@ -6729,7 +6727,8 @@
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
                                   "computedValue": "{{T_post_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"wt\"].length))}}",
-                                  "cellBackground": ""
+                                  "cellBackground": "",
+                                  "validation": {}
                                 },
                                 "num": {
                                   "allowCellWrapping": false,
@@ -6755,7 +6754,8 @@
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
                                   "computedValue": "{{T_post_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"num\"]))}}",
-                                  "cellBackground": ""
+                                  "cellBackground": "",
+                                  "validation": {}
                                 }
                               },
                               "key": "9xj1oje56u",
@@ -7462,23 +7462,15 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Контент_get_project",
-              "name": "get_project",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.user.email"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "Контент_get_user",
               "name": "get_user",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
-            },
+            }
+          ],
+          [
             {
               "id": "Контент_utils.forceEmbed",
               "name": "utils.forceEmbed",
@@ -7490,8 +7482,21 @@
               ],
               "timeoutInMillisecond": 10000
             }
+          ],
+          [
+            {
+              "id": "Контент_get_project",
+              "name": "get_project",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.user.email"
+              ],
+              "timeoutInMillisecond": 10000
+            }
           ]
         ],
+        "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Контент",
         "deleted": false,
