@@ -2057,7 +2057,7 @@
                                   "key": "groupButtons.groupButton1.onClick"
                                 }
                               ],
-                              "leftColumn": 28,
+                              "leftColumn": 29,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "childStylesheet.button.buttonColor"
@@ -2079,7 +2079,7 @@
                               "key": "11wej2t4dz",
                               "orientation": "horizontal",
                               "isDeprecated": false,
-                              "rightColumn": 63,
+                              "rightColumn": 62,
                               "widgetId": "5s92iapz4x",
                               "isVisible": "{{T_mf_list.selectedRow.uuid !== ''}}",
                               "version": 1,
