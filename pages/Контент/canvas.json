@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1010,
+          "bottomRow": 1070,
           "containerStyle": "none",
           "snapRows": 84,
           "parentRowSpace": 1,
@@ -1961,9 +1961,6 @@
                                   "key": "isVisible"
                                 },
                                 {
-                                  "key": "isDisabled"
-                                },
-                                {
                                   "key": "groupButtons.groupButton1.onClick"
                                 }
                               ],
@@ -2076,12 +2073,9 @@
                                 },
                                 {
                                   "key": "isVisible"
-                                },
-                                {
-                                  "key": "isDisabled"
                                 }
                               ],
-                              "isDisabled": "{{USER_get_wt_data.data[0].wt_data[0].wt_version !== null }}",
+                              "isDisabled": false,
                               "key": "11wej2t4dz",
                               "orientation": "horizontal",
                               "isDeprecated": false,
@@ -7265,7 +7259,7 @@
               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
               "parentColumnSpace": 20.0625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 52,
+              "leftColumn": 51,
               "dynamicBindingPathList": [
                 {
                   "key": "text"
