@@ -6417,6 +6417,7 @@
                           "children": [
                             {
                               "boxShadow": "none",
+                              "borderColor": "transparent",
                               "isVisibleDownload": false,
                               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
                               "topRow": 4,
@@ -6474,6 +6475,7 @@
                               ],
                               "leftColumn": 0,
                               "delimiter": ",",
+                              "variant": "VARIANT3",
                               "defaultSelectedRowIndex": 0,
                               "showInlineEditingOptionDropdown": true,
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
